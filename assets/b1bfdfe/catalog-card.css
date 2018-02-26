@@ -1,0 +1,558 @@
+.category-products_root .catalog__items {
+    margin-left : -30px;
+}
+
+.catalog__pagination {
+    display    : block;
+    margin     : 0;
+    padding    : 20px 0 50px;
+    text-align : center;
+}
+
+.catalog__pager {
+    display    : block;
+    margin     : 20px 0 0;
+    padding    : 0;
+    text-align : center;
+}
+
+.catalog__pagination .pagination {
+    margin  : 0 auto !important;
+    padding : 0 !important;
+}
+
+.catalog-card,
+.catalog-card__box,
+.catalog-card__description,
+.catalog-card__row,
+.catalog-card__image,
+.catalog-card__new,
+.catalog-card__tags,
+.catalog-card__tag,
+.catalog-card__title,
+.catalog-card__category,
+.catalog-card__price,
+.catalog-card__price-discount,
+.catalog-card__action,
+.catalog-card__params {
+    display : block;
+    margin  : 0;
+    padding : 0;
+}
+
+.catalog-card__action {
+    box-sizing         : border-box;
+    margin             : 0 auto;
+    padding            : 10px 20px;
+    width              : 100%;
+    background         : #f1e67f;
+    border-radius      : 3px;
+    box-shadow         : 0 6px 16px 0 rgba(0, 0, 0, .3);
+    color              : #000;
+    font-size          : 16px;
+    line-height        : 20px;
+    text-align         : center;
+    text-decoration    : none !important;
+    white-space        : nowrap;
+    -webkit-transition : all .3s ease 0s;
+    -moz-transition    : all .3s ease 0s;
+    -ms-transition     : all .3s ease 0s;
+    -o-transition      : all .3s ease 0s;
+    transition         : all .3s ease 0s;
+    cursor             : pointer;
+}
+
+.catalog-card__action:hover {
+    background : #e7dc75;
+}
+
+.catalog-card__image {
+    height        : 150px;
+    width         : 200px;
+    max-width     : 100%;
+    margin-right  : auto;
+    margin-bottom : 20px;
+    margin-left   : auto;
+    border        : none;
+    outline       : none;
+}
+
+.catalog-card__new {
+    display  : block;
+    outline  : 0;
+    border   : 0;
+    position : absolute;
+    top      : 0;
+    left     : 0;
+}
+
+.catalog-card__tags {
+    position : absolute;
+    right    : 0;
+    bottom   : 0;
+}
+
+.catalog-card__tag {
+    display : inline-block;
+}
+
+.catalog-card__tag + .catalog-card__tag {
+    margin-left : 5px;
+}
+
+.catalog-card__title {
+    display         : inline-block;
+    margin-bottom   : 10px;
+    line-height     : 20px;
+    text-align      : left;
+    text-decoration : none !important;
+}
+
+.catalog-card__name {
+    font-size   : 14px;
+    line-height : 20px;
+}
+
+.catalog-card__category {
+    font-size   : 13px;
+    line-height : 20px;
+    color       : #9f9f9f;
+}
+
+.catalog-card {
+    position       : relative;
+    width          : 200px;
+    margin         : 0 25px 45px 31px;
+    padding-top    : 25px;
+    display        : inline-block;
+    vertical-align : top;
+    font-size      : 0;
+    line-height    : 1;
+}
+
+.catalog-card__description {
+    position   : relative;
+    display    : inline-block;
+    text-align : left;
+    width      : 100%;
+}
+
+.catalog-card__price {
+    display        : inline-block;
+    vertical-align : middle;
+}
+
+.catalog-card__price-title {
+    display        : block;
+    font-size      : 14px;
+    padding-bottom : 8px;
+}
+
+.catalog-card__price + .catalog-card__price {
+    margin-left : 7px;
+}
+
+.catalog-card__price_type_expired {
+    font-size       : 16px;
+    color           : #9f9f9f;
+    text-decoration : line-through;
+}
+
+.catalog-card__price_type_expired .rub2 {
+    font-size : 0;
+}
+
+.catalog-card__price_type_expired .ruble {
+    margin      : 0;
+    padding     : 0;
+    position    : absolute;
+    text-align  : left;
+    text-indent : -9999px;
+}
+
+.catalog-card__price_type_actual {
+    font-size : 24px;
+}
+
+.catalog-card__price_type_discount {
+    position      : relative;
+    height        : 22px;
+    width         : 40px;
+    margin-bottom : 8px;
+}
+
+.catalog-card__price_type_discount svg {
+    height : 100%;
+    width  : 100%;
+}
+
+.catalog-card__price-discount {
+    position    : absolute;
+    top         : 1px;
+    right       : 2px;
+    bottom      : 0;
+    left        : 8px;
+    font-size   : 12px;
+    line-height : 21px;
+    text-align  : center;
+}
+
+.catalog-card__row_footer {
+    display : none;
+}
+
+.catalog-card__box {
+    position   : absolute;
+    top        : -20px;
+    right      : -25px;
+    bottom     : -25px;
+    left       : -25px;
+    min-height : 100%;
+    background : #fff;
+    text-align : left;
+    opacity    : 0;
+    z-index    : -1;
+    box-shadow : 0 3px 16px 1px rgba(0, 0, 0, 0.5);
+}
+
+.catalog-card__row {
+    position : relative;
+}
+
+.catalog-card__row_footer {
+    position     : absolute;
+    top          : 100%;
+    right        : 0;
+    left         : 0;
+    display      : block;
+    opacity      : 0;
+    z-index      : -1;
+    font-size    : 0;
+    text-align   : justify;
+    text-justify : distribute-all-lines;
+}
+
+.catalog-card__row_footer:after {
+    content : "";
+    display : inline-block;
+    width   : 100%;
+}
+
+.catalog-card__quick-view {
+    position          : absolute;
+    top               : 0;
+    right             : 0;
+    opacity           : 0;
+    height            : 15px;
+    width             : 15px;
+    cursor            : pointer;
+    -webkit-transform : translateZ(0);
+    transform         : translateZ(0);
+}
+
+.catalog-card__quick-view:before {
+    content    : "";
+    position   : absolute;
+    top        : 0;
+    right      : 0;
+    height     : 15px;
+    width      : 15px;
+    background : url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAzMCI+PGcgZmlsbD0iIzMzMyIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNOS44Ny4wNUM0LjQyLjA1IDAgNC40NyAwIDkuOTJjMCA1LjQ1IDQuNDIgOS44NyA5Ljg3IDkuODcgNS40NSAwIDkuODYtNC40NyA5Ljg2LTkuOVMxNS4zMyAwIDkuODcgMHptMCAxNy4wOGMtMy45OCAwLTcuMi0zLjIzLTcuMi03LjIgMC00IDMuMjItNy4yMiA3LjItNy4yMnM3LjIgMy4yOCA3LjIgNy4yNi0zLjIyIDcuMi03LjIgNy4yeiIvPjxwYXRoIGQ9Ik0yMi45OCAyNy41NmMuNS43My4zMyAxLjctLjM1IDIuMTQtLjY4LjQ1LTEuNjMuMjItMi4xLS41bC03LjA3LTEwLjZjLS40OC0uNzMtLjMyLTEuNy4zNS0yLjE1LjctLjQ1IDEuNjgtLjIyIDIuMTcuNUwyMyAyNy41NXoiLz48L2c+PC9zdmc+") 50% 50%/contain no-repeat;
+    opacity    : 0;
+}
+
+.catalog-card__quick-view:hover:before {
+    opacity : 1;
+}
+
+.catalog-card__quick-view:after {
+    content     : "Быстрый просмотр";
+    position    : absolute;
+    right       : 30px;
+    top         : 0;
+    white-space : nowrap;
+    line-height : 16px;
+    font-size   : 12px;
+}
+
+.catalog-card__like {
+    position          : absolute;
+    top               : 0;
+    left              : 0;
+    opacity           : 0;
+    height            : 15px;
+    width             : 15px;
+    background        : url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZD0iTTI5LjcgMTAuNjRxMC0xLjQ0LS4zNy0yLjU1dC0uOTgtMS43Ny0xLjQ2LTEuMDYtMS43LS41Ni0xLjc0LS4xMy0yIC40Ni0xLjk3IDEuMTQtMS41NSAxLjI4LTEuMDcgMS4xcS0uMzMuNC0uODguNHQtLjg3LS40cS0uNDMtLjUtMS4wOC0xLjFUMTIuNSA2LjE3dC0xLjk2LTEuMTQtMi0uNDYtMS43NS4xNC0xLjcuNTctMS40NSAxLjA2LS45OCAxLjc2LS4zOCAyLjU0cTAgMyAzLjMzIDYuMzRsMTAuMzcgMTBMMjYuMzYgMTdxMy4zNS0zLjM2IDMuMzUtNi4zNnptMi4zIDBxMCAzLjk1LTQuMSA4LjA0bC0xMS4xIDEwLjdxLS4zMy4zMy0uOC4zM3QtLjgtLjNMNC4wOCAxOC42M3EtLjE4LS4xNC0uNS0uNDZUMi42IDE3dC0xLjIzLTEuNzMtLjk1LTIuMTZUMCAxMC42NVEwIDYuNyAyLjI3IDQuNXQ2LjI3LTIuMnExLjEgMCAyLjI2LjM3dDIuMTQgMS4wNCAxLjcgMS4yM1QxNiA2LjEzcS42NC0uNjMgMS4zNi0xLjJ0MS43LTEuMjIgMi4xNC0xLjAzIDIuMjYtLjM4cTQgMCA2LjI3IDIuMlQzMiAxMC42NHoiLz48L3N2Zz4=") 50% 50%/contain no-repeat;
+    cursor            : pointer;
+    -webkit-transform : translateZ(0);
+    transform         : translateZ(0);
+}
+
+.catalog-card__like_active {
+    opacity          : 1;
+    background-image : url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZD0iTTE2IDI5LjdxLS40NiAwLS44LS4zTDQuMDggMTguNjNxLS4xOC0uMTQtLjUtLjQ2VDIuNiAxN3QtMS4yMy0xLjczLS45NS0yLjE2VDAgMTAuNjVRMCA2LjcgMi4yNyA0LjV0Ni4yNy0yLjJxMS4xIDAgMi4yNi4zN3QyLjE0IDEuMDQgMS43IDEuMjNUMTYgNi4xM3EuNjQtLjYzIDEuMzYtMS4ydDEuNy0xLjIyIDIuMTQtMS4wMyAyLjI2LS4zOHE0IDAgNi4yNyAyLjJUMzIgMTAuNjRxMCAzLjk1LTQuMSA4LjA0bC0xMS4xIDEwLjdxLS4zMy4zMy0uOC4zM3oiLz48L3N2Zz4=");
+}
+
+.catalog-card__like:hover,
+.catalog-card__quick-view:hover:before {
+    -webkit-transform : scale(1.4) translateZ(0);
+    transform         : scale(1.4) translateZ(0);
+}
+
+.catalog-card:hover {
+    overflow : visible;
+    z-index  : 1;
+}
+
+.catalog-card:hover .catalog-card__box {
+    -webkit-transition : opacity 0.75s ease 0s;
+    transition         : opacity 0.75s ease 0s;
+    opacity            : 1;
+    z-index            : 1;
+}
+
+.catalog-card:hover:after {
+    z-index : 1;
+}
+
+.catalog-card:hover .catalog-card__description,
+.catalog-card:hover .catalog-card__row,
+.catalog-card:hover .catalog-card__like,
+.catalog-card:hover .catalog-card__quick-view {
+    z-index : 1;
+}
+
+.catalog-card:hover .catalog-card__row_footer {
+    opacity            : 1;
+    -webkit-transition : opacity 0.75s ease 0s;
+    transition         : opacity 0.75s ease 0s;
+}
+
+.catalog-card:hover .catalog-card__like,
+.catalog-card:hover .catalog-card__quick-view,
+.catalog-card:hover .catalog-card__quick-view:before {
+    opacity            : 1;
+    -webkit-transition : opacity 0.75s ease 0s, transform 0.2s ease-out;
+    -webkit-transition : opacity 0.75s ease 0s, -webkit-transform 0.2s ease-out;
+    transition         : opacity 0.75s ease 0s, -webkit-transform 0.2s ease-out;
+    transition         : opacity 0.75s ease 0s, transform 0.2s ease-out;
+    transition         : opacity 0.75s ease 0s, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+}
+
+.catalog-card__params {
+    overflow  : hidden;
+    position  : relative;
+    z-index   : 1;
+    font-size : 14px;
+    margin    : 15px 0 20px;
+}
+
+.catalog-card__params > img {
+    max-height : 200px;
+    max-width  : 100%;
+    display    : block;
+    margin     : 0 auto 15px
+}
+
+.catalog-card__params > .name {
+    font-size : 25px
+}
+
+.catalog-card__params .icons {
+    position : absolute;
+    right    : 36px;
+    top      : 24px
+}
+
+.catalog-card__params .icons .icon {
+    width      : 29px;
+    height     : 29px;
+    background : center no-repeat
+}
+
+.catalog-card__params .icons .icon.tag-1 {
+    background-image : url(/images/catalog/home.png)
+}
+
+.catalog-card__params .icons .icon.tag-2 {
+    background-image : url(/images/catalog/cool.png)
+}
+
+.catalog-card__params .materials .item {
+    width  : 34px;
+    height : 34px;
+}
+
+.catalog-card__params .materials .material .par {
+    font-size   : 11px;
+    color       : #a3a3a3;
+    line-height : 16px;
+    margin      : 6px 0 0;
+}
+
+.catalog-card__params .materials .material .val {
+    font-size : 12px;
+}
+
+.catalog-card__params .materials .material {
+    margin : 0 21px 0 0
+}
+
+.catalog-card__params .materials .material .image {
+    width              : 34px;
+    height             : 34px;
+    -moz-border-radius : 50%;
+    border-radius      : 50%;
+    margin             : 0 9px 0 0
+}
+
+.catalog-card__params .materials .material .info {
+    font-size : 14px;
+    color     : #000
+}
+
+.catalog-card__params .materials .material .info .name {
+    font-size : 11px;
+    color     : #8d8d8d;
+    margin    : 0
+}
+
+.catalog-card__params .params {
+    margin : 15px 0 0;
+}
+
+.catalog-card__params .params:first-child {
+    margin-top : 0;
+}
+
+.catalog-card__params .params .param-item .name {
+    margin      : 0;
+    line-height : 20px;
+}
+
+.catalog-card__params .params .param-item {
+    margin : 0;
+}
+
+.catalog-card__params .params .param-item .values {
+    white-space : nowrap
+}
+
+.catalog-card__params .params .param-item .values .value-wrapper {
+    display       : inline-block;
+    padding-right : 21px;
+    background    : url(/images/catalog/krest.png) right center no-repeat
+}
+
+.catalog-card__params .params .param-item .values .value-wrapper:last-child {
+    background-image : none
+}
+
+.catalog-card__params .params .param-item .values .value-wrapper .name {
+    font-size      : 11px;
+    color          : #a3a3a3;
+    margin         : 0;
+    text-transform : lowercase
+}
+
+.catalog-card__params .price {
+    padding-top : 10px
+}
+
+.catalog-card__params .price .price-value {
+    font-size : 35px
+}
+
+.catalog-card__params .price .price-discount {
+    position         : relative;
+    height           : 30px;
+    line-height      : 30px;
+    background-color : #e0d161;
+    font-size        : 16px;
+    padding          : 0 8px 0 0;
+    margin           : 10px 0 0 17px
+}
+
+.catalog-card__params .price .price-discount .arrow {
+    width      : 12px;
+    height     : 30px;
+    position   : absolute;
+    left       : -12px;
+    top        : 0;
+    background : url(/images/catalog/discount-arrow-big.png) left center no-repeat
+}
+
+.catalog-card__params .price .old-price {
+    font-size : 12px;
+    margin    : 9px 0 0 10px
+}
+
+.catalog-card__params .rating-wrapper {
+    margin-top : 26px
+}
+
+.catalog-card__params .catalog-card__params-bottom {
+    margin-top : 10px;
+    position   : relative
+}
+
+.catalog-card_coupon .catalog-card__title {
+    padding-top : 54px;
+}
+
+.catalog-card_coupon .catalog-card__price_type_discount + .catalog-card__title {
+    padding-top : 0;
+}
+
+.catalog-card_coupon .catalog-card__price-title {
+    display        : inline-block;
+    vertical-align : middle;
+    margin-right   : 7px;
+    padding-bottom : 0;
+}
+
+.catalog-card_coupon .catalog-card__price_type_discount {
+    display     : inline-block;
+    height      : auto;
+    width       : auto;
+    position    : relative;
+    left        : -15px;
+    padding     : 8px 0;
+    white-space : nowrap;
+}
+
+.catalog-card_coupon .catalog-card__price-discount-title {
+    display        : inline-block;
+    vertical-align : middle;
+    position       : relative;
+    padding        : 8px 10px 8px 15px;
+    font-size      : 14px;
+    line-height    : 1;
+    background     : #efebcc;
+}
+
+.catalog-card_coupon .catalog-card__price-discount-title:after {
+    content       : "";
+    width         : 8px;
+    height        : 8px;
+    position      : absolute;
+    right         : -4px;
+    top           : 50%;
+    border-radius : 50%;
+    margin-top    : -4px;
+    background    : #efebcc;
+}
+
+.catalog-card_coupon .catalog-card__price-discount {
+    display        : inline-block;
+    vertical-align : middle;
+    position       : static;
+    top            : auto;
+    right          : auto;
+    bottom         : auto;
+    left           : auto;
+    padding        : 8px 10px 8px 13px;
+    background     : #ebdc6f;
+    font-size      : 14px;
+    line-height    : 1;
+}

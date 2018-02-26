@@ -1,0 +1,189 @@
+.section-name {
+    font-size : 25px;
+    margin    : 11px 0px -10px 0px;
+}
+
+.section-index-kits {
+    overflow : hidden;
+}
+
+.filter-item {
+    font-size    : 20px;
+    display      : inline-block;
+    margin-right : 10px;
+}
+
+.filter-item.active {
+    border-bottom : 1px solid;
+    height        : 26px;
+}
+
+.filter-item a:hover {
+    text-decoration : none;
+    opacity         : 0.75;
+}
+
+.index-kits {
+    margin-left : -30px;
+}
+
+.kiit-page,
+.kiit-page__title,
+.kiit-page__flash,
+.kiit-filter,
+.kiit-filter__item {
+    display : block;
+    margin  : 0;
+    padding : 0;
+}
+
+.kiit-page {
+    font     : normal 400 14px/1 "Circe-Light", Arial, sans-serif;
+    color    : #000;
+    overflow : hidden;
+}
+
+.kiit-page__title {
+    margin    : 10px 30px 25px;
+    font-size : 25px;
+}
+
+.kiit-page__flash {
+    margin-left   : 10px;
+    margin-right  : 10px;
+    margin-bottom : 30px;
+    padding       : 10px;
+    border        : 1px solid #ccc;
+    font-size     : 14px;
+    line-height   : normal;
+}
+
+.kiit-page__flash ol {
+    margin  : 0;
+    padding : 0 0 0 20px;
+}
+
+.kiit-page__flash li {
+    margin              : 0;
+    padding             : 0;
+    list-style-position : outside;
+}
+
+.kiit-filter {
+    font-size     : 0;
+    margin-bottom : 20px;
+    margin-left   : 30px;
+    margin-right  : 30px;
+}
+
+.kiit-filter__item {
+    font-size     : 20px;
+    margin-bottom : 10px;
+}
+
+.kiit-filter__item:hover {
+    opacity : 0.75;
+}
+
+.kiit-filter__item-link {
+    display         : inline-block;
+    text-decoration : none !important;
+}
+
+.kiit-filter__item_active .kiit-filter__item-link {
+    border-bottom : 1px solid;
+}
+
+@media (max-width : 767px) {
+    .kiit-page__title {
+        margin-left  : 20px;
+        margin-right : 20px;
+    }
+
+    .kiit-filter {
+        margin-left  : 20px;
+        margin-right : 20px;
+    }
+}
+
+@media (min-width : 768px) {
+    .kiit-filter__item {
+        display : inline-block;
+    }
+
+    .kiit-filter__item {
+        margin-right : 20px;
+    }
+
+    .kiit-page__flash {
+        margin-left  : 30px;
+        margin-right : 10%;
+        padding      : 15px;
+    }
+
+    .kiit-filter {
+        margin-right : 10%;
+    }
+}
+
+@media (min-width : 1376px) {
+    .kiit-page__flash {
+        margin-right : 15%;
+    }
+
+    .kiit-filter {
+        margin-right : 15%;
+    }
+}
+
+.kiit-page-banner {
+    display : block;
+}
+
+.kiit-page-banner:after {
+    content : "";
+    display : table;
+    clear   : both;
+}
+
+.kiit-page-banner__column {
+    display : block;
+    float   : left;
+}
+
+.kiit-page-banner__column_type_content {
+    width   : 700px;
+    margin  : 0 40px 0 0;
+    padding : 0;
+}
+
+.kiit-page-banner__column_type_image {
+    width    : 1px;
+    height   : 180px;
+    position : relative;
+}
+
+.kiit-page-banner__image {
+    display    : block;
+    position   : absolute;
+    right      : -9999px;
+    height     : 180px;
+    left       : 0;
+    top        : 0;
+    background : #f3f3f3;
+}
+
+.kiit-page-banner__image:before {
+    content    : "";
+    display    : block;
+    position   : absolute;
+    right      : -499px;
+    height     : 204px;
+    left       : 0;
+    top        : 0;
+    background : url('/images/banner_kits.png') 0 0 no-repeat;
+}
+
+.kiit-page-banner .kiit-filter {
+    margin-right : 0;
+}

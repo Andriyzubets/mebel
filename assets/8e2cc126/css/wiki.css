@@ -1,0 +1,549 @@
+.wiki .content .margin-wrapper{
+	/*overflow: hidden;*/
+}
+.wiki .wiki-right .articles .article .name:hover{
+	color: #000;
+	-webkit-transition: color 600ms ease;
+	-moz-transition: color 600ms ease;
+	-ms-transition: color 600ms ease;
+	-o-transition: color 600ms ease;
+	transition: color 600ms ease;
+}
+.wiki h1 {
+	margin-left: 30px;
+	margin-bottom: 2px
+}
+/* index */
+.wiki .document{
+	width: 100%;
+    margin-bottom: 40px;
+}
+.divan-cat {
+	width: 500px;
+}
+.mebel-cat {
+	width: 240px;
+    height: 265px;
+    margin-bottom: 20px;
+}
+.polezno-cat {
+	width: 240px;
+}
+.divan-cat a:hover,
+.mebel-cat a:hover,
+.polezno-cat a:hover {
+	text-decoration: none;
+}
+.divan-cat {
+	margin-bottom: 35px;
+}
+.mebel-cat .mebel-cat-category {
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+.mebel-cat .mebel-cat-name {
+    display: block;
+    line-height: 1.5;
+    overflow: hidden;
+    position: relative;
+    max-height: 3em;
+    font-size: 20px;
+}
+.wiki-content-block {
+	margin-top:30px;
+}
+.wiki-content-block > div {
+	margin-left: 27px;
+}
+.wiki-content-block h2 {
+	margin: 0 0 20px;
+}
+.wiki-content-block > div:first-child {
+	margin-left: 0;
+}
+.divan-cat .img {
+	height: 325px;
+}
+.mebel-cat .img {
+	height: 160px;
+}
+div .polezno-cat > div + div {
+	padding-top: 8px;
+	padding-bottom: 12px;
+}
+div .polezno-cat {
+	border-top: 1px solid #d8d8d8;
+}
+div .polezno-cat:first-child {
+	border-top: none;
+}
+div .polezno-cat{
+	padding-top: 20px;
+}
+div .polezno-cat:first-child {
+	padding-top: 0;
+}
+.random-term {
+	width: 240px;
+	padding: 20px;
+	box-sizing: border-box;
+	border: 1px solid #d8d8d8;
+	margin-bottom: 25px;
+}
+.random-term > span + span {
+	font-size: 13px;
+}
+div .polezno-cat:last-child > div + div {
+	border-bottom: none;
+}
+@media (min-width: 1025px) {
+	.random-term,
+	.polezno-cat {
+		width: 240px;
+	}
+}
+@media (max-width: 1135px) {
+	div .polezno-cat:first-child {
+		border-top: 1px solid #d8d8d8;
+		padding-top: 20px;
+	}
+}
+@media (min-width: 1600px) {
+	.wiki-content-block > div:first-child {
+		width: 1054px;
+		padding: 0;
+	}
+	.wiki-content-block > div:first-child + div {
+		margin-left: 0;
+	}
+	.middle-column-block {
+		margin-right: 15px;
+	}
+	.wiki-content-block > div {
+		 margin-left: 0;
+	}
+	.divan-cat {
+		float: left;
+		margin-right: 27px;
+	}
+}
+
+/* view */
+.wiki-article {
+	position: relative;
+	padding-top: 18px;
+	width: 880px !important;
+}
+.wiki-article h1 {
+    margin-bottom: 25px;
+    margin-left: 0;
+    margin-right: 50px;
+}
+.wiki-article .wiki-article-nav {
+	position: absolute;
+	top: 34px;
+	right: 15px;
+}
+.wiki-article-nav .arrow-left {
+	position: absolute;
+	left: -30px;
+}
+.wiki-article-nav .arrow-right {
+	position: absolute;
+	left: 0;
+}
+.wiki-article-nav .arrow-left:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 15px;
+	height: 20px;
+	background: url('/svg/icons/arrow_left_b.svg') left center no-repeat;
+	-webkit-background-size: 15px 20px;
+	background-size: 15px 20px;
+	cursor: pointer;
+}
+.wiki-article-nav .arrow-right:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 15px;
+	height: 20px;
+	background: url('/svg/icons/arrow_right_b.svg') left center no-repeat;
+	-webkit-background-size: 15px 20px;
+	background-size: 15px 20px;
+	cursor: pointer;
+}
+.wiki-article-nav .arrow-left.disabled:after,
+.wiki-article-nav .arrow-right.disabled:after {
+	opacity: 0.3;
+    cursor: auto;
+}
+.wiki-article-nav .arrow-left a,
+.wiki-article-nav .arrow-right a {
+	position: absolute;
+	width: 15px;
+	height: 20px;
+	z-index: 1;
+}
+.article-text {
+	margin-top: 25px;
+	margin-bottom: 30px;
+}
+.article-text .attention {
+    padding-left: 76px;
+    background: url(/images/icons/attention.png) 18px center no-repeat;
+    line-height: 26px;
+    min-height: 40px;
+}
+.article-text .attention span {
+    vertical-align: middle;
+}
+.article-goods-block {
+	margin-bottom: 25px;
+}
+.article-goods-block div.article-good {
+	width: 340px;
+	height: 305px;
+	margin-top: 15px;
+	margin-right: 25px;
+	position: relative;
+	box-sizing: border-box;
+	border: 2px solid #e6e6e6;
+}
+.article-goods-block div.article-good:last-child {
+	margin-right: 0;
+}
+.article-goods-block div.article-good:first-child {
+	margin-left: 0;
+}
+.article-good-text {
+	width: 100%;
+	font-size: 14px;
+	background-color: #e6e6e6;
+	padding: 15px;
+	box-sizing: border-box;
+	line-height: 22px;
+	max-height: 101px;
+	position: absolute;
+	bottom: 0;
+}
+.article-good-text div.article-good-title + div {
+	overflow: hidden;
+	max-height: 46px;
+}
+.article-good-title {
+	margin-bottom: 5px;
+}
+.article-good-title a,
+.article-good-title a:hover {
+	text-decoration: none;
+	color: #157ee9;
+}
+.article-good-img {
+	height: 150px;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 30px;
+
+}
+.article-сategory-block {
+	margin-bottom: 25px;
+    margin-left: -25px;
+}
+.article-category {
+	width: 340px;
+    height: 80px;
+    line-height: 40px;
+	margin-left: 25px;
+    margin-bottom: 25px;
+	box-sizing: border-box;
+	border: 1px solid #e6e6e6;
+	padding: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.article-category a,
+.article-category a:hover {
+	font-size: 14px;
+	text-decoration: none;
+}
+.article-category svg {
+    vertical-align: middle;
+    margin-right: 15px;
+    height: 40px;
+    width: 90px;
+}
+.article-category span:hover {
+  opacity: 0.75;
+}
+.article-category:hover svg .bg {
+    fill: #f1e67f!important;
+}
+.article-term-block {
+	margin-bottom: 30px;
+}
+.article-term-block .article-term {
+	width: 100%;
+	padding: 25px 20px;
+	box-sizing: border-box;
+	border: 1px solid #e6e6e6;
+	margin-top: 20px;
+	line-height: 26px;
+}
+.article-term-block .article-term > span {
+	font-size: 18px;
+}
+.article-term-block .title {
+	font-size: 18px;
+}
+
+.article-social-block {
+	margin-bottom: 47px;
+}
+.article-social-block .title {
+	margin-right: 15px;
+	font-size: 15px;
+}
+.article-social-block .links > a {
+	display: block;
+	float: left;
+	margin-top: -3px;
+	width: 27px;
+	height: 27px;
+	background-color: #cccccc;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	margin-right: 8px;
+	-webkit-box-shadow: inset 0 0 0 00px #FFF;
+	box-shadow: inset 0 0 0 00px #FFF;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+	cursor: pointer;
+}
+.article-social-block .links > a:hover {
+	background-color: #fff;
+	-webkit-box-shadow: inset 0 0 0 20px #FFF;
+	box-shadow: inset 0 0 0 20px #FFF;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.article-social-block .links > a > i {
+	display: block;
+	width: 27px;
+	height: 27px;
+	background: no-repeat center;
+}
+.article-social-block .links > a.vk > i {
+	background-image: url('/images/vk.png');
+}
+.article-social-block .links > a.fb > i {
+	background-image: url('/images/fb.png');
+}
+.article-social-block .links > a.ok > i {
+	background-image: url('/images/ok.png');
+}
+.article-article-block {
+	margin-bottom: 30px;
+}
+.article-article-block .title {
+	font-size: 20px;
+	margin-bottom: 12px;
+}
+.article-article-block .article-article {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.article-article-block .article-article a,
+.article-article-block .article-article a:hover {
+	color: #157ee9;
+	text-decoration: none;
+}
+.products-set {
+    border-top: 1px solid #cacaca;
+    padding-top: 10px;
+}
+.products-set .section-name {
+    margin-bottom: 20px !important;
+}
+.products-set .section-name sup {
+    display: none;
+}
+
+@media (min-width: 1600px) {
+	.wiki-article {
+		float: left;
+	}
+	.article-goods-block div.article-good {
+		margin-left: 0;
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+	.sub-block-1 {
+		margin-top: 96px;
+		width: 340px;
+		float: left;
+    margin-left: 40px;
+	}
+	.sub-block-2 {
+		width: 800px;
+	}
+    .article-сategory-block {
+        margin-left: 0;
+    }
+	.article-category {
+		margin-left: 0;
+		margin-top: 20px;
+	}
+	.article-category:first-child {
+		margin-top: 0;
+	}
+	.article-goods-block {
+		margin-bottom: 0;
+	}
+}
+
+/* category */
+.main-wiki-article {
+	width: 500px;
+	display: inline-block;
+	margin-right: 25px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+.main-wiki-article h2 {
+	margin-top: 13px;
+	font-size: 28px;
+	margin-bottom: 18px;
+}
+.main-wiki-article .short-text {
+    font-size: 16px;
+    overflow: hidden;
+}
+.wiki-category-link {
+	margin-top: 11px;
+}
+.wiki-category-link a {
+	margin-top: 10px;
+	margin-bottom: 15px;
+	font-size: 17px;
+	color: #7e7e7e;
+	text-decoration: none;
+}
+.wiki-article-link {
+    display: block;
+	font-size: 20px;
+	margin-top: 8px;
+    line-height: 1.5;
+    max-height: 3em;
+    position: relative;
+    overflow: hidden;
+}
+.other-wiki-article {
+	height: 265px;
+	width: 240px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 25px;
+	margin-bottom: 20px;
+}
+.main-wiki-article a:hover,
+.wiki-category-link a:hover,
+.other-wiki-article a:hover {
+	text-decoration: none;
+}
+
+/* wiktionary */
+.alphabet {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 0;
+}
+.alphabet a,
+.alphabet span {
+	display: inline-block;
+	font-size: 20px;
+	padding: 5px 10px;
+}
+.alphabet a {
+	color: #000;
+}
+.alphabet span {
+	color: #b7b7b7;
+}
+.alphabet a:hover {
+	text-decoration: none;
+}
+.alphabet .active {
+	background-color: #ffe164;
+	border-radius: 5px;
+}
+.wiki-term {
+	width: 100%;
+	line-height: 26px;
+	padding: 24px;
+	box-sizing: border-box;
+	border: 1px solid #d8d8d8;
+	margin-bottom: 25px;
+}
+ul li.wiki-term {
+	display: inline-block;
+}
+.wiki-term > span:first-child {
+	font-size: 20px;
+}
+.wiki-links {
+	display: block;
+	margin-top: 0;
+}
+.wiki-links a,
+.wiki-links a:hover {
+	color: #157ee9;
+	display: block;
+	margin-top: 4px;
+	font-size: 16px;
+	text-decoration: none;
+}
+.wiki-links a:first-child {
+	margin-top: 15px;
+}
+.ul {
+	column-count: 2;
+	column-gap: 25px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 25px;
+	-moz-column-count: 2;
+	-moz-column-gap: 25px;
+	padding-left: 0;
+	padding-right: 25px
+}
+@media (min-width: 1600px) {
+	.ul {
+		column-count: 3;
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+	}
+}
+
+.wiki a.blink-link:hover {
+    opacity: 0.75;
+    text-decoration: none;
+}
+.ellipsis-dots {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.ellipsis-fill {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+}

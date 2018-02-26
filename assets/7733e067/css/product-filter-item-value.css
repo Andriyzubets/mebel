@@ -1,0 +1,38 @@
+.product-filter-item-value {
+    -moz-user-select    : none;
+    -webkit-user-select : none;
+    -ms-user-select     : none;
+    user-select         : none;
+}
+
+.product-filter-item-value,
+.product-filter-item-value__container {
+    display : block;
+    margin  : 0;
+    padding : 0;
+}
+
+.product-filter-item-value__checkbox {
+    box-sizing    : border-box;
+    display       : block;
+    border-radius : 2px;
+    border        : 1px solid #a3a3a3;
+    width         : 1em;
+    height        : 1em;
+    position      : absolute;
+    top           : 2px;
+    left          : 0;
+}
+
+.product-filter-item-value_selected .product-filter-item-value__checkbox {
+    border-color : #000;
+    box-shadow   : inset 0 0 0 4px #000;
+}
+
+.product-filter-item-value__title {
+    display : inline;
+}
+
+.product-filter-item_type_multiple .product-filter-item-value__checkbox {
+    transition : all .1s ease-in-out 0s;
+}

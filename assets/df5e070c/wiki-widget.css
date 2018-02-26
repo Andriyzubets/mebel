@@ -1,0 +1,170 @@
+.wiki-widget {
+    display : block;
+}
+
+.wiki-widget:after {
+    content : '';
+    display : table;
+    clear   : both;
+}
+
+.wiki-widget_theme_row {
+    display      : flex;
+    margin-left  : -15px;
+    margin-right : -15px;
+}
+
+.wiki-widget_theme_row .wiki-widget__article:before {
+    right : 15px;
+    left  : 15px;
+}
+
+.wiki-widget_theme_row .wiki-widget__article-container {
+    box-sizing    : border-box;
+    float         : left;
+    width         : 50%;
+    padding-left  : 15px;
+    padding-right : 15px;
+}
+
+.wiki-widget_theme_row .wiki-widget__article-image {
+    left : 16px;
+}
+
+.wiki-widget_theme_list .wiki-widget__article-container {
+    margin-bottom : 20px;
+}
+
+.product-description .product-tabs-content .wiki-widget {
+    margin-bottom : 30px;
+}
+
+.wiki-widget__article-container {
+    position   : relative;
+    background : #fff;
+}
+
+.wiki-widget__article {
+    box-sizing : border-box;
+    display    : block;
+    min-height : 160px;
+}
+
+.wiki-widget__article:before {
+    content  : '';
+    position : absolute;
+    top      : 0;
+    right    : 0;
+    bottom   : 0;
+    left     : 0;
+    border   : 1px solid #ddd;
+
+}
+
+.wiki-widget__article:after {
+    content : '';
+    display : table;
+    clear   : both;
+}
+
+.wiki-widget__article-row {
+    display  : block;
+    margin   : 15px 0 15px 245px;
+    padding  : 0 25px;
+    position : relative;
+}
+
+.wiki-widget__article-row_category {
+    margin-top : 0;
+    padding    : 1px 0 0 1px;
+}
+
+.wiki-widget__article-image {
+    display    : block;
+    position   : absolute;
+    top        : 1px;
+    left       : 1px;
+    bottom     : 1px;
+    width      : 245px;
+    background : none 50% 50%/cover no-repeat;
+}
+
+.wiki-widget__article-category {
+    display            : inline-block;
+    padding            : 10px 10px 8px;
+    background         : #dedede;
+    cursor             : pointer;
+    color              : #000;
+    font-family        : Circe-Bold, sans-serif;
+    font-size          : 10px;
+    line-height        : 1;
+    font-weight        : 700;
+    text-decoration    : none !important;
+    text-transform     : uppercase;
+    -webkit-transition : background-color 0.2s ease;
+    -moz-transition    : background-color 0.2s ease;
+    transition         : background-color 0.2s ease;
+}
+
+.wiki-widget__article-category_mebel-v-interere {
+    background-color : #dedede;
+}
+
+.wiki-widget__article-category_mebel-v-interere:hover {
+    background-color : #c5c5c5;
+}
+
+.wiki-widget__article-category_divany-v-detalah {
+    background-color : #ffe164;
+}
+
+.wiki-widget__article-category_divany-v-detalah:hover {
+    background-color : #ffd731;
+}
+
+.wiki-widget__article-category_polezno-znat {
+    background-color : #abd193;
+}
+
+.wiki-widget__article-category_polezno-znat:hover {
+    background-color : #8fc26f;
+}
+
+.wiki-widget__article-title {
+    display            : inline;
+    cursor             : pointer;
+    color              : #000;
+    font-size          : 20px;
+    line-height        : 1.2;
+    text-decoration    : none !important;
+    -webkit-transition : color 0.2s ease;
+    -moz-transition    : color 0.2s ease;
+    transition         : color 0.2s ease;
+}
+
+.wiki-widget__article-title:hover {
+    color : #999;
+}
+
+.wiki-widget__article-teaser {
+    display     : block;
+    color       : #000;
+    font-size   : 14px;
+    line-height : 1.4;
+}
+
+@media (max-width : 1899px) {
+    .wiki-widget_theme_row .wiki-widget__article-container:nth-child(n + 3) {
+        display : none;
+    }
+}
+
+@media (min-width : 1900px) {
+    .wiki-widget_theme_row .wiki-widget__article-container {
+        width : 33.333333%;
+    }
+
+    .wiki-widget_theme_row .wiki-widget__article-container:nth-child(n + 4) {
+        display : none;
+    }
+}

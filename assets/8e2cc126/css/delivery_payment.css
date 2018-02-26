@@ -1,0 +1,519 @@
+.delivery .content .margin-wrapper {
+    overflow : hidden;
+}
+
+.delivery .content .document {
+    width : 95%;
+}
+
+.delivery .delivery-first-text {
+    width : 67%;
+}
+
+.delivery .advantage {
+    margin      : 0 0 47px 0;
+    max-width   : 1120px;
+    line-height : 2;
+}
+
+.delivery .advantage h2 {
+    margin-bottom : 30px;
+}
+
+.delivery .advantage .advantage-item {
+    width      : 22%;
+    margin     : 0 3% 0 0;
+    background : no-repeat left top;
+    font-size  : 14px;
+}
+
+.delivery .advantage .advantage-item.oneday > span {
+    width         : 63px;
+    height        : 40px;
+    display       : block;
+    margin-bottom : 35px;
+    background    : url('/images/advantage-item-sprite.png') -85px 0 no-repeat;
+}
+
+.delivery .advantage .advantage-item.allinclusive > span {
+    width         : 44px;
+    height        : 60px;
+    display       : block;
+    margin-bottom : 15px;
+    background    : url('/images/advantage-item-sprite.png') 0 0 no-repeat;
+}
+
+.delivery .advantage .advantage-item.pickup > span {
+    width         : 47px;
+    height        : 42px;
+    display       : block;
+    margin-bottom : 33px;
+    background    : url('/images/advantage-item-sprite.png') -150px 0 no-repeat;
+}
+
+.delivery .advantage .advantage-item.movers > span {
+    width         : 41px;
+    height        : 43px;
+    display       : block;
+    margin-bottom : 32px;
+    background    : url('/images/advantage-item-sprite.png') -44px 0 no-repeat;
+}
+
+.delivery .infotables {
+    width : 70%;
+}
+
+.delivery .tabs {
+    margin : 31px 0 0 0;
+}
+
+.delivery .tabs-parent {
+    display  : block;
+    overflow : hidden;
+    margin   : 25px 0 35px;
+}
+
+.delivery .tabs-parent a {
+    float           : left;
+    font-size       : 20px;
+    line-height     : 22px;
+    margin-right    : 25px;
+    text-decoration : none;
+}
+
+.delivery .tabs-parent a.active {
+    border-bottom : 1px solid #000;
+}
+
+.delivery .tabs > a {
+    display         : block;
+    font-size       : 15px;
+    float           : left;
+    margin          : 0 38px 0 0;
+    text-decoration : none !important;
+}
+
+.delivery .tabs > a.active {
+    border-bottom : 1px solid #000;
+}
+
+.delivery .delivery-table {
+    margin    : 20px 0 50px 0;
+    display   : none;
+    max-width : 875px;
+    font-size : 14px;
+}
+
+.delivery .delivery-table tbody td {
+    vertical-align : middle;
+}
+
+.delivery .delivery-table tbody td.width {
+    width : 67px;
+}
+
+.delivery .delivery-table.active {
+    display : table;
+}
+
+.delivery .delivery-parent {
+    display : none;
+}
+
+.delivery .delivery-parent.active {
+    display : block;
+}
+
+.delivery .tab-parent-title {
+    margin      : 0 0 18px;
+    font-size   : 35px;
+    font-weight : normal;
+}
+
+.delivery h2,
+.warranty h2 {
+    margin-bottom : 19px;
+    line-height   : 1;
+}
+
+.delivery h3,
+.warranty h3 {
+    font-size   : 17px;
+    font-weight : normal;
+    line-height : 1;
+}
+
+.delivery .delivery-check {
+    width        : 68%;
+    padding-left : 17px;
+    line-height  : 26px;
+}
+
+.site-delivery {
+    max-width      : 1145px;
+    padding-bottom : 30px;
+}
+
+.site-delivery .plain-text {
+    width : 68%;
+}
+
+.delivery .attention {
+    padding-left : 76px;
+    width        : 63%;
+    background   : url('/images/icons/attention.png') 18px center no-repeat;
+    line-height  : 26px;
+}
+
+.delivery .schedule,
+.warranty .schedule {
+    padding     : 0 21px 23px;
+    width       : 242px;
+    margin      : 0px 0 0 20px;
+    line-height : 22px;
+}
+
+.delivery .schedule {
+    border : 1px solid #cccccc;
+}
+
+.delivery .moreinfo {
+    width       : 20%;
+    padding     : 16px 0 0 20px;
+    margin-left : 19px;
+    line-height : 26px;
+}
+
+.left-warranty {
+    width     : 60%;
+    max-width : 760px;
+}
+
+body.warranty .pager,
+body.delivery .pager {
+    margin  : 0 0 20px;
+    padding : 0;
+}
+
+body.delivery .pager li,
+body.warranty .pager li {
+    display      : inline-block;
+    margin-right : 20px;
+    list-style   : none;
+}
+
+body.delivery .pager li a,
+body.warranty .pager li a {
+    color           : #000;
+    font-family     : 'Circe-Light';
+    font-size       : 20px;
+    line-height     : 22px;
+    text-decoration : none;
+    float           : left;
+}
+
+body.delivery .pager li a:hover,
+body.warranty .pager li a:hover {
+    opacity : 0.75
+}
+
+.pager li a.active {
+    border-bottom : 1px solid #000;
+    opacity       : 1 !important;
+}
+
+.warranty-content p {
+    margin      : 0;
+    line-height : 26px;
+}
+
+.warranty-period {
+    background  : #e6e6e6;
+    margin      : 49px 0;
+    padding     : 15px 20px;
+    font-family : 'Circe-Light';
+    font-size   : 24px;
+    text-align  : center;
+}
+
+.schedule.schedule-reclamation {
+    display     : inline-block;
+    font-family : 'Circe-Light';
+    font-size   : 14px;
+}
+
+.schedule-reclamation .reclamation-inner {
+    border        : 1px solid #cccccc;
+    margin-bottom : 25px;
+    padding       : 5px 21px 20px;
+    width         : 242px;
+}
+
+.schedule.schedule-reclamation a:hover {
+    text-decoration : none;
+    opacity         : 0.75;
+}
+
+.schedule .more-links {
+    border  : 1px dashed #adadad;
+    padding : 15px 20px 15px;
+    width   : 100%;
+}
+
+.warranty-title {
+    margin      : 20px 0 15px;
+    font-family : 'Circe-Light';
+    font-size   : 20px;
+}
+
+.warranty-issues {
+    margin    : 28px 0 49px;
+    max-width : 840px;
+}
+
+.warranty-issues h2 {
+    margin-bottom : 30px;
+}
+
+.warranty-issues .issue {
+    display        : inline-block;
+    margin-right   : 3%;
+    vertical-align : top;
+    line-height    : 26px;
+    width          : 30%;
+}
+
+.warranty-issues .issue.carcost {
+    margin-right : 0
+}
+
+.warranty-issues .issue i {
+    display    : block;
+    height     : 39px;
+    margin     : 2px 0 32px;
+    background : url(/images/icons/return.png) center top no-repeat;
+}
+
+.warranty-issues .issue.return i {
+    background-position : center -36px;
+    height              : 38px;
+    margin              : 1px 0 34px;
+}
+
+.warranty-issues .issue.carcost i {
+    background-position : center -78px;
+    height              : 40px;
+    margin              : 0 0 33px;
+}
+
+.warranty-conditions {
+    line-height : 26px;
+    margin      : -3px 0px 49px 0
+}
+
+.warranty-conditions p {
+    margin : 25px 0
+}
+
+.warranty-conditions .warranty-7days {
+    background  : #e6e6e6;
+    font-size   : 24px;
+    line-height : 64px;
+    margin      : 27px 0;
+    text-align  : center
+}
+
+.warranty-conditions .phone {
+    font-size : 20px
+}
+
+@media screen and (max-width : 1366px) {
+    .delivery .delivery-first-text {
+    }
+
+    .warranty .schedule, .reclamation-inner {
+        width : 200px !important
+    }
+}
+
+@media screen and (max-width : 1320px) {
+    .warranty-period {
+        font-size : 23px
+    }
+
+    .warranty-conditions .warranty-7days {
+        font-size : 23px
+    }
+}
+
+@media screen and (max-width : 1270px) {
+    .left-warranty {
+        width : 68%
+    }
+
+    .warranty .schedule, .reclamation-inner {
+        width : 175px !important
+    }
+
+    .warranty-period {
+        font-size : 21px
+    }
+
+    .warranty-conditions .warranty-7days {
+        font-size : 20px
+    }
+}
+
+@media screen and (max-width : 1177px) {
+    .warranty-period, .warranty-7days {
+        font-size : 19px
+    }
+}
+
+@media screen and (min-width : 1366px) {
+}
+
+@media screen and (max-width : 1023px) {
+    .delivery .delivery-first-text {
+        width : 60%
+    }
+}
+
+#paymentdata {
+    border : none !important
+}
+
+#paymentdata .first-text {
+    margin-bottom : 30px;
+}
+
+#paymentdata .payment_method {
+    display        : inline-block;
+    width          : 24%;
+    font-family    : 'Circe-Light';
+    vertical-align : top;
+    line-height    : 26px;
+}
+
+#paymentdata .payment_method .icon {
+    background    : url(/images/icons/payment_types.png) 0 0 no-repeat;
+    height        : 27px;
+    margin-bottom : 8px;
+}
+
+#paymentdata .payment_method.acquiring .icon {
+    background-position : 0 -28px;
+    height              : 30px;
+    margin-bottom       : 5px;
+}
+
+#paymentdata .payment_method.credit .icon {
+    background-position : 0 -59px;
+    height              : 35px;
+    border              : none;
+    margin-bottom       : 0;
+}
+
+#paymentdata .payment_method.wire .icon {
+    background-position : 0 -96px;
+    height              : 35px;
+    border              : none;
+    margin-bottom       : 0;
+}
+
+#paymentdata .title {
+    font-size   : 18px;
+    font-weight : normal;
+    margin-top  : 0;
+}
+
+#paymentdata p {
+    font-size     : 14px;
+    padding-right : 20px;
+}
+
+#paymentdata .payment_method.pay-travel .icon {
+    background    : url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNC4xNCIgaGVpZ2h0PSIzMCIgdmlld0JveD0iMCAwIDM0LjE0IDMwIj48cGF0aCBkPSJNMzMuNCAzMEguNzZjLS40IDAtLjc1LS4zMy0uNzUtLjc0IDAtLjQuMzUtLjc0Ljc2LS43NEgzMy40Yy40IDAgLjc0LjMzLjc0Ljc0IDAgLjQtLjMzLjc0LS43NC43NHoiLz48cGF0aCBkPSJNOC41NiAxMy4yNHYxNi4wMmMwIC40LS4zMy43NC0uNzQuNzQtLjQgMC0uNzQtLjMzLS43NC0uNzRWMTMuMjRjMC0uNC4zNC0uNzQuNzQtLjc0LjQgMCAuNzQuMzMuNzQuNzR6TTI3LjA2IDEzLjI0djE2LjAyYzAgLjQtLjMzLjc0LS43NC43NC0uNCAwLS43NC0uMzMtLjc0LS43NFYxMy4yNGMwLS40LjMzLS43NC43NC0uNzQuNCAwIC43NC4zMy43NC43NHpNMTkuMDcgMTYuMTNoMy43NmMuNCAwIC43NC4zMy43NC43NSAwIC40LS4zMy43NC0uNzQuNzRoLTMuNzdjLS40IDAtLjc0LS4zNC0uNzQtLjc1IDAtLjQuMzMtLjc0Ljc1LS43NHoiLz48cGF0aCBkPSJNMjUuNTggMS40OFYxMi41SDguNTZWMS40OGgxNy4wMk0yNy4wNiAwSDcuMDh2MTMuOThoMTkuOThWMHoiLz48cGF0aCBkPSJNMjIuMSA0Ljg2djQuMjZIMTIuMDRWNC44NkgyMi4xbTEuNDctMS40OGgtMTN2Ny4yM2gxM1YzLjR6Ii8+PC9zdmc+") no-repeat;
+    height        : 30px;
+    margin-bottom : 5px;
+}
+
+.static-page-3 #paymentdata .payment_method,
+.product-tabs-content #paymentdata .payment_method {
+    display : block;
+    width   : auto;
+}
+
+.static-page-3 #paymentdata .icon,
+.product-tabs-content #paymentdata .icon {
+    float      : left;
+    width      : 72px;
+    border-top : 5px solid #fff;
+}
+
+.product-tabs-content #paymentdata .icon {
+    border-color : #efefef
+}
+
+.static-page-3 #paymentdata .title,
+.static-page-3 #paymentdata p,
+.product-tabs-content #paymentdata .title,
+.product-tabs-content #paymentdata p {
+    margin-left : 72px
+}
+
+.static-page-3 #paymentdata .acquiring img,
+.product-tabs-content #paymentdata .acquiring img {
+    position : relative;
+    top      : 6px;
+}
+
+.delivery-banner {
+    display       : block;
+    margin-bottom : 40px;
+}
+
+.delivery-banner:after {
+    content : "";
+    display : table;
+    clear   : both;
+}
+
+.delivery-banner__column {
+    display : block;
+    float   : left;
+}
+
+.delivery-banner__column_type_content {
+    width   : 640px;
+    margin  : 0 40px 0 0;
+    padding : 0;
+}
+
+.delivery-banner__column_type_image {
+    width    : 1px;
+    height   : 260px;
+    position : relative;
+}
+
+.delivery-banner__image {
+    display    : block;
+    position   : absolute;
+    right      : -9999px;
+    height     : 260px;
+    left       : 0;
+    top        : 10px;
+    background : url('/images/banner-delivery-hint.jpg') 30px 25px no-repeat #f3f3f3;
+}
+
+.delivery-banner__hint {
+    display     : block;
+    position    : absolute;
+    left        : 0;
+    top         : 280px;
+    white-space : nowrap;
+}
+
+.delivery .delivery-banner .delivery-first-text {
+    width : 100%;
+}

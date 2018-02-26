@@ -1,0 +1,2227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=1024"/>
+    <meta name="robots" content="noyaca"/>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+            <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.divan.ru/order/check"/>
+        <meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token" content="LnRCdkNybXBCGi9PdEErNnsjJEd1NwwmYSEsOSQ9I11pA3Y7IEs6SA==">
+    <title>Оформление заказа в интернет-магазине Divan.ru</title>
+    <link href="/assets/f52e56a9/css/common.min.css?v=1518430574" rel="stylesheet">
+<link href="/assets/f52e56a9/css/yii.min.css?v=1491397306" rel="stylesheet">
+<link href="/assets/f52e56a9/css/main.min.css?v=1513156947" rel="stylesheet">
+<link href="/assets/8e2cc126/css/delivery_payment.css?v=1517466184" rel="stylesheet">
+<link href="/assets/8e2cc126/css/order.css?v=1513074016" rel="stylesheet">
+<link href="/assets/d737e553/jquery.bxslider.min.css?v=1491380300" rel="stylesheet">
+<link href="/assets/f52e56a9/css/product-quick-view.min.css?v=1518430574" rel="stylesheet">
+<link href="/assets/f52e56a9/css/catalog-helper.min.css?v=1510671204" rel="stylesheet">
+<link href="/assets/f52e56a9/css/logo.min.css?v=1518430574" rel="stylesheet">
+<link href="/assets/97d2e8c7/css/subscribe-form.css?v=1491380301" rel="stylesheet">
+<link href="/assets/43794d2d/css/location-form.css?v=1513941527" rel="stylesheet">
+<style>.colored, .kiit-product__more { background-color: #f1e67f}
+.ab-white .price-discount svg .discount-svg { fill: #f1e67f}
+.button.colored:hover, .kiit-product__more:hover { background-color: #e7dc75}
+.colored334, .kiit-product__more_category_334{ background-color: #f1e67f}
+.button.colored334:hover, .kiit-product__more_category_334:hover { background-color: #e7dc75}
+.price-discount334 svg .discount-svg { fill: #f1e67f}
+.price-discount-alternate334 svg .discount-svg { fill: #f08183}
+.colored3, .kiit-product__more_category_3{ background-color: #f1bf8c}
+.button.colored3:hover, .kiit-product__more_category_3:hover { background-color: #e7b582}
+.price-discount3 svg .discount-svg { fill: #f1bf8c}
+.price-discount-alternate3 svg .discount-svg { fill: #ede171}
+.colored16, .kiit-product__more_category_16{ background-color: #DBEC9C}
+.button.colored16:hover, .kiit-product__more_category_16:hover { background-color: #d1e292}
+.price-discount16 svg .discount-svg { fill: #DBEC9C}
+.price-discount-alternate16 svg .discount-svg { fill: #d6cce8}
+.colored199, .kiit-product__more_category_199{ background-color: #91d1cf}
+.button.colored199:hover, .kiit-product__more_category_199:hover { background-color: #87c7c5}
+.price-discount199 svg .discount-svg { fill: #91d1cf}
+.price-discount-alternate199 svg .discount-svg { fill: #d6cce8}
+.colored477, .kiit-product__more_category_477{ background-color: #FFFFFF}
+.button.colored477:hover, .kiit-product__more_category_477:hover { background-color: #f5f5f5}
+.price-discount477 svg .discount-svg { fill: #FFFFFF}
+.price-discount-alternate477 svg .discount-svg { fill: #FFFFFF}
+.colored479, .kiit-product__more_category_479{ background-color: #FFFFFF}
+.button.colored479:hover, .kiit-product__more_category_479:hover { background-color: #f5f5f5}
+.price-discount479 svg .discount-svg { fill: #FFFFFF}
+.price-discount-alternate479 svg .discount-svg { fill: #FFFFFF}
+.colored478, .kiit-product__more_category_478{ background-color: #FFFFFF}
+.button.colored478:hover, .kiit-product__more_category_478:hover { background-color: #f5f5f5}
+.price-discount478 svg .discount-svg { fill: #FFFFFF}
+.price-discount-alternate478 svg .discount-svg { fill: #FFFFFF}
+.colored20, .kiit-product__more_category_20{ background-color: #E7CFE0}
+.button.colored20:hover, .kiit-product__more_category_20:hover { background-color: #ddc5d6}
+.price-discount20 svg .discount-svg { fill: #E7CFE0}
+.price-discount-alternate20 svg .discount-svg { fill: #fbb982}
+.colored484, .kiit-product__more_category_484{ background-color: #EEEACF}
+.button.colored484:hover, .kiit-product__more_category_484:hover { background-color: #e4e0c5}
+.price-discount484 svg .discount-svg { fill: #EEEACF}
+.price-discount-alternate484 svg .discount-svg { fill: #91D1CF}
+.colored817, .kiit-product__more_category_817{ background-color: #FFFFFF}
+.button.colored817:hover, .kiit-product__more_category_817:hover { background-color: #f5f5f5}
+.price-discount817 svg .discount-svg { fill: #FFFFFF}
+.price-discount-alternate817 svg .discount-svg { fill: #FFFFFF}
+.colored821, .kiit-product__more_category_821{ background-color: #FFFFFF}
+.button.colored821:hover, .kiit-product__more_category_821:hover { background-color: #f5f5f5}
+.price-discount821 svg .discount-svg { fill: #FFFFFF}
+.price-discount-alternate821 svg .discount-svg { fill: #FFFFFF}
+.colored1, .kiit-product__more_category_1{ background-color: #f1e67f}
+.button.colored1:hover, .kiit-product__more_category_1:hover { background-color: #e7dc75}
+.price-discount1 svg .discount-svg { fill: #f1e67f}
+.price-discount-alternate1 svg .discount-svg { fill: #f08183}
+.colored22, .kiit-product__more_category_22{ background-color: #C5D7E5}
+.button.colored22:hover, .kiit-product__more_category_22:hover { background-color: #bbcddb}
+.price-discount22 svg .discount-svg { fill: #C5D7E5}
+.price-discount-alternate22 svg .discount-svg { fill: #cfc493}
+.colored21, .kiit-product__more_category_21{ background-color: #D6CCE8}
+.button.colored21:hover, .kiit-product__more_category_21:hover { background-color: #ccc2de}
+.price-discount21 svg .discount-svg { fill: #D6CCE8}
+.price-discount-alternate21 svg .discount-svg { fill: #abd193}
+.colored9, .kiit-product__more_category_9{ background-color: #DACEA1}
+.button.colored9:hover, .kiit-product__more_category_9:hover { background-color: #d0c497}
+.price-discount9 svg .discount-svg { fill: #DACEA1}
+.price-discount-alternate9 svg .discount-svg { fill: #9cdbd9}
+</style>
+<script src="/assets/3d2afb43/jquery.min.js?v=1418915491"></script>
+<script type="text/javascript">var inputmask_69a2315d = {"mask":"+7(999)999-99-99"};
+</script>        <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.divan.ru/order/check">
+    <meta property="og:title" content="Оформление заказа в интернет-магазине Divan.ru">
+    <meta property="og:description" content="Мебель начинается с дивана. Мы производим мебель. Мы продаем мебель. Мы любим мебель. Мы знаем все о мебели.">
+    <meta property="og:image" content="https://www.divan.ru/images/logo_fb.jpg?090103"/>
+</head>
+<body class="order">
+<script type="text/javascript">
+/*<!-- Google Tag Manager -->*/
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5WZW4K');
+/*<!-- End Google Tag Manager -->*/
+
+var serviceDomain = 'tracker.directcrm.ru';
+(function (window, document, script, url, objectName) {
+    window[objectName] = window[objectName] || function ()
+    {
+        (window[objectName].Queue = window[objectName].Queue || []).push(arguments);
+    },
+        a = document.createElement(script),
+        m = document.getElementsByTagName(script)[0]; a.async = 1; a.src = url + '?v=' + Math.random(); m.parentNode.insertBefore(a, m);
+})(window, document, 'script', 'https://' + serviceDomain + '/scripts/v1/tracker.js', 'directCrm');
+directCrm('create', {
+    projectSystemName: 'Divan', 
+    brandSystemName: 'Divan', 
+    pointOfContactSystemName: 'divan.ru', 
+    projectDomain: 'Divan-services.directcrm.ru', 
+    serviceDomain: serviceDomain
+});</script><div class="content main-content" style="padding-bottom: 180px; margin-left: 50px;">
+    <div class="margin-wrapper compact">
+        <div class="header">
+            <div class="logo  left wmp-logo" data-logo-type="">
+    <a href="/"><span class="logo-roller left"></span><img class="left svg" src="/svg/logo.svg" alt="Divan.ru"></a>            <div class="slg left">мебель <br>начинается <br>с дивана</div>
+        <div class="clear"></div>
+</div>            <div class="left">
+                <span class="location">Москва</span>
+                <div class="phone">
+                    <span class="phone-value comagic_phone">(495) 710-99-99</span>
+                    <span class="phone-corner"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAHBAMAAADOnLEXAAAAFVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAASAQCkAAAABnRSTlMA0BDwMKALHsmcAAAAMUlEQVR4XmMIVGBgYBJlEDNhYHBOZFBMdmAxE2JgEjNxTlRgAHKBHAYgF8hhAHKBHACMKgUv8BhT5QAAAABJRU5ErkJggg==" alt=""></span>
+                </div>
+            </div>
+            <ul class="top-menu left">
+            </ul>
+            <noindex>
+            <div class="services-buttons left" style="display: none;">
+                <a href="javascript:void(0);" class="history product-history-list-button left">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon-history" width="30" height="34" viewBox="0 0 30 34"><path class="icon-history__background" fill="#FFF" d="M5 7h20v21H5"/><path class="icon-history__skelet" fill="#000" d="M4 29h5v5l3-1 3 1v-5h11V6.04H4V29zM6 8.04h18V26.8l-18-.02V8.05z"/></svg>
+    <span class="value">0</span>
+    <span class="hint">История просмотров</span>
+</a>
+
+<div class="product-history-list">
+    <!--    <div class="addpadding">-->
+    <div class="product-history-top">
+        <div class="title">Вы смотрели
+            <div class="counter biggest-close-button"></div>
+        </div>
+    </div>
+    <div class="product-history-middle">
+        <div class="product-items">
+                    </div>
+        <div class="hidescroll"></div>
+    </div>
+    <div class="product-history-bottom">
+        <a href="javascript:void(0);" class="colored button clean-history">Очистить историю</a>
+    </div>
+    <!--    </div>-->
+</div>                <a href="javascript:void(0);" class="compare-list-button left">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon-favorite" width="30" height="34" viewBox="0 0 30 34"><path class="icon-favorite__background" fill="#FFF" d="M20.5 5.67s-3.28 1.95-4 3c-.72 1.05-1-1-6-2s-7 2-7 2l-1 3-1 3 4 5.33 9 8.67 13-12v-8l-3-2-4-1z"/><path class="icon-favorite__skelet" fill="#000" d="M15 30c-.22-.02-.43-.1-.6-.25-.45-.4-10.9-9.7-12.85-12.6-1.27-1.9-1.4-4.97-.32-7.46C2.28 7.23 4.3 5.65 6.93 5.2c.67-.1 1.3-.15 1.92-.15 3.32 0 5.2 1.58 6.06 2.63.03 0 .06 0 .1.03l.1-.03c.87-1.05 2.74-2.63 6.07-2.63.6 0 1.25.05 1.9.16 2.63.44 4.66 2.02 5.7 4.46 1.1 2.47.96 5.53-.3 7.44-1.95 2.9-12.4 12.2-12.85 12.6-.17.15-.38.23-.6.24L15 30zm0-19.7c-.3.03-.58-.05-.78-.26l-.3-.3c-.07-.06-.13-.15-.18-.25-.04-.1-1.3-2.44-4.9-2.44-.5 0-1.03.05-1.58.14-2.48.42-3.65 2-4.2 3.28-.92 2.12-.62 4.4.15 5.56C4.6 18.1 11.64 24.58 15 27.6c3.4-3 10.4-9.5 11.8-11.55.77-1.16 1.07-3.44.15-5.56-.55-1.28-1.72-2.87-4.2-3.28-.55-.08-1.08-.13-1.58-.13-3.6 0-4.86 2.32-4.9 2.42-.05.1-.1.18-.2.25l-.28.3c-.2.2-.5.28-.8.26v-.03z"/></svg>
+    <span class="value">0</span>
+    <span class="hint">Мне понравилось</span>
+</a>
+
+<div class="compare-list">
+    <div class="compare-top">
+        <div class="title">Вам нравится
+            <div class="counter biggest-close-button"></div>
+        </div>
+    </div>
+    <div class="compare-middle">
+        <div class="product-items">
+                    </div>
+        <div class="hidescroll"></div>
+    </div>
+    <div class="compare-bottom">
+        <div class="total"><span class="count">0</span> товара на <span class="cost">0<span class="rub2"> руб.</span></span></div>
+        <a href="/compare" class="colored button">Сравнить</a>
+        <a href="javascript:void(0);" class="button compare-remove-all">Очистить</a>
+    </div>
+</div>                
+<a id="cart" href="/order/check" class="cart left" data-action="cart">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon-cart" width="30" height="34" viewBox="0 0 30 34"><path class="icon-cart__background" fill="#FFF" d="M4.97 6.5h21l1 21h-23"/><path class="icon-cart__skelet" fill="#000" d="M5.12 26.98L5.97 8h4v1.84c0 .56.45 1 1 1 .56 0 1-.44 1-1V8h7v1.84c0 .56.45 1 1 1s1-.44 1-1V8h4.06l.85 18.98H5.12zm21.82-21h-5.97V4.8c0-1.65-.84-4.8-5.36-4.8C11.1 0 10 3.14 10 4.8V6h-5.9L3.02 29h24.94L26.94 5.98zM11.97 4.8c0-.1-.03-2.78 3.64-2.78 3.5 0 3.38 2.33 3.38 2.8V6h-7V4.8z"/></svg>
+    <span class="value">0</span>
+    <span class="hint">Моя корзина</span>
+</a>
+<div id="cart-popup">
+    <a href="/order/check" class="cart-popup-head">
+        <span class="close"></span>
+        <div class="title">Товар добавлен в корзину</div>
+        <div class="description">
+            Ваш заказ: <span class="cart-count">0</span> товар(ов) на
+            сумму <span class="cart-cost">0<span class="rub2"> руб.</span></span>
+        </div>
+    </a>
+    <div class="cart-popup-body">
+        <div class="title">Рекомендуемые товары</div>
+        <div class="product-list">
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>                <div class="clear"></div>
+            </div>
+            </noindex>
+            <div class="clear"></div>
+        </div>
+    </div>
+        <div class="margin-wrapper compact">
+        <div class="document">
+            <h1 class="order-check-title">Ваша корзина пуста</h1>
+            <div class="hidden-products" style="display:none">
+    <h3>Ранее удаленные товары из корзины</h3>
+
+    <div class="hidden-products-list">
+            </div>
+</div>
+            <div class="order-wrap" style="display:none">
+                <div class="check-order-text reminder-check">Проверьте правильность заказа и выбранных параметров</div>
+                <div class="order-items left">
+                    <div class="order-items-container" data-anal-list="Оформление заказа">
+                                            </div>
+                    <div class="wrapper-end" id="order_form">
+                        <form id="customer-info-form" action="/order/check" method="post">
+<input type="hidden" name="_csrf" value="LnRCdkNybXBCGi9PdEErNnsjJEd1NwwmYSEsOSQ9I11pA3Y7IEs6SA==">                        <div class="order-form">
+                            <div class="order-padding">
+                                <div class="title">Заполните информацию о себе</div>
+                                <div class="error-summary" style="display:none"><p>Исправьте следующие ошибки:</p><ul></ul></div>                                <div class="form-item field-orderform-first_name">
+<label class="item-caption left" for="orderform-first_name">Имя</label>
+<div class="item-input"><input type="text" id="orderform-first_name" class="form-control" name="OrderForm[first_name]"></div>
+
+</div>                                <div class="form-item field-orderform-email">
+<label class="item-caption left" for="orderform-email">Электронная почта</label>
+<div class="item-input"><input type="text" id="orderform-email" class="form-control" name="OrderForm[email]"></div>
+
+</div>                                <div class="form-item field-orderform-mobile required">
+<label class="item-caption left" for="orderform-mobile">Мобильный телефон</label>
+<div class="item-input"><input type="text" id="orderform-mobile" class="form-control" name="OrderForm[mobile]" data-plugin-inputmask="inputmask_69a2315d"></div>
+
+</div>                                                            </div>
+                            <div class="line"></div>
+                                                        <div class="order-padding">
+                                <div class="title">Выберите способ доставки</div>
+                                <div class="delivery-list">
+                                                                            <a href="#" class="delivery-item left courier"
+                                           data-delivery-method="courier"
+                                           data-delivery-id="1"
+                                           data-default-payment-type-id="1"
+                                        >
+                                            Курьером
+                                            <div class="hit">
+                                                Курьер доставляет вам товар, а вы тщательно осматриваете заказ, после чего
+                                                производите оплату. Курьер предоставит вам товарный и кассовый чек. Данный способ
+                                                оплаты товара доступен для Москвы и Московской области. Доставка в другие города России 
+                                                осуществляется транспортными компаниями, подробные условия уточняйте у наших менеджеров.
+                                            </div>
+                                        </a>
+                                                                                                                <a href="#" class="delivery-item left pickup"
+                                           data-delivery-method="self-delivery"
+                                           data-delivery-id="2"
+                                           data-default-payment-type-id="5"
+                                        >
+                                            Самовывоз
+                                            <div class="hit">
+                                                Адрес пункта самовывоза: Московская обл., г. Ногинск, ул. 3-го Интернационала, 236а
+                                            </div>
+                                        </a>
+                                                                        <div class="form-item field-orderform-delivery_type_id required">
+
+<div class="item-input"><input type="hidden" id="orderform-delivery_type_id" class="form-control" name="OrderForm[delivery_type_id]" value="1"></div>
+
+</div>                                    <label style="display:none;" for="empty_input"></label>
+                                    <input style="position:absolute;visibility:hidden;opacity:0;height:0;width:0;" type="text" id="empty_input" value="0"/>
+
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="delivery-methods">
+                                    <div class="form-item mail courier active field-orderform-address">
+<label class="item-caption left" for="orderform-address">Адрес</label>
+<div class="item-input"><input type="text" id="orderform-address" class="form-control" name="OrderForm[address]"></div>
+
+</div>                                </div>
+                            </div>
+                                                        <div class="line"></div>
+                            <div class="order-padding payment-types" style="display:none;">
+                                <div class="title">Выберите способ оплаты</div>
+                                <div class="pay-list clearfix">
+                                    <a href="#" class="pay-item left cash" data-payment-id="1">Наличными</a>
+                                    <a href="#" class="pay-item left cash" data-payment-id="6">Наличными в шоу-руме</a>
+                                                                        <a href="#" class="pay-item left credit" data-payment-id="8">Покупка в рассрочку</a>
+                                                                        <a href="#" class="pay-item left bank" data-payment-id="3">Банковский перевод</a>
+                                    <a href="#" class="pay-item left ecommerce" data-payment-id="5">Банковская карта</a>
+                                </div>
+                                <div class="form-item field-orderform-payment_type_id required">
+
+<div class="item-input"><input type="hidden" id="orderform-payment_type_id" class="form-control" name="OrderForm[payment_type_id]"></div>
+
+</div>                            </div>
+                            <div class="order-padding payment-variants" style="display:none; padding-top: 0px;">
+                                <div class="pay-variant-list clearfix">
+                                    <a href="#" class="pay-variant-item left"
+                                       data-payment-variant-id="part">Сделать предоплату</a>
+                                    <a href="#" class="pay-variant-item left"
+                                       data-payment-variant-id="full">Оплатить покупку полностью</a>
+                                </div>
+                                <div class="form-item field-orderform-payment_variant">
+
+<div class="item-input"><input type="hidden" id="orderform-payment_variant" class="form-control" name="OrderForm[payment_variant]"></div>
+
+</div>                            </div>
+                            <div class="order-padding order-submit">
+                                <a href="#" class="colored button order_submit">Подтверждаю заказ</a>
+                                <br>
+                                <div class="privacy-policy-info">* Подтверждая заказ, я соглашаюсь с условиями <a class="privacy-policy-link" target="_blank" href="/static-page/privacy-policy">политики конфиденциальности</a></div>
+                            </div>
+                        </div>
+                        </form>                    </div>
+                </div>
+                <div class="order-info left" id="order_info" data-order-id="">
+                                        <div class="order-sub-info-block">
+                        <div class="discounts" style="display: none;">
+                            <div class="discount game-discount" style="display: none;">Скидка 404: 0<span class="rub2"> руб.</span></div>
+                            <div class="discount coupon-discount" style="display: none;">Скидка по купону: 0<span class="rub2"> руб.</span></div>
+                            <div class="line"></div>
+                        </div>
+                    Итого <span class="total_count">0</span> товар<span class="total_count_ending"></span> на сумму
+                    <div class="price">
+                        <div class="total_cost price-value left">0<span class="rub2"> руб.</span></div>
+                                                <div class="clear"></div>
+                    </div>
+                                        <div class="coupon-activation">
+                        <div class="coupon-activation-link">
+                            <span>Активировать промокод?</span>
+                        </div>
+                        <div class="coupon-activation-form">
+                            <form id="w0" action="/order/coupon" method="post">
+<input type="hidden" name="_csrf" value="LnRCdkNybXBCGi9PdEErNnsjJEd1NwwmYSEsOSQ9I11pA3Y7IEs6SA=="><div class="coupon-field field-couponform-code required">
+
+<input type="text" id="couponform-code" class="form-control" name="CouponForm[code]">
+
+<div class="help-block"></div>
+</div><button type="submit" class="button white coupon-submit-button right">Пересчитать</button></form>                        </div>
+                    </div>
+                                        <div class="order_info_btn">
+                        <a href="#" class="colored button is_visible order_info_continue_btn">Оформить заказ</a>
+                    </div>
+                    <div class="price-text">
+                        Стоимость заказа указана без учета доставки.
+                                            </div>
+                    </div>
+                                            <div class="more-links">
+                                                            <a id="page-1" class="static-page-blur" href="/static-page/oferta">Договор оферты</a>                                                                <a id="page-2" class="static-page-blur" href="/static-page/dostavka_i_oplata">Доставка и оплата</a>                                                            <div class="static-page-bg"></div>
+                            <div class="static-page-content">
+                                <a href="#" class="close"></a>
+
+                                <div class="static-page-content-inner">
+                                                                            <div id="static-page-1" class="blur-modal static-page-7" style="display:none;">
+                                            <h1>Договор оферты</h1>
+
+<p>Настоящий договор между интернет-магазином &laquo;Диван.ру&raquo; и пользователем услуг интернет-магазина определяет условия приобретения товаров через сайт интернет-магазина www.divan.ru</p>
+
+<p>В настоящем договоре, если контекст не требует иного, нижеприведенные термины имеют следующие значения:</p>
+
+<p>&laquo;Продавец&raquo; &ndash; Общество с ограниченной ответственностью &laquo;Диван.ру&raquo; (интернет-магазин &laquo;Диван.ру&raquo;).</p>
+
+<p>&laquo;Покупатель&raquo; &ndash; физическое или юридическое лицо, заключившее с Продавцом Договор на условиях, содержащихся в Договоре.</p>
+
+<p>&laquo;Оферта&raquo; &ndash; публичное предложение Продавца, адресованное любому физическому или юридическому лицу, заключить с ним договор купли-продажи (далее &ndash; &laquo;Договор&raquo;) на существующих условиях, содержащихся в Договоре, включая все его приложения.</p>
+
+<p>&laquo;Товар&raquo; &ndash; перечень наименований ассортимента, представленный на официальном интернет-сайте Продавца.</p>
+
+<p>&laquo;Заказ&raquo; &ndash; отдельные позиции из ассортиментного перечня Товаров, указанные Покупателем при оформлении заявки на интернет-сайте или по телефону.</p>
+
+<p>&laquo;Доставка&raquo; &ndash; транспортировка товара Покупателю по адресу, указанному Покупателем при оформлении заказа.</p>
+
+<p>1. ОБЩИЕ ПОЛОЖЕНИЯ.</p>
+
+<p>1.1 Общество с ограниченной ответственностью &laquo;Диван.ру&raquo; (интернет-магазин &laquo;Диван.ру&raquo;), публикует Публичную оферту о продаже товаров по образцам, представленным на интернет-сайте Продавца: www.divan.ru.</p>
+
+<p>1.2. Настоящая оферта адресована физическим и юридическим лицам.</p>
+
+<p>1.3. В случае, если до окончательного оформления заказа, на адрес Покупателя необходим выезд замерщика Продавца, то условия настоящего договора не распространяют свои действия и стороны заключают отдельный договор подряда.</p>
+
+<p>1.4. В соответствии со статьей 437 Гражданского Кодекса Российской Федерации (ГК РФ) данный документ является публичной офертой, и в случае принятия изложенных ниже условий физическое, либо юридическое лицо, производящее акцепт этой оферты, осуществляет оплату Товара Продавца в соответствии с условиями настоящего Договора. В соответствии с пунктом 3 статьи 438 ГК РФ, оплата Товара Покупателем является акцептом оферты, что считается равносильным заключению Договора на условиях, изложенных в оферте.</p>
+
+<p>1.5. На основании вышеизложенного, внимательно ознакомьтесь с текстом публичной оферты, и если вы не согласны с каким-либо пунктом оферты, Вам предлагается отказаться от покупки Товаров или использования Услуг, предоставляемых Продавцом.</p>
+
+<p>2. ПРЕДМЕТ ДОГОВОРА</p>
+
+<p>2.1. В соответствии с настоящим Договором Продавец обязуется передать в собственность Покупателю мебель (далее &ndash; товар) в выбранном количестве, ассортименте и комплектности, а Покупатель обязуется принять этот товар и уплатить за него определенную заказом денежную сумму (цену).</p>
+
+<p>2.2. Передача товара осуществляется только при условии его полной оплаты.</p>
+
+<p>2.3.&nbsp;Продавец обращает внимание Покупателя на тот факт, что в случае изменения любого из параметров товара, либо самостоятельного определения параметров, будь то габарит, цвет, наполнение, обивка, комбинация материалов (либо иных параметров товара), т.е. внесение любых изменений в уже готовый вариант исполнения, товар изготавливается для Покупателя под заказ и является товаром обладающим индивидуально-определенными свойствами, не подлежащим возврату или обмену в соответствии со ст.26.1. Закона &laquo;О защите прав потребителей&raquo;. При оформлении таких заказов Покупатель вносит предоплату в размере 50 % от суммы договора, которая в случае отказа Покупателя от получения товара не подлежит возврату. Так же Продавец обращает внимание Покупателя на тот факт, что в силу специфики изготовления мебели под заказ, озвученный в момент оформления срок выполнения таких заказов является предварительным и может увеличен до 45 дней.</p>
+
+<p>2.4. Продавец обращает внимание Покупателя на тот факт, что при покупке двух сопутствующих товаров (например диван и кресло), товары продаются как единый мебельный гарнитур и не подлежат возврату или обмену в соответствии с Постановлением Правительства РФ от 19 января 1998 г. N 55 &laquo;Об утверждении Правил продажи отдельных видов товаров, перечня товаров длительного пользования, на которые не распространяется требование покупателя о безвозмездном предоставлении ему на период ремонта или замены аналогичного товара, и перечня непродовольственных товаров надлежащего качества, не подлежащих возврату или обмену на аналогичный товар других размера, формы, габарита, фасона, расцветки или комплектации&raquo;.</p>
+
+<p>3. ЦЕНА И ПОРЯДОК РАСЧЕТОВ</p>
+
+<p>3.1. Стоимость товара оговаривается с Покупателем при оформлении заказа. Стоимость товара может быть изменена Продавцом (в том числе в случае внесения Покупателем предоплаты) в случае изменения цен на комплектующие.&nbsp; Об изменении цены Продавец извещает Покупателя по телефону, либо по электронной почте.</p>
+
+<p>3.2. Оплата товара, изготовленного по индивидуальному заказу, производится Покупателем&nbsp; наличными или безналичными денежными средствами, путем внесения предоплаты в размере 50 % от суммы договора,&nbsp; вторая половина от стоимости вносится&nbsp; непосредственно в момент передачи товара Покупателю, любыми способами, указанными на интернет-сайте Продавца.</p>
+
+<p>3.3. Подъем в квартиру и сборка являются дополнительными, отдельно оплачиваемыми услугами. Их стоимость, а также стоимость других возможных услуг указаны на сайте Продавца.</p>
+
+<p>3.4. Действие дисконтной карты распространяется на все товары, кроме неакционных* (подробности уточняйте у менеджеров)</p>
+
+<p>3.5. Действия регулярных и нерегулярных акций, проводимых компанией распространяются на все товары, кроме неакционных, при этом покупатель может воспользоваться условиями только одной из этих акций, проводимых в настоящий момент.</p>
+
+<p>3.6. Действие дисконтных карт и скидочных сертификатов распространяется только на сам товар, услуги оплачиваются отдельно.</p>
+
+<p>4. ПРАВА И ОБЯЗАННОСТИ СТОРОН</p>
+
+<p>4.1. Продавец обязан доставить товар по указанному Покупателем адресу, в срок согласованный Сторонами.</p>
+
+<p>4.2. Продавец обязан по телефону, указанному Покупателем, дополнительно уведомить Покупателя о предстоящей доставке.</p>
+
+<p>4.3. Покупатель обязан при приемке товара осуществить проверку количества и целости упаковки, осуществить проверку элементов мебели на факт отсутствия внешних повреждений.</p>
+
+<p>4.4. Покупатель обязан оплатить товар по цене и в срок, установленный настоящим Договором.</p>
+
+<p>5. ОТВЕТСТВЕННОСТЬ СТОРОН</p>
+
+<p>5.1. Право собственности на товар переходит Покупателю в момент передачи товара.</p>
+
+<p>5.2.&nbsp;Стороны приходят к соглашению, что в случае отказа Покупателя принять товар, изготовленный по индивидуальному заказу, сумма предоплаты остается у Продавца и является компенсацией фактически понесенных расходов по исполнению договора.</p>
+
+<p>5.3. За нарушение условий настоящего Договора стороны несут ответственность в порядке, установленном законодательством РФ.</p>
+
+<p>6. ГАРАНТИЯ НА ТОВАР</p>
+
+<p>6.1. Гарантийный срок на мебель составляет 18 месяцев, за исключением мягкой мебели в тканях первой ценовой категории, гарантийный срок которой &ndash; 6 месяцев с момента получения ее Покупателем.</p>
+
+<p>6.2. В соответствии с ГОСТ Р 16371-93 гарантийные обязательства продавца не распространяются на товары, сборка которых производилась покупателем самостоятельно (не специалистами продавца).</p>
+
+<p>6.3. Не распространяется гарантия на повреждения, полученные в ходе самостоятельной доставки и подъема товара.</p>
+
+<p>6.4. Гарантийное обслуживание не производится в случае:</p>
+
+<p>- истечения гарантийного срока;</p>
+
+<p>- невыполнения условий эксплуатации;</p>
+
+<p>- наличия на изделии механических повреждений и дефектов, выявленных Покупателем после осуществления приемки-передачи и подписания товарного чека;</p>
+
+<p>- наличия на изделии механических повреждений и дефектов, следов постороннего вмешательства в изделие, возникающих в результате неправильной эксплуатации;</p>
+
+<p>- нанесения ущерба изделию в результате умышленных или ошибочных действий Покупателя;</p>
+
+<p>- нанесения ущерба изделию, вызванного попаданием внутрь изделия посторонних предметов, жидкостей, животных, насекомых и т.д.;</p>
+
+<p>- нанесения изделию ущерба в результате внесения изменений в его конструкцию;</p>
+
+<p>- использования изделий в производственных целях;</p>
+
+<p>- нарушения иных условий, указанных в Правилах и условиях эффективного безопасного использования мебели (ГОСТ Р 16371-93, ГОСТ Р 19917-93).</p>
+
+<p>6.5. При доставке товара от Продавца к Покупателю допускаются наличие незначительных дефектов, не влияющих на функциональность, как то: проходящий и несильный химический запах, незначительные сколы, либо царапины на кромке, незначительная разнооттеночность.</p>
+
+<p>6.6. Не является недостатком (дефектом) товара наличие в его элементах особенностей, обусловленных стилистической идеей производителя исходных материалов или природным происхождением исходных материалов, в частности: несущественных отличий фактуры и/или оттенков массива дерева, натурального шпона, натурального камня и т.п. На деревянных и/или шпонированных элементах мебели допускаются пороки древесины на лицевых поверхностях: сучки светлые и темные и прочие до 15 мм; свилеватость, глазки, кармашки длиной не более 20 мм, шириной 1.5 мм, глубиной 3 мм. Морщины на облицовочном материале мягких элементов, возникающие после снятия нагрузок и исчезающие после разглаживания (рукой), также не являются дефектом.</p>
+
+<p>6.7. Если в результате экспертизы товара установлено, что его недостатки возникли вследствие обстоятельств, за которые не отвечает продавец (изготовитель), потребитель обязан возместить продавцу расходы на проведение экспертизы.</p>
+
+<p>6.8. Срок устранения недостатков - до 45 (сорока пяти) календарных дней, не считая дня обращения Покупателя к Продавцу.</p>
+
+<p>6.9. В зависимости от периода закупки ткани и ЛДСП их оттенок может незначительно меняться, в связи с чем мебель, приобретенная не одновременно, может слегка отличаться по оттенку друг от друга.</p>
+
+<p>6.10. Продавец имеет право без согласования с Покупателем заменить комплектующие товара на аналогичные.</p>
+
+<p>7. РАЗРЕШЕНИЕ СПОРОВ</p>
+
+<p>7.1. Все возникшие споры разрешаются через отдел претензий Продавца.</p>
+
+<p>7.2. При обращении в отдел претензий Покупатель обязан сообщить номер заказа (номер товарного чека), либо телефон, оставленный при оформлении заказа.</p>
+
+<p>7.3. Стороны имеют право обратиться за судебной защитой своих интересов в соответствии с действующим законодательством.</p>
+
+<p>8. СРОК ДЕЙСТВИЯ ДОГОВОРА</p>
+
+<p>8.1. Настоящий договор вступает в силу с момента оформления Покупателем заказа и действует до полного исполнения Сторонами принятых на себя обязательств.</p>
+
+<p>9. ДЕЙСТВИЕ НЕПРЕОДОЛИМОЙ СИЛЫ</p>
+
+<p>9.1. Ни одна из Сторон не несет ответственности перед другой Стороной за задержку или невыполнение обязательств, обусловленных обстоятельствами, возникшими помимо воли и желания Сторон и которые нельзя предвидеть или предотвратить разумными мерами, включая объявленную или фактическую войну, гражданские волнения, эпидемии, блокаду, эмбарго, а также стихийные бедствия: землетрясения, наводнения, пожары и т.п.</p>
+
+<p>Сторона, которая не исполняет своего обязательства вследствие действия обстоятельств непреодолимой силы, должна известить об этом другую Сторону. Сторона, ссылающаяся на какое-либо из обстоятельств непреодолимой силы, обязана в течение 5 (пяти) календарных дней известить другую Сторону о наступлении или прекращении действия этого обстоятельства в письменной форме. Сторона, затронутая этим обстоятельством, если своевременно не объявит о его наступлении, не может ссылаться на него, разве что само это обстоятельство препятствовало отправлению такого сообщения.</p>
+
+<p>9.2. Если обстоятельства непреодолимой силы действуют на протяжении трех последовательных месяцев и не обнаруживают признаков прекращения, настоящий Договор может быть расторгнут по инициативе одной из Сторон путем направления уведомления о его расторжении другой Стороне. Обстоятельства непреодолимой силы продлевают срок исполнения тех пунктов данного Договора, выполнение которых явилось невозможным вследствие этих обстоятельств. Сторона, для которой создалась невозможность надлежащего исполнения обязательств по Договору вследствие наступления обстоятельств непреодолимой силы, должна самостоятельно предпринять все разумные и возможные меры с целью ограничить неблагоприятные последствия, вызванные указанными обстоятельствами.</p>
+
+<p>9.3. Акты государственных органов, принятые после заключения Сторонами Договора, содержащие запрет на исполнение Договора, являются обстоятельствами непреодолимой силы и освобождают Стороны от исполнения обязательств в случае, если они имеют юридическую силу, которая распространяется на отношения, возникшие в период действия Договора. Если такие акты препятствуют Сторонам исполнять Договор частично, Стороны приводят Договор в соответствие с новыми требованиями Закона путем заключения дополнительного соглашения.</p>
+
+<p>10. ЗАКЛЮЧИТЕЛЬНЫЕ И ДОПОЛНИТЕЛЬНЫЕ ПОЛОЖЕНИЯ</p>
+
+<p>10.1. Цены и условия доставки указаны на интернет-сайте Продавца.</p>
+
+<p>10.2. Подъем на этаж и сборка товара являются дополнительными отдельно оплачиваемыми услугами.</p>
+
+<p>10.3. Отказ от товара по причине некачественной сборки невозможен, поскольку сборка является отдельно оплачиваемой услугой и ее качество к качеству самого товара отношения не имеет.</p>
+
+<p>10.4. Монитор компьютера в зависимости от калибровки цветовой гаммы может искажать цвета и оттенки фотографий готовой мебели и материалов. Продавец не несет ответственности за подобные искажения.</p>
+
+<p>10.5. Покупатель информируется, что согласно Постановления Правительства РФ от 27.09.2007 г. № 612 (ред. От 04.10.12) &laquo;Об утверждении Правил продажи товаров дистанционным способом&raquo;:</p>
+
+<p>- Покупатель имеет право не позднее 20 дней после получения товара известить продавца о нарушениях условий договора, касающихся количества, ассортимента, качества и комплектности.</p>
+
+<p>- Покупатель вправе отказаться от товара в любое время до его передачи, а после передачи товара - в течение 7 дней, при этом Продавец вправе удержать из суммы возврата свои расходы на доставку от Покупателя возвращенного товара. Покупатель информируется, что расходы Продавца составляют стоимость доставки до Покупателя и стоимость доставки обратно от Покупателя. Данная стоимость указана на интернет-сайте продавца.</p>
+
+<p>- В случае если покупателю передается товар с нарушением условий договора, касающихся количества, ассортимента, качества, комплектности, тары и (или) упаковки товара, покупатель может не позднее 20 дней после получения товара известить продавца об этих нарушениях.</p>
+
+<p>- Возврат товара надлежащего качества возможен в случае, если сохранены его товарный вид, потребительские свойства, а также документ, подтверждающий факт и условия покупки указанного товара. Отсутствие у покупателя указанного документа не лишает его возможности ссылаться на другие доказательства приобретения товара у данного продавца.</p>
+
+<p>- Покупатель не вправе отказаться от товара надлежащего качества, имеющего индивидуально-определенные свойства, если указанный товар может быть использован исключительно приобретающим его потребителем.</p>
+
+<p>10.6. Жалобы и претензии принимаются по электронной почте или по телефону, указанным на интернет-сайте продавца. Для оформления рекламации необходимо заполнить прилагающийся к товару бланк рекламации и выслать его на электронную почту отдела претензий.</p>
+
+<p>10.7. Во всем остальном, что не предусмотрено настоящим договором, стороны руководствуются действующим законодательством РФ. При этом в случае противоречия условий Договора действующему законодательству, подлежат применению положения действующего законодательства.</p>
+
+<p>10.8. Оформляя заказ, Покупатель дает согласие на получение на номер телефона, указанный им при оформлении покупки, SMS-сообщений, информирующих Покупателя о ходе исполнения заказа</p>
+
+<p>11. АДРЕСА И РЕКВИЗИТЫ СТОРОН:</p>
+
+<p>Продавец: ООО &laquo;ДИВАН.РУ&raquo;</p>
+
+<p>Юридический адрес: 129110, г.&nbsp;Москва, проспект Мира, д.&nbsp;79, строение&nbsp;1, помещение&nbsp;21, ком.&nbsp;2</p>
+
+<p>ИНН: 7725277348</p>
+
+<p>КПП: 772501001</p>
+
+<p>ОГРН: 1157746545450</p>
+                                        </div>
+                                                                                <div id="static-page-2" class="blur-modal static-page-3" style="display:none;">
+                                            <h1>Доставка и оплата</h1>
+
+<p>Мы осуществляем доставку по Москве и Московской области. Оплата производится наличными в момент получения товара. Также, в случае необходимости, вы можете забрать свой заказ в пункте самовывоза. Доставка в регионы осуществляется транспортными компаниями, подробные условия всегда можно уточнить у наших менеджеров.</p>
+
+<div class="infotables left">
+<table class="active delivery-table" id="deliverydata">
+	<thead>
+		<tr>
+			<td rowspan="2" style="width:25%">Груз</td>
+			<td colspan="2">Доставка</td>
+			<td colspan="2">Подъем на этажи</td>
+		</tr>
+		<tr>
+			<td>В пределах МКАД и до 10 км от МКАД</td>
+			<td>Более 10км от МКАД</td>
+			<td>На грузовом лифте</td>
+			<td>Ручной</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td colspan="3">ЗАНОС НА 1-Й ЭТАЖ (для клиентов, проживающих на первом этаже и в частных домах)</td>
+			<td colspan="2">500 р.</td>
+		</tr>
+		<tr>
+			<td>Прихожие, обувницы, комоды, столы, тумбы, кровати</td>
+			<td>990₽</td>
+			<td rowspan="5">До 40 км - 30 р/км;<br />
+			От 40 до 60 км - 40 р/км;<br />
+			Свыше 60 км - 50 р/км<br />
+			от МКАДа до центра населенного пункта.</td>
+			<td>500₽</td>
+			<td>250 р. за этаж.</td>
+		</tr>
+		<tr>
+			<td>Кресла и пуфы</td>
+			<td>990₽</td>
+			<td>500₽</td>
+			<td>150 р. за этаж.</td>
+		</tr>
+		<tr>
+			<td>Шкафы, гардеробные, стенки, гостиные, детские комнаты, кухонные гарнитуры</td>
+			<td>1290₽</td>
+			<td>500₽</td>
+			<td>250 р. за этаж.</td>
+		</tr>
+		<tr>
+			<td>Прямые диваны, кухонные диваны и уголки</td>
+			<td>1290₽</td>
+			<td>500₽</td>
+			<td>250 р. за этаж.</td>
+		</tr>
+		<tr>
+			<td>Угловые диваны</td>
+			<td>1490₽</td>
+			<td>500₽</td>
+			<td>350 р. за этаж.</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="clear" style="font-size:10px;line-height:1;">&nbsp;</div>
+
+<div class="clear">*Минимальная стоимость доставки составляет 990₽</div>
+
+<h2>Оплата</h2>
+
+<div id="paymentdata">
+<div class="payment_method cash">
+<div class="icon">&nbsp;</div>
+
+<div class="title">Наличными</div>
+
+<p>Курьер доставит вам товар по указанному адресу. Вы внимательно осматриваете комплектацию и внешний вид продукции, после чего оплачиваете ее стоимость, а также стоимость выбранных вами услуг. На привезенные изделия мы предоставим товарный чек и документацию.</p>
+</div>
+
+<div class="payment_method acquiring">
+<div class="icon">&nbsp;</div>
+
+<div class="title">Visa / Mastercard &nbsp; &nbsp; <img class="visa" src="/images/visa.png" /> &nbsp; <img class="mastercard" src="/images/mastercard.png" /></div>
+
+<p>Для удобной оплаты банковской картой используется система электронных платежей Московского Кредитного Банка. При оформлении заказа выберите способ оплаты с помощью карт Visa или Mastercard, после чего вы перейдете на страницу безопасного платежа.</p>
+</div>
+
+<div class="payment_method credit">
+<div class="icon">&nbsp;</div>
+
+<div class="title">Кредит</div>
+
+<p>Заказ в нашем магазине может быть оформлен в рассрочку или кредит. Свяжитесь с менеджерами для того, чтобы получить информацию об условиях, далее вашу заявку рассмотрит кредитный специалист и поможет рассчитать срок кредита и сумму первоначального взноса.</p>
+</div>
+
+<div class="payment_method pay-travel">
+<div class="icon">&nbsp;</div>
+
+<div class="title">Терминалы Pay.Travel</div>
+
+<p>Оплатить покупку наличными или картой можно через систему Pay.Travel. Для этого достаточно найти ближайший терминал, выбрать из списка компаний Диван.ру, указать номер заказа, дождаться подтверждения и распечатать чек.</p>
+
+<p>Адреса терминалов:<br />
+<a href="http://pay.travel/pay_places/" rel="nofollow" target="_blank">www.pay.travel/pay_places</a></p>
+</div>
+
+<div class="payment_method wire">
+<div class="icon">&nbsp;</div>
+
+<div class="title">Банковский перевод</div>
+
+<p>Для осуществления платежа банковским переводом менеджер выставит счет с выбранными товарами и вышлет на вашу электронную почту. Данный способ оплаты по банковским реквизитам компании предусмотрен как для физических, так и для юридических лиц.</p>
+</div>
+</div>
+
+<div class="clear">&nbsp;</div>
+                                        </div>
+                                                                        </div>
+                            </div>
+                        </div>
+                                                        </div>
+            </div>
+            <div class="order-empty"  >
+                <a href="/site/site-map" class="button colored resume-buying">Продолжить покупки</a>
+                                    <div class="products-sets-block">
+                            <div class="items-list products-set add-left-margin" data-anal-list="Хиты интернет продаж">
+        <div class="section-name">Хиты интернет продаж <sup>5</sup></div>
+                    <div class="text">В нашем интернет-магазине представлены только тщательно отобранные модели, исключительные диваны – хиты продаж в Москве и по России. Каждая модель дивана из нашего интернет каталога – это воплощение отличного дизайна, легенда мебельной отрасли.</div>
+                        <div class="makeMeScrollable clearfix">
+                <div class="product catalog-item horizontal" data-product-id="45" data-product-price="20990.0000" data-product-name="Сингапур Textile Rustic" data-product-category-name="Прямые диваны" data-product-variant="20">    <div class="catalog-item-inner" itemscope itemtype="http://schema.org/Product">
+                <img class="product-image" src="/assets/thumb/shop_product/706/200x150_ffffff_100_0_2015080611432210800_0.jpg" alt="Диван Сингапур Textile Rustic" itemprop="image">        <div class="tags">
+            <img src="/assets/49c69ec5/102957.svg" alt="Доставка за 1 день"><img src="/assets/47893399/117653.svg" alt="Лучшая цена"><img src="/assets/f5b9ed07/182443.svg" alt="Есть в шоу-руме в ТЦ Прага">            <div class="clearfix"></div>
+        </div>
+        <meta itemprop="description" content="Диван Сингапур Textile Rustic">
+        <div class="name product_name" itemprop="name">
+            <span>Диван</span>
+            Сингапур Textile Rustic        </div>
+                    <div class="price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <span class="price-title">Цена</span>
+                                    <span class="old-price left">
+                        26 200<span class="rub2"> руб.</span>                    </span>
+                                <div class="price-value left">20 990<span class="rub2"> руб.</span></div>
+                <meta itemprop="price" content="20990.0000">
+                <meta itemprop="priceCurrency" content="RUB">
+                                    <div class="price-discount price-discount1 left">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="72px" height="40px" viewBox="0 0 72 40" enable-background="new 0 0 72 40" xml:space="preserve">
+<g>
+	<path class="discount-svg" fill="#D67E85" d="M69.648,0.01c-0.019,0-0.082-0.002-0.103-0.002c-9.587-0.011-18.692,0-27.899,0.007H26.981
+		c-0.025,0-0.05,0.001-0.075,0.002C23.666,0.014,20.398,0.009,17.084,0C12.057,4.976,7.031,9.942,2.104,14.999
+		c-2.784,2.769-2.817,7.324-0.03,9.943C7.011,30.018,12.087,35.014,17.104,40l52.405-0.004c1.351,0,2.491-1.189,2.491-2.539V2.461
+		C72,1.132,70.969,0.044,69.648,0.01z M6.747,23.029c-1.673,0-3.029-1.355-3.029-3.029s1.356-3.029,3.029-3.029
+		S9.776,18.327,9.776,20S8.42,23.029,6.747,23.029z"/>
+</g>
+</svg>
+                        <span>-20%</span>
+                    </div>
+                                <div class="clear"></div>
+            </div>
+            </div>
+            <div class="product-popover">
+            <div class="catalog-item horizontal">
+                <a href="/product/singapur-textile-rustic" style="position:relative">
+                                        <img class="popover-img product-image" src="/assets/thumb/shop_product/706/200x150_ffffff_100_0_2015080611432210800_0.jpg" alt="Сингапур Textile Rustic">                </a>
+                <div class="tags">
+                    <img src="/assets/49c69ec5/102957.svg" alt="Доставка за 1 день"><img src="/assets/47893399/117653.svg" alt="Лучшая цена"><img src="/assets/f5b9ed07/182443.svg" alt="Есть в шоу-руме в ТЦ Прага">                    <div class="clearfix"></div>
+                </div>
+                <div class="like "></div>
+                <div class="quick-view-button" data-product-id="45"></div>
+                <a class="name" href="/product/singapur-textile-rustic">
+                    <span>Диван</span>
+                    Сингапур Textile Rustic                </a>
+                                    <div class="price">
+                        <span class="price-title">Цена</span>
+                                                    <span class="old-price left">
+                                26 200<span class="rub2"> руб.</span>                            </span>
+                                                <div class="price-value left">20 990<span class="rub2"> руб.</span></div>
+                                                    <div class="price-discount price-discount1 left">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="72px" height="40px" viewBox="0 0 72 40" enable-background="new 0 0 72 40" xml:space="preserve">
+<g>
+	<path class="discount-svg" fill="#D67E85" d="M69.648,0.01c-0.019,0-0.082-0.002-0.103-0.002c-9.587-0.011-18.692,0-27.899,0.007H26.981
+		c-0.025,0-0.05,0.001-0.075,0.002C23.666,0.014,20.398,0.009,17.084,0C12.057,4.976,7.031,9.942,2.104,14.999
+		c-2.784,2.769-2.817,7.324-0.03,9.943C7.011,30.018,12.087,35.014,17.104,40l52.405-0.004c1.351,0,2.491-1.189,2.491-2.539V2.461
+		C72,1.132,70.969,0.044,69.648,0.01z M6.747,23.029c-1.673,0-3.029-1.355-3.029-3.029s1.356-3.029,3.029-3.029
+		S9.776,18.327,9.776,20S8.42,23.029,6.747,23.029z"/>
+</g>
+</svg>
+                                <span>-20%</span>
+                            </div>
+                                                <div class="clear"></div>
+                    </div>
+                                <div class="fast-view-window">
+                    
+<div class="params params-group-2">
+    <div class="param-item">
+                    <div class="name">Размеры</div>
+                <div class="values">
+                                                                    <div class="value-wrapper ">
+                    <div class="name">Длина</div>
+                    <div class="value">
+                        242 см                    </div>
+                </div>
+                                            <div class="value-wrapper ">
+                    <div class="name">Глубина</div>
+                    <div class="value">
+                        120 см                    </div>
+                </div>
+                                            <div class="value-wrapper last">
+                    <div class="name">Высота</div>
+                    <div class="value">
+                        96 см                    </div>
+                </div>
+                    </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="params params-group-3">
+    <div class="param-item">
+                    <div class="name">Спальное место</div>
+                <div class="values">
+                                                                    <div class="value-wrapper ">
+                    <div class="name">Длина</div>
+                    <div class="value">
+                        198 см                    </div>
+                </div>
+                                            <div class="value-wrapper ">
+                    <div class="name">Ширина</div>
+                    <div class="value">
+                        155 см                    </div>
+                </div>
+                                            <div class="value-wrapper last">
+                    <div class="name">Высота</div>
+                    <div class="value">
+                        48 см                    </div>
+                </div>
+                    </div>
+    </div>
+    <div class="clear"></div>
+</div>                    <div class="fast-view-window-bottom">
+                        <a class="button colored1" href="/product/singapur-textile-rustic">
+                            Купить
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>    <div class="product catalog-item horizontal" data-product-id="50" data-product-price="27990.0000" data-product-name="Манхэттен Jeans" data-product-category-name="Угловые диваны" data-product-variant="14">    <div class="catalog-item-inner" itemscope itemtype="http://schema.org/Product">
+                <img class="product-image" src="/assets/thumb/shop_product/988/200x150_ffffff_100_0_2015080616240910800_0.jpg" alt="Диван угловой Манхэттен Jeans" itemprop="image">        <div class="tags">
+            <img src="/assets/49c69ec5/102957.svg" alt="Доставка за 1 день">            <div class="clearfix"></div>
+        </div>
+        <meta itemprop="description" content="Диван угловой Манхэттен Jeans">
+        <div class="name product_name" itemprop="name">
+            <span>Диван угловой</span>
+            Манхэттен Jeans        </div>
+                    <div class="price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <span class="price-title">Цена</span>
+                                    <span class="old-price left">
+                        32 500<span class="rub2"> руб.</span>                    </span>
+                                <div class="price-value left">27 990<span class="rub2"> руб.</span></div>
+                <meta itemprop="price" content="27990.0000">
+                <meta itemprop="priceCurrency" content="RUB">
+                                    <div class="price-discount price-discount1 left">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="72px" height="40px" viewBox="0 0 72 40" enable-background="new 0 0 72 40" xml:space="preserve">
+<g>
+	<path class="discount-svg" fill="#D67E85" d="M69.648,0.01c-0.019,0-0.082-0.002-0.103-0.002c-9.587-0.011-18.692,0-27.899,0.007H26.981
+		c-0.025,0-0.05,0.001-0.075,0.002C23.666,0.014,20.398,0.009,17.084,0C12.057,4.976,7.031,9.942,2.104,14.999
+		c-2.784,2.769-2.817,7.324-0.03,9.943C7.011,30.018,12.087,35.014,17.104,40l52.405-0.004c1.351,0,2.491-1.189,2.491-2.539V2.461
+		C72,1.132,70.969,0.044,69.648,0.01z M6.747,23.029c-1.673,0-3.029-1.355-3.029-3.029s1.356-3.029,3.029-3.029
+		S9.776,18.327,9.776,20S8.42,23.029,6.747,23.029z"/>
+</g>
+</svg>
+                        <span>-14%</span>
+                    </div>
+                                <div class="clear"></div>
+            </div>
+            </div>
+            <div class="product-popover">
+            <div class="catalog-item horizontal">
+                <a href="/product/manhetten-jeans" style="position:relative">
+                                        <img class="popover-img product-image" src="/assets/thumb/shop_product/988/200x150_ffffff_100_0_2015080616240910800_0.jpg" alt="Манхэттен Jeans">                </a>
+                <div class="tags">
+                    <img src="/assets/49c69ec5/102957.svg" alt="Доставка за 1 день">                    <div class="clearfix"></div>
+                </div>
+                <div class="like "></div>
+                <div class="quick-view-button" data-product-id="50"></div>
+                <a class="name" href="/product/manhetten-jeans">
+                    <span>Диван угловой</span>
+                    Манхэттен Jeans                </a>
+                                    <div class="price">
+                        <span class="price-title">Цена</span>
+                                                    <span class="old-price left">
+                                32 500<span class="rub2"> руб.</span>                            </span>
+                                                <div class="price-value left">27 990<span class="rub2"> руб.</span></div>
+                                                    <div class="price-discount price-discount1 left">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="72px" height="40px" viewBox="0 0 72 40" enable-background="new 0 0 72 40" xml:space="preserve">
+<g>
+	<path class="discount-svg" fill="#D67E85" d="M69.648,0.01c-0.019,0-0.082-0.002-0.103-0.002c-9.587-0.011-18.692,0-27.899,0.007H26.981
+		c-0.025,0-0.05,0.001-0.075,0.002C23.666,0.014,20.398,0.009,17.084,0C12.057,4.976,7.031,9.942,2.104,14.999
+		c-2.784,2.769-2.817,7.324-0.03,9.943C7.011,30.018,12.087,35.014,17.104,40l52.405-0.004c1.351,0,2.491-1.189,2.491-2.539V2.461
+		C72,1.132,70.969,0.044,69.648,0.01z M6.747,23.029c-1.673,0-3.029-1.355-3.029-3.029s1.356-3.029,3.029-3.029
+		S9.776,18.327,9.776,20S8.42,23.029,6.747,23.029z"/>
+</g>
+</svg>
+                                <span>-14%</span>
+                            </div>
+                                                <div class="clear"></div>
+                    </div>
+                                <div class="fast-view-window">
+                    
+<div class="params params-group-2">
+    <div class="param-item">
+                    <div class="name">Размеры</div>
+                <div class="values">
+                                                                    <div class="value-wrapper ">
+                    <div class="name">Длина</div>
+                    <div class="value">
+                        247 см                    </div>
+                </div>
+                                            <div class="value-wrapper ">
+                    <div class="name">Глубина</div>
+                    <div class="value">
+                        163 см                    </div>
+                </div>
+                                            <div class="value-wrapper last">
+                    <div class="name">Высота</div>
+                    <div class="value">
+                        92 см                    </div>
+                </div>
+                    </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="params params-group-3">
+    <div class="param-item">
+                    <div class="name">Спальное место</div>
+                <div class="values">
+                                                                    <div class="value-wrapper ">
+                    <div class="name">Длина</div>
+                    <div class="value">
+                        200 см                    </div>
+                </div>
+                                            <div class="value-wrapper ">
+                    <div class="name">Ширина</div>
+                    <div class="value">
+                        145 см                    </div>
+                </div>
+                                            <div class="value-wrapper last">
+                    <div class="name">Высота</div>
+                    <div class="value">
+                        43 см                    </div>
+                </div>
+                    </div>
+    </div>
+    <div class="clear"></div>
+</div>                    <div class="fast-view-window-bottom">
+                        <a class="button colored1" href="/product/manhetten-jeans">
+                            Купить
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>    <div class="product catalog-item horizontal" data-product-id="1039" data-product-price="19990.0000" data-product-name="Торонто Velvet Latte" data-product-category-name="Прямые диваны" data-product-variant="14">    <div class="catalog-item-inner" itemscope itemtype="http://schema.org/Product">
+                <img class="product-image" src="/assets/thumb/shop_product/14954/200x150_ffffff_100_0_2016011915102610800_0.jpg" alt="Диван Торонто Velvet Latte" itemprop="image">        <div class="tags">
+                        <div class="clearfix"></div>
+        </div>
+        <meta itemprop="description" content="Диван Торонто Velvet Latte">
+        <div class="name product_name" itemprop="name">
+            <span>Диван</span>
+            Торонто Velvet Latte        </div>
+                    <div class="price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <span class="price-title">Цена</span>
+                                    <span class="old-price left">
+                        23 300<span class="rub2"> руб.</span>                    </span>
+                                <div class="price-value left">19 990<span class="rub2"> руб.</span></div>
+                <meta itemprop="price" content="19990.0000">
+                <meta itemprop="priceCurrency" content="RUB">
+                                    <div class="price-discount price-discount1 left">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="72px" height="40px" viewBox="0 0 72 40" enable-background="new 0 0 72 40" xml:space="preserve">
+<g>
+	<path class="discount-svg" fill="#D67E85" d="M69.648,0.01c-0.019,0-0.082-0.002-0.103-0.002c-9.587-0.011-18.692,0-27.899,0.007H26.981
+		c-0.025,0-0.05,0.001-0.075,0.002C23.666,0.014,20.398,0.009,17.084,0C12.057,4.976,7.031,9.942,2.104,14.999
+		c-2.784,2.769-2.817,7.324-0.03,9.943C7.011,30.018,12.087,35.014,17.104,40l52.405-0.004c1.351,0,2.491-1.189,2.491-2.539V2.461
+		C72,1.132,70.969,0.044,69.648,0.01z M6.747,23.029c-1.673,0-3.029-1.355-3.029-3.029s1.356-3.029,3.029-3.029
+		S9.776,18.327,9.776,20S8.42,23.029,6.747,23.029z"/>
+</g>
+</svg>
+                        <span>-14%</span>
+                    </div>
+                                <div class="clear"></div>
+            </div>
+            </div>
+            <div class="product-popover">
+            <div class="catalog-item horizontal">
+                <a href="/product/toronto-velvet-latte-divan" style="position:relative">
+                                        <img class="popover-img product-image" src="/assets/thumb/shop_product/14954/200x150_ffffff_100_0_2016011915102610800_0.jpg" alt="Торонто Velvet Latte">                </a>
+                <div class="tags">
+                                        <div class="clearfix"></div>
+                </div>
+                <div class="like "></div>
+                <div class="quick-view-button" data-product-id="1039"></div>
+                <a class="name" href="/product/toronto-velvet-latte-divan">
+                    <span>Диван</span>
+                    Торонто Velvet Latte                </a>
+                                    <div class="price">
+                        <span class="price-title">Цена</span>
+                                                    <span class="old-price left">
+                                23 300<span class="rub2"> руб.</span>                            </span>
+                                                <div class="price-value left">19 990<span class="rub2"> руб.</span></div>
+                                                    <div class="price-discount price-discount1 left">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="72px" height="40px" viewBox="0 0 72 40" enable-background="new 0 0 72 40" xml:space="preserve">
+<g>
+	<path class="discount-svg" fill="#D67E85" d="M69.648,0.01c-0.019,0-0.082-0.002-0.103-0.002c-9.587-0.011-18.692,0-27.899,0.007H26.981
+		c-0.025,0-0.05,0.001-0.075,0.002C23.666,0.014,20.398,0.009,17.084,0C12.057,4.976,7.031,9.942,2.104,14.999
+		c-2.784,2.769-2.817,7.324-0.03,9.943C7.011,30.018,12.087,35.014,17.104,40l52.405-0.004c1.351,0,2.491-1.189,2.491-2.539V2.461
+		C72,1.132,70.969,0.044,69.648,0.01z M6.747,23.029c-1.673,0-3.029-1.355-3.029-3.029s1.356-3.029,3.029-3.029
+		S9.776,18.327,9.776,20S8.42,23.029,6.747,23.029z"/>
+</g>
+</svg>
+                                <span>-14%</span>
+                            </div>
+                                                <div class="clear"></div>
+                    </div>
+                                <div class="fast-view-window">
+                    
+<div class="params params-group-2">
+    <div class="param-item">
+                    <div class="name">Размеры</div>
+                <div class="values">
+                                                                    <div class="value-wrapper ">
+                    <div class="name">Длина</div>
+                    <div class="value">
+                        154 см                    </div>
+                </div>
+                                            <div class="value-wrapper ">
+                    <div class="name">Глубина</div>
+                    <div class="value">
+                        103 см                    </div>
+                </div>
+                                            <div class="value-wrapper last">
+                    <div class="name">Высота</div>
+                    <div class="value">
+                        85 см                    </div>
+                </div>
+                    </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="params params-group-3">
+    <div class="param-item">
+                    <div class="name">Спальное место</div>
+                <div class="values">
+                                                                    <div class="value-wrapper ">
+                    <div class="name">Длина</div>
+                    <div class="value">
+                        198 см                    </div>
+                </div>
+                                            <div class="value-wrapper ">
+                    <div class="name">Ширина</div>
+                    <div class="value">
+                        146 см                    </div>
+                </div>
+                                            <div class="value-wrapper last">
+                    <div class="name">Высота</div>
+                    <div class="value">
+                        41 см                    </div>
+                </div>
+                    </div>
+    </div>
+    <div class="clear"></div>
+</div>                    <div class="fast-view-window-bottom">
+                        <a class="button colored1" href="/product/toronto-velvet-latte-divan">
+                            Купить
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>    <div class="product catalog-item horizontal" data-product-id="1045" data-product-price="23890.0000" data-product-name="Милфорд 302" data-product-category-name="Прямые диваны" data-product-variant="18">    <div class="catalog-item-inner" itemscope itemtype="http://schema.org/Product">
+                <img class="product-image" src="/assets/thumb/shop_product/15591/200x150_ffffff_100_0_2016012511001610800_0.jpg" alt="Диван Милфорд 302" itemprop="image">        <div class="tags">
+                        <div class="clearfix"></div>
+        </div>
+        <meta itemprop="description" content="Диван Милфорд 302">
+        <div class="name product_name" itemprop="name">
+            <span>Диван</span>
+            Милфорд 302        </div>
+                    <div class="price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <span class="price-title">Цена</span>
+                                    <span class="old-price left">
+                        29 100<span class="rub2"> руб.</span>                    </span>
+                                <div class="price-value left">23 890<span class="rub2"> руб.</span></div>
+                <meta itemprop="price" content="23890.0000">
+                <meta itemprop="priceCurrency" content="RUB">
+                                    <div class="price-discount price-discount1 left">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="72px" height="40px" viewBox="0 0 72 40" enable-background="new 0 0 72 40" xml:space="preserve">
+<g>
+	<path class="discount-svg" fill="#D67E85" d="M69.648,0.01c-0.019,0-0.082-0.002-0.103-0.002c-9.587-0.011-18.692,0-27.899,0.007H26.981
+		c-0.025,0-0.05,0.001-0.075,0.002C23.666,0.014,20.398,0.009,17.084,0C12.057,4.976,7.031,9.942,2.104,14.999
+		c-2.784,2.769-2.817,7.324-0.03,9.943C7.011,30.018,12.087,35.014,17.104,40l52.405-0.004c1.351,0,2.491-1.189,2.491-2.539V2.461
+		C72,1.132,70.969,0.044,69.648,0.01z M6.747,23.029c-1.673,0-3.029-1.355-3.029-3.029s1.356-3.029,3.029-3.029
+		S9.776,18.327,9.776,20S8.42,23.029,6.747,23.029z"/>
+</g>
+</svg>
+                        <span>-18%</span>
+                    </div>
+                                <div class="clear"></div>
+            </div>
+            </div>
+            <div class="product-popover">
+            <div class="catalog-item horizontal">
+                <a href="/product/milford-302-divan" style="position:relative">
+                                        <img class="popover-img product-image" src="/assets/thumb/shop_product/15591/200x150_ffffff_100_0_2016012511001610800_0.jpg" alt="Милфорд 302">                </a>
+                <div class="tags">
+                                        <div class="clearfix"></div>
+                </div>
+                <div class="like "></div>
+                <div class="quick-view-button" data-product-id="1045"></div>
+                <a class="name" href="/product/milford-302-divan">
+                    <span>Диван</span>
+                    Милфорд 302                </a>
+                                    <div class="price">
+                        <span class="price-title">Цена</span>
+                                                    <span class="old-price left">
+                                29 100<span class="rub2"> руб.</span>                            </span>
+                                                <div class="price-value left">23 890<span class="rub2"> руб.</span></div>
+                                                    <div class="price-discount price-discount1 left">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="72px" height="40px" viewBox="0 0 72 40" enable-background="new 0 0 72 40" xml:space="preserve">
+<g>
+	<path class="discount-svg" fill="#D67E85" d="M69.648,0.01c-0.019,0-0.082-0.002-0.103-0.002c-9.587-0.011-18.692,0-27.899,0.007H26.981
+		c-0.025,0-0.05,0.001-0.075,0.002C23.666,0.014,20.398,0.009,17.084,0C12.057,4.976,7.031,9.942,2.104,14.999
+		c-2.784,2.769-2.817,7.324-0.03,9.943C7.011,30.018,12.087,35.014,17.104,40l52.405-0.004c1.351,0,2.491-1.189,2.491-2.539V2.461
+		C72,1.132,70.969,0.044,69.648,0.01z M6.747,23.029c-1.673,0-3.029-1.355-3.029-3.029s1.356-3.029,3.029-3.029
+		S9.776,18.327,9.776,20S8.42,23.029,6.747,23.029z"/>
+</g>
+</svg>
+                                <span>-18%</span>
+                            </div>
+                                                <div class="clear"></div>
+                    </div>
+                                <div class="fast-view-window">
+                    
+<div class="params params-group-2">
+    <div class="param-item">
+                    <div class="name">Размеры</div>
+                <div class="values">
+                                                                    <div class="value-wrapper ">
+                    <div class="name">Длина</div>
+                    <div class="value">
+                        231 см                    </div>
+                </div>
+                                            <div class="value-wrapper ">
+                    <div class="name">Глубина</div>
+                    <div class="value">
+                        97 см                    </div>
+                </div>
+                                            <div class="value-wrapper last">
+                    <div class="name">Высота</div>
+                    <div class="value">
+                        87 см                    </div>
+                </div>
+                    </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="params params-group-3">
+    <div class="param-item">
+                    <div class="name">Спальное место</div>
+                <div class="values">
+                                                                    <div class="value-wrapper ">
+                    <div class="name">Длина</div>
+                    <div class="value">
+                        191 см                    </div>
+                </div>
+                                            <div class="value-wrapper last">
+                    <div class="name">Ширина</div>
+                    <div class="value">
+                        137 см                    </div>
+                </div>
+                    </div>
+    </div>
+    <div class="clear"></div>
+</div>                    <div class="fast-view-window-bottom">
+                        <a class="button colored1" href="/product/milford-302-divan">
+                            Купить
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>    <div class="product catalog-item horizontal" data-product-id="1034" data-product-price="18990.0000" data-product-name="Остин Velvet Light" data-product-category-name="Прямые диваны" data-product-variant="11">    <div class="catalog-item-inner" itemscope itemtype="http://schema.org/Product">
+                <img class="product-image" src="/assets/thumb/shop_product/15142/200x150_ffffff_100_0_2016012015074710800_0.jpg" alt="Диван Остин Velvet Light" itemprop="image">        <div class="tags">
+                        <div class="clearfix"></div>
+        </div>
+        <meta itemprop="description" content="Диван Остин Velvet Light">
+        <div class="name product_name" itemprop="name">
+            <span>Диван</span>
+            Остин Velvet Light        </div>
+                    <div class="price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <span class="price-title">Цена</span>
+                                    <span class="old-price left">
+                        21 300<span class="rub2"> руб.</span>                    </span>
+                                <div class="price-value left">18 990<span class="rub2"> руб.</span></div>
+                <meta itemprop="price" content="18990.0000">
+                <meta itemprop="priceCurrency" content="RUB">
+                                    <div class="price-discount price-discount1 left">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="72px" height="40px" viewBox="0 0 72 40" enable-background="new 0 0 72 40" xml:space="preserve">
+<g>
+	<path class="discount-svg" fill="#D67E85" d="M69.648,0.01c-0.019,0-0.082-0.002-0.103-0.002c-9.587-0.011-18.692,0-27.899,0.007H26.981
+		c-0.025,0-0.05,0.001-0.075,0.002C23.666,0.014,20.398,0.009,17.084,0C12.057,4.976,7.031,9.942,2.104,14.999
+		c-2.784,2.769-2.817,7.324-0.03,9.943C7.011,30.018,12.087,35.014,17.104,40l52.405-0.004c1.351,0,2.491-1.189,2.491-2.539V2.461
+		C72,1.132,70.969,0.044,69.648,0.01z M6.747,23.029c-1.673,0-3.029-1.355-3.029-3.029s1.356-3.029,3.029-3.029
+		S9.776,18.327,9.776,20S8.42,23.029,6.747,23.029z"/>
+</g>
+</svg>
+                        <span>-11%</span>
+                    </div>
+                                <div class="clear"></div>
+            </div>
+            </div>
+            <div class="product-popover">
+            <div class="catalog-item horizontal">
+                <a href="/product/ostin-velvet-light-divan" style="position:relative">
+                                        <img class="popover-img product-image" src="/assets/thumb/shop_product/15142/200x150_ffffff_100_0_2016012015074710800_0.jpg" alt="Остин Velvet Light">                </a>
+                <div class="tags">
+                                        <div class="clearfix"></div>
+                </div>
+                <div class="like "></div>
+                <div class="quick-view-button" data-product-id="1034"></div>
+                <a class="name" href="/product/ostin-velvet-light-divan">
+                    <span>Диван</span>
+                    Остин Velvet Light                </a>
+                                    <div class="price">
+                        <span class="price-title">Цена</span>
+                                                    <span class="old-price left">
+                                21 300<span class="rub2"> руб.</span>                            </span>
+                                                <div class="price-value left">18 990<span class="rub2"> руб.</span></div>
+                                                    <div class="price-discount price-discount1 left">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="72px" height="40px" viewBox="0 0 72 40" enable-background="new 0 0 72 40" xml:space="preserve">
+<g>
+	<path class="discount-svg" fill="#D67E85" d="M69.648,0.01c-0.019,0-0.082-0.002-0.103-0.002c-9.587-0.011-18.692,0-27.899,0.007H26.981
+		c-0.025,0-0.05,0.001-0.075,0.002C23.666,0.014,20.398,0.009,17.084,0C12.057,4.976,7.031,9.942,2.104,14.999
+		c-2.784,2.769-2.817,7.324-0.03,9.943C7.011,30.018,12.087,35.014,17.104,40l52.405-0.004c1.351,0,2.491-1.189,2.491-2.539V2.461
+		C72,1.132,70.969,0.044,69.648,0.01z M6.747,23.029c-1.673,0-3.029-1.355-3.029-3.029s1.356-3.029,3.029-3.029
+		S9.776,18.327,9.776,20S8.42,23.029,6.747,23.029z"/>
+</g>
+</svg>
+                                <span>-11%</span>
+                            </div>
+                                                <div class="clear"></div>
+                    </div>
+                                <div class="fast-view-window">
+                    
+<div class="params params-group-2">
+    <div class="param-item">
+                    <div class="name">Размеры</div>
+                <div class="values">
+                                                                    <div class="value-wrapper ">
+                    <div class="name">Длина</div>
+                    <div class="value">
+                        172 см                    </div>
+                </div>
+                                            <div class="value-wrapper ">
+                    <div class="name">Глубина</div>
+                    <div class="value">
+                        103 см                    </div>
+                </div>
+                                            <div class="value-wrapper last">
+                    <div class="name">Высота</div>
+                    <div class="value">
+                        85 см                    </div>
+                </div>
+                    </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="params params-group-3">
+    <div class="param-item">
+                    <div class="name">Спальное место</div>
+                <div class="values">
+                                                                    <div class="value-wrapper ">
+                    <div class="name">Длина</div>
+                    <div class="value">
+                        198 см                    </div>
+                </div>
+                                            <div class="value-wrapper ">
+                    <div class="name">Ширина</div>
+                    <div class="value">
+                        146 см                    </div>
+                </div>
+                                            <div class="value-wrapper last">
+                    <div class="name">Высота</div>
+                    <div class="value">
+                        41 см                    </div>
+                </div>
+                    </div>
+    </div>
+    <div class="clear"></div>
+</div>                    <div class="fast-view-window-bottom">
+                        <a class="button colored1" href="/product/ostin-velvet-light-divan">
+                            Купить
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>                    </div>
+            </div>
+                            <div class="items-list products-set add-left-margin" data-anal-list="Купить диван и не только">
+        <div class="section-name">Купить диван и не только <sup>9</sup></div>
+                    <div class="text">Уютное кресло, практичный комод или вместительный шкаф-купе – интернет-гипермаркет мебели Диван.ру не ограничивает ваш выбор. У нас вы всегда сможете подобрать не только красивый диван, но и другую мебель – удобную и функциональную, обустроить каждую комнату в индивидуальном стиле.</div>
+                        <div class="makeMeScrollable clearfix">
+                <div class="product catalog-item horizontal" data-product-id="5105" data-product-price="8950.0000" data-product-name="Норвуд Scandi" data-product-category-name="ТВ-тумбы" data-product-variant="0">    <div class="catalog-item-inner" itemscope itemtype="http://schema.org/Product">
+                <img class="product-image" src="/assets/thumb/shop_product/162658/200x150_ffffff_100_0_2017062709393310800_0.jpg" alt="ТВ-тумба Норвуд Scandi" itemprop="image">        <div class="tags">
+                        <div class="clearfix"></div>
+        </div>
+        <meta itemprop="description" content="ТВ-тумба Норвуд Scandi">
+        <div class="name product_name" itemprop="name">
+            <span>ТВ-тумба</span>
+            Норвуд Scandi        </div>
+                    <div class="price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <span class="price-title">Цена</span>
+                                <div class="price-value left">8 950<span class="rub2"> руб.</span></div>
+                <meta itemprop="price" content="8950.0000">
+                <meta itemprop="priceCurrency" content="RUB">
+                                <div class="clear"></div>
+            </div>
+            </div>
+            <div class="product-popover">
+            <div class="catalog-item horizontal">
+                <a href="/product/tv-tumba-norvud-scandi" style="position:relative">
+                                        <img class="popover-img product-image" src="/assets/thumb/shop_product/162658/200x150_ffffff_100_0_2017062709393310800_0.jpg" alt="Норвуд Scandi">                </a>
+                <div class="tags">
+                                        <div class="clearfix"></div>
+                </div>
+                <div class="like "></div>
+                <div class="quick-view-button" data-product-id="5105"></div>
+                <a class="name" href="/product/tv-tumba-norvud-scandi">
+                    <span>ТВ-тумба</span>
+                    Норвуд Scandi                </a>
+                                    <div class="price">
+                        <span class="price-title">Цена</span>
+                                                <div class="price-value left">8 950<span class="rub2"> руб.</span></div>
+                                                <div class="clear"></div>
+                    </div>
+                                <div class="fast-view-window">
+                    
+<div class="params params-group-2">
+    <div class="param-item">
+                    <div class="name">Размеры</div>
+                <div class="values">
+                                                                    <div class="value-wrapper ">
+                    <div class="name">Длина</div>
+                    <div class="value">
+                        120 см                    </div>
+                </div>
+                                            <div class="value-wrapper ">
+                    <div class="name">Глубина</div>
+                    <div class="value">
+                        40 см                    </div>
+                </div>
+                                            <div class="value-wrapper last">
+                    <div class="name">Высота</div>
+                    <div class="value">
+                        70 см                    </div>
+                </div>
+                    </div>
+    </div>
+    <div class="clear"></div>
+</div>                    <div class="fast-view-window-bottom">
+                        <a class="button colored20" href="/product/tv-tumba-norvud-scandi">
+                            Купить
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>    <div class="product catalog-item horizontal" data-product-id="4394" data-product-price="8690.0000" data-product-name="Рейкьявик-1 Боб пайн" data-product-category-name="Кровати" data-product-variant="35">    <div class="catalog-item-inner" itemscope itemtype="http://schema.org/Product">
+                <img class="product-image" src="/assets/thumb/shop_product/188853/200x150_ffffff_100_0_2017082410072210800_0.jpg" alt="Кровать Рейкьявик-1 Боб пайн" itemprop="image">        <div class="tags">
+                        <div class="clearfix"></div>
+        </div>
+        <meta itemprop="description" content="Кровать Рейкьявик-1 Боб пайн">
+        <div class="name product_name" itemprop="name">
+            <span>Кровать</span>
+            Рейкьявик-1 Боб пайн        </div>
+                    <div class="price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <span class="price-title">Цена</span>
+                                    <span class="old-price left">
+                        13 370<span class="rub2"> руб.</span>                    </span>
+                                <div class="price-value left">8 690<span class="rub2"> руб.</span></div>
+                <meta itemprop="price" content="8690.0000">
+                <meta itemprop="priceCurrency" content="RUB">
+                                    <div class="price-discount price-discount22 left">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="72px" height="40px" viewBox="0 0 72 40" enable-background="new 0 0 72 40" xml:space="preserve">
+<g>
+	<path class="discount-svg" fill="#D67E85" d="M69.648,0.01c-0.019,0-0.082-0.002-0.103-0.002c-9.587-0.011-18.692,0-27.899,0.007H26.981
+		c-0.025,0-0.05,0.001-0.075,0.002C23.666,0.014,20.398,0.009,17.084,0C12.057,4.976,7.031,9.942,2.104,14.999
+		c-2.784,2.769-2.817,7.324-0.03,9.943C7.011,30.018,12.087,35.014,17.104,40l52.405-0.004c1.351,0,2.491-1.189,2.491-2.539V2.461
+		C72,1.132,70.969,0.044,69.648,0.01z M6.747,23.029c-1.673,0-3.029-1.355-3.029-3.029s1.356-3.029,3.029-3.029
+		S9.776,18.327,9.776,20S8.42,23.029,6.747,23.029z"/>
+</g>
+</svg>
+                        <span>-35%</span>
+                    </div>
+                                <div class="clear"></div>
+            </div>
+            </div>
+            <div class="product-popover">
+            <div class="catalog-item horizontal">
+                <a href="/product/krovat-rejkyavik-1-bob-pajn" style="position:relative">
+                                        <img class="popover-img product-image" src="/assets/thumb/shop_product/188853/200x150_ffffff_100_0_2017082410072210800_0.jpg" alt="Рейкьявик-1 Боб пайн">                </a>
+                <div class="tags">
+                                        <div class="clearfix"></div>
+                </div>
+                <div class="like "></div>
+                <div class="quick-view-button" data-product-id="4394"></div>
+                <a class="name" href="/product/krovat-rejkyavik-1-bob-pajn">
+                    <span>Кровать</span>
+                    Рейкьявик-1 Боб пайн                </a>
+                                    <div class="price">
+                        <span class="price-title">Цена</span>
+                                                    <span class="old-price left">
+                                13 370<span class="rub2"> руб.</span>                            </span>
+                                                <div class="price-value left">8 690<span class="rub2"> руб.</span></div>
+                                                    <div class="price-discount price-discount22 left">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="72px" height="40px" viewBox="0 0 72 40" enable-background="new 0 0 72 40" xml:space="preserve">
+<g>
+	<path class="discount-svg" fill="#D67E85" d="M69.648,0.01c-0.019,0-0.082-0.002-0.103-0.002c-9.587-0.011-18.692,0-27.899,0.007H26.981
+		c-0.025,0-0.05,0.001-0.075,0.002C23.666,0.014,20.398,0.009,17.084,0C12.057,4.976,7.031,9.942,2.104,14.999
+		c-2.784,2.769-2.817,7.324-0.03,9.943C7.011,30.018,12.087,35.014,17.104,40l52.405-0.004c1.351,0,2.491-1.189,2.491-2.539V2.461
+		C72,1.132,70.969,0.044,69.648,0.01z M6.747,23.029c-1.673,0-3.029-1.355-3.029-3.029s1.356-3.029,3.029-3.029
+		S9.776,18.327,9.776,20S8.42,23.029,6.747,23.029z"/>
+</g>
+</svg>
+                                <span>-35%</span>
+                            </div>
+                                                <div class="clear"></div>
+                    </div>
+                                <div class="fast-view-window">
+                    
+<div class="params params-group-2">
+    <div class="param-item">
+                    <div class="name">Размеры</div>
+                <div class="values">
+                                                                    <div class="value-wrapper ">
+                    <div class="name">Длина</div>
+                    <div class="value">
+                        207 см                    </div>
+                </div>
+                                            <div class="value-wrapper ">
+                    <div class="name">Ширина</div>
+                    <div class="value">
+                        149 см                    </div>
+                </div>
+                                            <div class="value-wrapper last">
+                    <div class="name">Высота</div>
+                    <div class="value">
+                        90 см                    </div>
+                </div>
+                    </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="params params-group-3">
+    <div class="param-item">
+                    <div class="name">Спальное место</div>
+                <div class="values">
+                                                                    <div class="value-wrapper ">
+                    <div class="name">Длина</div>
+                    <div class="value">
+                        200 см                    </div>
+                </div>
+                                            <div class="value-wrapper ">
+                    <div class="name">Ширина</div>
+                    <div class="value">
+                        140 см                    </div>
+                </div>
+                                            <div class="value-wrapper last">
+                    <div class="name">Высота</div>
+                    <div class="value">
+                        40 см                    </div>
+                </div>
+                    </div>
+    </div>
+    <div class="clear"></div>
+</div>                    <div class="fast-view-window-bottom">
+                        <a class="button colored22" href="/product/krovat-rejkyavik-1-bob-pajn">
+                            Купить
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>    <div class="product catalog-item horizontal" data-product-id="4981" data-product-price="8410.0000" data-product-name="Кельн " data-product-category-name="ТВ-тумбы" data-product-variant="0">    <div class="catalog-item-inner" itemscope itemtype="http://schema.org/Product">
+                <img class="product-image" src="/assets/thumb/shop_product/164885/200x150_ffffff_100_0_2017070312554110800_0.jpg" alt="ТВ-тумба Кельн " itemprop="image">        <div class="tags">
+            <img src="/assets/f5b9ed07/182443.svg" alt="Есть в шоу-руме в ТЦ Прага">            <div class="clearfix"></div>
+        </div>
+        <meta itemprop="description" content="ТВ-тумба Кельн ">
+        <div class="name product_name" itemprop="name">
+            <span>ТВ-тумба</span>
+            Кельн         </div>
+                    <div class="price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <span class="price-title">Цена</span>
+                                <div class="price-value left">8 410<span class="rub2"> руб.</span></div>
+                <meta itemprop="price" content="8410.0000">
+                <meta itemprop="priceCurrency" content="RUB">
+                                <div class="clear"></div>
+            </div>
+            </div>
+            <div class="product-popover">
+            <div class="catalog-item horizontal">
+                <a href="/product/tv-tumba-kln" style="position:relative">
+                                        <img class="popover-img product-image" src="/assets/thumb/shop_product/164885/200x150_ffffff_100_0_2017070312554110800_0.jpg" alt="Кельн ">                </a>
+                <div class="tags">
+                    <img src="/assets/f5b9ed07/182443.svg" alt="Есть в шоу-руме в ТЦ Прага">                    <div class="clearfix"></div>
+                </div>
+                <div class="like "></div>
+                <div class="quick-view-button" data-product-id="4981"></div>
+                <a class="name" href="/product/tv-tumba-kln">
+                    <span>ТВ-тумба</span>
+                    Кельн                 </a>
+                                    <div class="price">
+                        <span class="price-title">Цена</span>
+                                                <div class="price-value left">8 410<span class="rub2"> руб.</span></div>
+                                                <div class="clear"></div>
+                    </div>
+                                <div class="fast-view-window">
+                    
+<div class="params params-group-2">
+    <div class="param-item">
+                    <div class="name">Размеры</div>
+                <div class="values">
+                                                                    <div class="value-wrapper ">
+                    <div class="name">Длина</div>
+                    <div class="value">
+                        155 см                    </div>
+                </div>
+                                            <div class="value-wrapper ">
+                    <div class="name">Глубина</div>
+                    <div class="value">
+                        50 см                    </div>
+                </div>
+                                            <div class="value-wrapper last">
+                    <div class="name">Высота</div>
+                    <div class="value">
+                        48 см                    </div>
+                </div>
+                    </div>
+    </div>
+    <div class="clear"></div>
+</div>                    <div class="fast-view-window-bottom">
+                        <a class="button colored20" href="/product/tv-tumba-kln">
+                            Купить
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>    <div class="product catalog-item horizontal" data-product-id="524" data-product-price="15290.0000" data-product-name="Адель White" data-product-category-name="Кровати" data-product-variant="20">    <div class="catalog-item-inner" itemscope itemtype="http://schema.org/Product">
+                <img class="product-image" src="/assets/thumb/shop_product/10052/200x150_ffffff_100_0_2015120711184610800_0.jpg" alt="Кровать Адель White" itemprop="image">        <div class="tags">
+            <img src="/assets/49c69ec5/102957.svg" alt="Доставка за 1 день">            <div class="clearfix"></div>
+        </div>
+        <meta itemprop="description" content="Кровать Адель White">
+        <div class="name product_name" itemprop="name">
+            <span>Кровать</span>
+            Адель White        </div>
+                    <div class="price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <span class="price-title">Цена</span>
+                                    <span class="old-price left">
+                        19 000<span class="rub2"> руб.</span>                    </span>
+                                <div class="price-value left">15 290<span class="rub2"> руб.</span></div>
+                <meta itemprop="price" content="15290.0000">
+                <meta itemprop="priceCurrency" content="RUB">
+                                    <div class="price-discount price-discount22 left">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="72px" height="40px" viewBox="0 0 72 40" enable-background="new 0 0 72 40" xml:space="preserve">
+<g>
+	<path class="discount-svg" fill="#D67E85" d="M69.648,0.01c-0.019,0-0.082-0.002-0.103-0.002c-9.587-0.011-18.692,0-27.899,0.007H26.981
+		c-0.025,0-0.05,0.001-0.075,0.002C23.666,0.014,20.398,0.009,17.084,0C12.057,4.976,7.031,9.942,2.104,14.999
+		c-2.784,2.769-2.817,7.324-0.03,9.943C7.011,30.018,12.087,35.014,17.104,40l52.405-0.004c1.351,0,2.491-1.189,2.491-2.539V2.461
+		C72,1.132,70.969,0.044,69.648,0.01z M6.747,23.029c-1.673,0-3.029-1.355-3.029-3.029s1.356-3.029,3.029-3.029
+		S9.776,18.327,9.776,20S8.42,23.029,6.747,23.029z"/>
+</g>
+</svg>
+                        <span>-20%</span>
+                    </div>
+                                <div class="clear"></div>
+            </div>
+            </div>
+            <div class="product-popover">
+            <div class="catalog-item horizontal">
+                <a href="/product/myagkaya-krovat-adel-white" style="position:relative">
+                                        <img class="popover-img product-image" src="/assets/thumb/shop_product/10052/200x150_ffffff_100_0_2015120711184610800_0.jpg" alt="Адель White">                </a>
+                <div class="tags">
+                    <img src="/assets/49c69ec5/102957.svg" alt="Доставка за 1 день">                    <div class="clearfix"></div>
+                </div>
+                <div class="like "></div>
+                <div class="quick-view-button" data-product-id="524"></div>
+                <a class="name" href="/product/myagkaya-krovat-adel-white">
+                    <span>Кровать</span>
+                    Адель White                </a>
+                                    <div class="price">
+                        <span class="price-title">Цена</span>
+                                                    <span class="old-price left">
+                                19 000<span class="rub2"> руб.</span>                            </span>
+                                                <div class="price-value left">15 290<span class="rub2"> руб.</span></div>
+                                                    <div class="price-discount price-discount22 left">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="72px" height="40px" viewBox="0 0 72 40" enable-background="new 0 0 72 40" xml:space="preserve">
+<g>
+	<path class="discount-svg" fill="#D67E85" d="M69.648,0.01c-0.019,0-0.082-0.002-0.103-0.002c-9.587-0.011-18.692,0-27.899,0.007H26.981
+		c-0.025,0-0.05,0.001-0.075,0.002C23.666,0.014,20.398,0.009,17.084,0C12.057,4.976,7.031,9.942,2.104,14.999
+		c-2.784,2.769-2.817,7.324-0.03,9.943C7.011,30.018,12.087,35.014,17.104,40l52.405-0.004c1.351,0,2.491-1.189,2.491-2.539V2.461
+		C72,1.132,70.969,0.044,69.648,0.01z M6.747,23.029c-1.673,0-3.029-1.355-3.029-3.029s1.356-3.029,3.029-3.029
+		S9.776,18.327,9.776,20S8.42,23.029,6.747,23.029z"/>
+</g>
+</svg>
+                                <span>-20%</span>
+                            </div>
+                                                <div class="clear"></div>
+                    </div>
+                                <div class="fast-view-window">
+                    
+<div class="params params-group-2">
+    <div class="param-item">
+                    <div class="name">Размеры</div>
+                <div class="values">
+                                                                    <div class="value-wrapper ">
+                    <div class="name">Длина</div>
+                    <div class="value">
+                        250 см                    </div>
+                </div>
+                                            <div class="value-wrapper ">
+                    <div class="name">Ширина</div>
+                    <div class="value">
+                        200 см                    </div>
+                </div>
+                                            <div class="value-wrapper last">
+                    <div class="name">Высота</div>
+                    <div class="value">
+                        88 см                    </div>
+                </div>
+                    </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="params params-group-3">
+    <div class="param-item">
+                    <div class="name">Спальное место</div>
+                <div class="values">
+                                                                    <div class="value-wrapper ">
+                    <div class="name">Длина</div>
+                    <div class="value">
+                        200 см                    </div>
+                </div>
+                                            <div class="value-wrapper ">
+                    <div class="name">Ширина</div>
+                    <div class="value">
+                        160 см                    </div>
+                </div>
+                                            <div class="value-wrapper last">
+                    <div class="name">Высота</div>
+                    <div class="value">
+                        27 см                    </div>
+                </div>
+                    </div>
+    </div>
+    <div class="clear"></div>
+</div>                    <div class="fast-view-window-bottom">
+                        <a class="button colored22" href="/product/myagkaya-krovat-adel-white">
+                            Купить
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>    <div class="product catalog-item horizontal" data-product-id="4669" data-product-price="2850.0000" data-product-name="Майер-1-2 Венге" data-product-category-name="Журнальные столики" data-product-variant="0">    <div class="catalog-item-inner" itemscope itemtype="http://schema.org/Product">
+                <img class="product-image" src="/assets/thumb/shop_product/149301/200x150_ffffff_100_0_2017052210161210800_0.jpg" alt="Журнальный стол Майер-1-2 Венге" itemprop="image">        <div class="tags">
+                        <div class="clearfix"></div>
+        </div>
+        <meta itemprop="description" content="Журнальный стол Майер-1-2 Венге">
+        <div class="name product_name" itemprop="name">
+            <span>Журнальный стол</span>
+            Майер-1-2 Венге        </div>
+                    <div class="price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <span class="price-title">Цена</span>
+                                <div class="price-value left">2 850<span class="rub2"> руб.</span></div>
+                <meta itemprop="price" content="2850.0000">
+                <meta itemprop="priceCurrency" content="RUB">
+                                <div class="clear"></div>
+            </div>
+            </div>
+            <div class="product-popover">
+            <div class="catalog-item horizontal">
+                <a href="/product/jurnalnyj-stol-majer-1-2-venge" style="position:relative">
+                                        <img class="popover-img product-image" src="/assets/thumb/shop_product/149301/200x150_ffffff_100_0_2017052210161210800_0.jpg" alt="Майер-1-2 Венге">                </a>
+                <div class="tags">
+                                        <div class="clearfix"></div>
+                </div>
+                <div class="like "></div>
+                <div class="quick-view-button" data-product-id="4669"></div>
+                <a class="name" href="/product/jurnalnyj-stol-majer-1-2-venge">
+                    <span>Журнальный стол</span>
+                    Майер-1-2 Венге                </a>
+                                    <div class="price">
+                        <span class="price-title">Цена</span>
+                                                <div class="price-value left">2 850<span class="rub2"> руб.</span></div>
+                                                <div class="clear"></div>
+                    </div>
+                                <div class="fast-view-window">
+                    
+<div class="params params-group-2">
+    <div class="param-item">
+                    <div class="name">Размеры</div>
+                <div class="values">
+                                                                    <div class="value-wrapper ">
+                    <div class="name">Длина</div>
+                    <div class="value">
+                        45 см                    </div>
+                </div>
+                                            <div class="value-wrapper ">
+                    <div class="name">Глубина</div>
+                    <div class="value">
+                        45 см                    </div>
+                </div>
+                                            <div class="value-wrapper last">
+                    <div class="name">Высота</div>
+                    <div class="value">
+                        62 см                    </div>
+                </div>
+                    </div>
+    </div>
+    <div class="clear"></div>
+</div>                    <div class="fast-view-window-bottom">
+                        <a class="button colored20" href="/product/jurnalnyj-stol-majer-1-2-venge">
+                            Купить
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>    <div class="product catalog-item horizontal" data-product-id="5039" data-product-price="37620.0000" data-product-name="Лаки " data-product-category-name="Модульные гостиные" data-product-variant="0">    <div class="catalog-item-inner" itemscope itemtype="http://schema.org/Product">
+                <img class="product-image" src="/assets/thumb/shop_product/160400/200x150_ffffff_100_0_2017062012335410800_0.jpg" alt="Модульная гостиная Лаки " itemprop="image">        <div class="tags">
+            <img src="/assets/6bf40bee/302628.svg" alt="Бесплатная сборка">            <div class="clearfix"></div>
+        </div>
+        <meta itemprop="description" content="Модульная гостиная Лаки ">
+        <div class="name product_name" itemprop="name">
+            <span>Модульная гостиная</span>
+            Лаки         </div>
+                    <div class="price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <span class="price-title">Цена</span>
+                                <div class="price-value left">37 620<span class="rub2"> руб.</span></div>
+                <meta itemprop="price" content="37620.0000">
+                <meta itemprop="priceCurrency" content="RUB">
+                                <div class="clear"></div>
+            </div>
+            </div>
+            <div class="product-popover">
+            <div class="catalog-item horizontal">
+                <a href="/product/stenka-laki" style="position:relative">
+                                        <img class="popover-img product-image" src="/assets/thumb/shop_product/160400/200x150_ffffff_100_0_2017062012335410800_0.jpg" alt="Лаки ">                </a>
+                <div class="tags">
+                    <img src="/assets/6bf40bee/302628.svg" alt="Бесплатная сборка">                    <div class="clearfix"></div>
+                </div>
+                <div class="like "></div>
+                <div class="quick-view-button" data-product-id="5039"></div>
+                <a class="name" href="/product/stenka-laki">
+                    <span>Модульная гостиная</span>
+                    Лаки                 </a>
+                                    <div class="price">
+                        <span class="price-title">Цена</span>
+                                                <div class="price-value left">37 620<span class="rub2"> руб.</span></div>
+                                                <div class="clear"></div>
+                    </div>
+                                <div class="fast-view-window">
+                                        <div class="fast-view-window-bottom">
+                        <a class="button colored20" href="/product/stenka-laki">
+                            Купить
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>    <div class="product catalog-item horizontal" data-product-id="4667" data-product-price="14880.0000" data-product-name="Кеннер-4 " data-product-category-name="Столы и обеденные группы" data-product-variant="0">    <div class="catalog-item-inner" itemscope itemtype="http://schema.org/Product">
+                <img class="product-image" src="/assets/thumb/shop_product/148548/200x150_ffffff_100_0_2017051909181010800_0.jpg" alt="Обеденный стол Кеннер-4 " itemprop="image">        <div class="tags">
+                        <div class="clearfix"></div>
+        </div>
+        <meta itemprop="description" content="Обеденный стол Кеннер-4 ">
+        <div class="name product_name" itemprop="name">
+            <span>Обеденный стол</span>
+            Кеннер-4         </div>
+                    <div class="price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <span class="price-title">Цена</span>
+                                <div class="price-value left">14 880<span class="rub2"> руб.</span></div>
+                <meta itemprop="price" content="14880.0000">
+                <meta itemprop="priceCurrency" content="RUB">
+                                <div class="clear"></div>
+            </div>
+            </div>
+            <div class="product-popover">
+            <div class="catalog-item horizontal">
+                <a href="/product/obedennyj-stol-kenner-4" style="position:relative">
+                                        <img class="popover-img product-image" src="/assets/thumb/shop_product/148548/200x150_ffffff_100_0_2017051909181010800_0.jpg" alt="Кеннер-4 ">                </a>
+                <div class="tags">
+                                        <div class="clearfix"></div>
+                </div>
+                <div class="like "></div>
+                <div class="quick-view-button" data-product-id="4667"></div>
+                <a class="name" href="/product/obedennyj-stol-kenner-4">
+                    <span>Обеденный стол</span>
+                    Кеннер-4                 </a>
+                                    <div class="price">
+                        <span class="price-title">Цена</span>
+                                                <div class="price-value left">14 880<span class="rub2"> руб.</span></div>
+                                                <div class="clear"></div>
+                    </div>
+                                <div class="fast-view-window">
+                    
+<div class="params params-group-2">
+    <div class="param-item">
+                    <div class="name">Размеры</div>
+                <div class="values">
+                                                                    <div class="value-wrapper ">
+                    <div class="name">Длина</div>
+                    <div class="value">
+                        100 см                    </div>
+                </div>
+                                            <div class="value-wrapper ">
+                    <div class="name">Глубина</div>
+                    <div class="value">
+                        100 см                    </div>
+                </div>
+                                            <div class="value-wrapper last">
+                    <div class="name">Высота</div>
+                    <div class="value">
+                        75 см                    </div>
+                </div>
+                    </div>
+    </div>
+    <div class="clear"></div>
+</div>                    <div class="fast-view-window-bottom">
+                        <a class="button colored21" href="/product/obedennyj-stol-kenner-4">
+                            Купить
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>    <div class="product catalog-item horizontal" data-product-id="2855" data-product-price="20990.0000" data-product-name="Cross-3 " data-product-category-name="Столы и обеденные группы" data-product-variant="3">    <div class="catalog-item-inner" itemscope itemtype="http://schema.org/Product">
+                <img class="product-image" src="/assets/thumb/shop_product/72307/200x150_ffffff_100_0_2016110112243810800_0.jpg" alt="Стол трансформер Cross-3 " itemprop="image">        <div class="tags">
+                        <div class="clearfix"></div>
+        </div>
+        <meta itemprop="description" content="Стол трансформер Cross-3 ">
+        <div class="name product_name" itemprop="name">
+            <span>Стол трансформер</span>
+            Cross-3         </div>
+                    <div class="price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <span class="price-title">Цена</span>
+                                    <span class="old-price left">
+                        21 600<span class="rub2"> руб.</span>                    </span>
+                                <div class="price-value left">20 990<span class="rub2"> руб.</span></div>
+                <meta itemprop="price" content="20990.0000">
+                <meta itemprop="priceCurrency" content="RUB">
+                                    <div class="price-discount price-discount21 left">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="72px" height="40px" viewBox="0 0 72 40" enable-background="new 0 0 72 40" xml:space="preserve">
+<g>
+	<path class="discount-svg" fill="#D67E85" d="M69.648,0.01c-0.019,0-0.082-0.002-0.103-0.002c-9.587-0.011-18.692,0-27.899,0.007H26.981
+		c-0.025,0-0.05,0.001-0.075,0.002C23.666,0.014,20.398,0.009,17.084,0C12.057,4.976,7.031,9.942,2.104,14.999
+		c-2.784,2.769-2.817,7.324-0.03,9.943C7.011,30.018,12.087,35.014,17.104,40l52.405-0.004c1.351,0,2.491-1.189,2.491-2.539V2.461
+		C72,1.132,70.969,0.044,69.648,0.01z M6.747,23.029c-1.673,0-3.029-1.355-3.029-3.029s1.356-3.029,3.029-3.029
+		S9.776,18.327,9.776,20S8.42,23.029,6.747,23.029z"/>
+</g>
+</svg>
+                        <span>-3%</span>
+                    </div>
+                                <div class="clear"></div>
+            </div>
+            </div>
+            <div class="product-popover">
+            <div class="catalog-item horizontal">
+                <a href="/product/stol-transformer-cross-3" style="position:relative">
+                                        <img class="popover-img product-image" src="/assets/thumb/shop_product/72307/200x150_ffffff_100_0_2016110112243810800_0.jpg" alt="Cross-3 ">                </a>
+                <div class="tags">
+                                        <div class="clearfix"></div>
+                </div>
+                <div class="like "></div>
+                <div class="quick-view-button" data-product-id="2855"></div>
+                <a class="name" href="/product/stol-transformer-cross-3">
+                    <span>Стол трансформер</span>
+                    Cross-3                 </a>
+                                    <div class="price">
+                        <span class="price-title">Цена</span>
+                                                    <span class="old-price left">
+                                21 600<span class="rub2"> руб.</span>                            </span>
+                                                <div class="price-value left">20 990<span class="rub2"> руб.</span></div>
+                                                    <div class="price-discount price-discount21 left">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="72px" height="40px" viewBox="0 0 72 40" enable-background="new 0 0 72 40" xml:space="preserve">
+<g>
+	<path class="discount-svg" fill="#D67E85" d="M69.648,0.01c-0.019,0-0.082-0.002-0.103-0.002c-9.587-0.011-18.692,0-27.899,0.007H26.981
+		c-0.025,0-0.05,0.001-0.075,0.002C23.666,0.014,20.398,0.009,17.084,0C12.057,4.976,7.031,9.942,2.104,14.999
+		c-2.784,2.769-2.817,7.324-0.03,9.943C7.011,30.018,12.087,35.014,17.104,40l52.405-0.004c1.351,0,2.491-1.189,2.491-2.539V2.461
+		C72,1.132,70.969,0.044,69.648,0.01z M6.747,23.029c-1.673,0-3.029-1.355-3.029-3.029s1.356-3.029,3.029-3.029
+		S9.776,18.327,9.776,20S8.42,23.029,6.747,23.029z"/>
+</g>
+</svg>
+                                <span>-3%</span>
+                            </div>
+                                                <div class="clear"></div>
+                    </div>
+                                <div class="fast-view-window">
+                    
+<div class="params params-group-2">
+    <div class="param-item">
+                    <div class="name">Размеры</div>
+                <div class="values">
+                                                                    <div class="value-wrapper ">
+                    <div class="name">Длина</div>
+                    <div class="value">
+                        101 см                    </div>
+                </div>
+                                            <div class="value-wrapper ">
+                    <div class="name">Глубина</div>
+                    <div class="value">
+                        80 см                    </div>
+                </div>
+                                            <div class="value-wrapper last">
+                    <div class="name">Высота</div>
+                    <div class="value">
+                        36 см                    </div>
+                </div>
+                    </div>
+    </div>
+    <div class="clear"></div>
+</div>                    <div class="fast-view-window-bottom">
+                        <a class="button colored21" href="/product/stol-transformer-cross-3">
+                            Купить
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>    <div class="product catalog-item horizontal" data-product-id="5151" data-product-price="34430.0000" data-product-name="Монблан-1 Венге" data-product-category-name="Прихожие" data-product-variant="0">    <div class="catalog-item-inner" itemscope itemtype="http://schema.org/Product">
+                <img class="product-image" src="/assets/thumb/shop_product/163159/200x150_ffffff_100_0_2017062811525110800_0.jpg" alt="Модульная прихожая Монблан-1 Венге" itemprop="image">        <div class="tags">
+                        <div class="clearfix"></div>
+        </div>
+        <meta itemprop="description" content="Модульная прихожая Монблан-1 Венге">
+        <div class="name product_name" itemprop="name">
+            <span>Модульная прихожая</span>
+            Монблан-1 Венге        </div>
+                    <div class="price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <span class="price-title">Цена</span>
+                                <div class="price-value left">34 430<span class="rub2"> руб.</span></div>
+                <meta itemprop="price" content="34430.0000">
+                <meta itemprop="priceCurrency" content="RUB">
+                                <div class="clear"></div>
+            </div>
+            </div>
+            <div class="product-popover">
+            <div class="catalog-item horizontal">
+                <a href="/product/modulnaya-prihojaya-monblan-1-venge" style="position:relative">
+                                        <img class="popover-img product-image" src="/assets/thumb/shop_product/163159/200x150_ffffff_100_0_2017062811525110800_0.jpg" alt="Монблан-1 Венге">                </a>
+                <div class="tags">
+                                        <div class="clearfix"></div>
+                </div>
+                <div class="like "></div>
+                <div class="quick-view-button" data-product-id="5151"></div>
+                <a class="name" href="/product/modulnaya-prihojaya-monblan-1-venge">
+                    <span>Модульная прихожая</span>
+                    Монблан-1 Венге                </a>
+                                    <div class="price">
+                        <span class="price-title">Цена</span>
+                                                <div class="price-value left">34 430<span class="rub2"> руб.</span></div>
+                                                <div class="clear"></div>
+                    </div>
+                                <div class="fast-view-window">
+                                        <div class="fast-view-window-bottom">
+                        <a class="button colored9" href="/product/modulnaya-prihojaya-monblan-1-venge">
+                            Купить
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>                    </div>
+            </div>
+                    </div>
+                            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="order-confirmation-block">
+        <div class="order-confirm left">
+            Итого <span class="total_count">0</span> товар<span class="total_count_ending"></span> на сумму:
+        </div>
+        <div class="order_info_btn">
+            <a href="#" class="colored button is_visible order_info_continue_btn">Оформить заказ</a>
+            <a href="#" class="colored button order_submit">Подтверждаю заказ</a>
+        </div>
+        <div class="price right">
+                            <div class="none-discount"></div>
+                       <div class="total_cost price-value left">0<span class="rub2"> руб.</span></div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        <div style="display:inline-block;text-align:left;padding:0;margin:12px 10px 0;font-size:11px">* Подтверждая заказ, я соглашаюсь с условиями <a class="privacy-policy-link" style="text-decoration:underline;" href="/static-page/privacy-policy" target="_blank">политики конфиденциальности</a></div>
+    </div>
+    <div class="order-success order-success_get4click" data-url="/">
+        <a href="#" class="close white"></a>
+        Оформление заказа
+        <div class="title">Это успех, друг!</div>
+        <div id="promocode-element-container"></div>
+        <div class="text">
+            Ваш заказ успешно оформлен. О любом изменении статуса мы будем информировать вас по электронной почте. Спасибо!
+        </div>
+        <a class="colored button" href="/">Перейти на главную страницу</a>    </div>
+    <div class="clearfix"></div>
+</div>
+<footer>
+    <div class="inner-content">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="hr"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="footer-terms">
+                    <div class="left">
+                        <div class="logo  left wmp-logo" data-logo-type="">
+    <a href="/"><span class="logo-roller left"></span><img class="left svg" src="/svg/logo.svg" alt="Divan.ru"></a>            <div class="slg left">мебель<br>начинается<br>с дивана</div>
+        <div class="clear"></div>
+</div>                    </div>
+                    <div class="terms"><noindex>
+                        Все ресурсы сайта www.divan.ru, включая текстовую, графическую и видео информацию, структуру и оформление страниц,
+                        защищены российскими и международными законами и соглашениями об охране авторских прав и интеллектуальной собственности
+                        (статьи 1259 и 1260 главы 70 "Авторское право" Гражданского Кодекса Российской Федерации от 18 декабря 2006 года N 230-ФЗ).
+                    </noindex></div>
+                    </div>
+                </div>
+            </div>
+        <div class="row footer-bottom">
+            <div class="col-xs-8">
+                <span class="copy">&copy;2013-2018. Диван.ру - интернет магазин диванов и другой мебели. Все права защищены.</span>
+            </div>
+        </div>
+    </div>
+</footer>
+<noindex>
+<div class="contact-form-widget blur-form">
+    <div class="contact-form-widget-content blur-content">
+        <a href="javascript:void(0);" class="close white"></a>
+        <div class="title">Написать сообщение</div>
+        <div class="text">
+<form id="w1" action="/order/check" method="post">
+<input type="hidden" name="_csrf" value="LnRCdkNybXBCGi9PdEErNnsjJEd1NwwmYSEsOSQ9I11pA3Y7IEs6SA=="><div class="form-group field-contactform-name required">
+<label class="control-label" for="contactform-name">Имя</label>
+<input type="text" id="contactform-name" class="form-control" name="ContactForm[name]" maxlength="50">
+
+<div class="help-block"></div>
+</div><div class="form-group field-contactform-email required">
+<label class="control-label" for="contactform-email">Электронная почта</label>
+<input type="text" id="contactform-email" class="form-control" name="ContactForm[email]">
+
+<div class="help-block"></div>
+</div><div class="form-group field-contactform-subject">
+<label class="control-label" for="contactform-subject">Тема</label>
+<input type="text" id="contactform-subject" class="form-control" name="ContactForm[subject]" maxlength="100">
+
+<div class="help-block"></div>
+</div><div class="form-group field-contactform-body required">
+<label class="control-label" for="contactform-body">Сообщение</label>
+<textarea id="contactform-body" class="form-control" name="ContactForm[body]" maxlength="100"></textarea>
+
+<div class="help-block"></div>
+</div><button type="submit" class="colored button send" style="font-family: &quot;Circe-Light&quot;, sans-serif;">Отправить</button><span class="button clean">Отменить</span></form>        </div>
+    </div>
+    <div class="contact-form-widget-success blur-success">
+        <a href="javascript:void(0);" class="close white"></a>
+        <div class="title">Сообщение отправлено</div>
+        <div class="text">Благодарим за обращение!</div>
+        <span class="colored button close">Продолжить покупки</span>
+    </div>
+</div><div class="callback-form-widget blur-form">
+    <div class="callback-form-widget-content blur-content">
+        <a href="javascript:void(0);" class="close white"></a>
+        <div class="title">Обратный звонок</div>
+        <div class="text">
+<form id="w2" action="/order/check" method="post">
+<input type="hidden" name="_csrf" value="LnRCdkNybXBCGi9PdEErNnsjJEd1NwwmYSEsOSQ9I11pA3Y7IEs6SA=="><div class="form-group field-callbackform-name">
+<label class="control-label" for="callbackform-name">Имя</label>
+<input type="text" id="callbackform-name" class="form-control" name="CallbackForm[name]" maxlength="50">
+
+<div class="help-block"></div>
+</div><div class="form-group field-callbackform-phone required">
+<label class="control-label" for="callbackform-phone">Номер</label>
+<input type="text" id="callbackform-phone" class="form-control" name="CallbackForm[phone]" data-plugin-inputmask="inputmask_69a2315d">
+
+<div class="help-block"></div>
+</div><button type="submit" class="colored button send" style="font-family: &quot;Circe-Light&quot;, sans-serif;">Отправить</button><span class="button clean">Отменить</span></form>        </div>
+    </div>
+    <div class="callback-form-widget-success blur-success">
+        <a href="javascript:void(0);" class="close white"></a>
+        <div class="title">Запрос отправлен</div>
+        <div class="text">Наши менеджеры скоро свяжутся с вами!</div>
+        <span class="colored button close">Продолжить покупки</span>
+    </div>
+</div><div class="subscribe-form-widget subscribe-form-widget_type_b" style="visibility: hidden; display: none;">
+    <div class="subscribe-form-widget__close"></div>
+    <div class="subscribe-form-widget__title">Добро пожаловать на Divan.ru</div>
+    <div class="subscribe-form-widget__body">
+        <form method="post">
+            <div class="subscribe-form-widget__container">
+                <div class="subscribe-form-widget__column subscribe-form-widget__column_index_2 subscribe-form-widget__flipboard">
+                    <div class="subscribe-form-widget__layout subscribe-form-widget__layout_type_success">
+                        <div class="bg">
+                            <div class="subscribe-form-widget__offer-title subscribe-form-widget__offer-title_type_text">Спасибо<br>за подписку</div>
+                            <div class="subscribe-form-widget__offer-title subscribe-form-widget__offer-title_type_thanks">На Ваш e-mail отправлено<br>письмо с дальнейшими<br>инструкциями</div>
+                        </div>
+                    </div>
+                    <div class="subscribe-form-widget__layout subscribe-form-widget__layout_active subscribe-form-widget__layout_type_input">
+                        <div class="subscribe-form-widget__offer subscribe-form-widget__offer_type_b">
+                                                            <div class="subscribe-form-widget__offer-title subscribe-form-widget__offer-title_type_text">Подарочная скидка</div>
+                                                                                        <div class="subscribe-form-widget__offer-title subscribe-form-widget__offer-title_type_discount">500 ₽</div>
+                                                                                        <div class="subscribe-form-widget__offer-title subscribe-form-widget__offer-title_type_limitation">на первый заказ</div>
+                                                        <div class="form-group field-subscribeform-email required">
+                                <input type="text" class="subscribe-form-widget__input subscribe-form-widget__input_size_big" name="name" placeholder="Введите ваше имя">
+                            </div>
+
+                            <div class="form-group field-subscribeform-email required">
+                                <input type="text" class="subscribe-form-widget__input subscribe-form-widget__input_size_big" name="email" placeholder="Введите свой e-mail">
+                            </div>
+                            <div class="subscribe-form-widget__message subscribe-form-widget__message_type_info">Вы сможете отписаться от рассылки в любой момент.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subscribe-form-widget__column subscribe-form-widget__column_index_1">
+                    <div class="subscribe-form-widget__description">Промокод на скидку будет отправлен на Ваш e-mail. <br>Нажимая на кнопку «Получить скидку»,  Вы соглашаетесь на получение новостной рассылки. 
+</div>
+                </div>
+            </div>
+            <div class="subscribe-form-widget__buttons">
+                <div class="subscribe-form-widget__button subscribe-form-widget__button_reset">Нет, скидка меня не интересует</div>
+                <button type="submit" class="subscribe-form-widget__button subscribe-form-widget__button_submit" data-title="Получить подарок">Получить подарок</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="contact-forms-popup" style="display:none">
+    <a class="switch active" data-rel="callback">Перезвоните мне</a>
+    <a class="switch" data-rel="contact">Задать вопрос</a>
+
+    <div class="tab tab-callback">
+        <form id="w3" action="/order/check" method="post" data-url="/site/send-callback">
+<input type="hidden" name="_csrf" value="LnRCdkNybXBCGi9PdEErNnsjJEd1NwwmYSEsOSQ9I11pA3Y7IEs6SA=="><div class="form-group field-callbackform-phone2">
+<label class="control-label" for="callbackform-phone2">Телефон</label>
+<input type="text" id="callbackform-phone2" class="form-control" name="CallbackForm[phone2]" data-plugin-inputmask="inputmask_69a2315d">
+
+<div class="help-block"></div>
+</div><div class="form-group field-callbackform-name">
+<label class="control-label" for="callbackform-name">Имя</label>
+<input type="text" id="callbackform-name" class="form-control" name="CallbackForm[name]" maxlength="75">
+
+<div class="help-block"></div>
+</div><button type="submit" class="colored button send" style="">Отправить заявку</button></form>    </div>
+    <div class="tab tab-callback-success">
+        Менеджер перезвонит Вам<br>в ближайшее время.
+    </div>
+
+    <div class="tab tab-contact" style="z-index: 1; position: relative;">
+        <form id="w4" action="/order/check" method="post" data-url="/site/send-message">
+<input type="hidden" name="_csrf" value="LnRCdkNybXBCGi9PdEErNnsjJEd1NwwmYSEsOSQ9I11pA3Y7IEs6SA=="><div class="form-group field-contactform-body required">
+<label class="control-label" for="contactform-body">Вопрос</label>
+<textarea id="contactform-body" class="form-control" name="ContactForm[body]" maxlength="200" style="width:210px"></textarea>
+
+<div class="help-block"></div>
+</div><div class="form-group field-contactform-name required">
+<label class="control-label" for="contactform-name">Имя</label>
+<input type="text" id="contactform-name" class="form-control" name="ContactForm[name]" maxlength="75">
+
+<div class="help-block"></div>
+</div><div class="form-group field-contactform-email required">
+<label class="control-label" for="contactform-email">Электронная почта</label>
+<input type="text" id="contactform-email" class="form-control" name="ContactForm[email]">
+
+<div class="help-block"></div>
+</div><button type="submit" class="colored button send" style="">Отправить вопрос</button></form>    </div>
+    <div class="tab tab-contact-success">
+        Менеджер ответит на ваш вопрос<br>в ближайшее время.
+    </div>
+</div>
+<div class="location-confirm-popup" style="display:none">
+    <div class="location-confirm-popup__section location-confirm-popup__section_title">
+        <span class="location-confirm-popup__title">Ваш регион <span class="location-confirm-popup__region">Москва</span>?</span>
+    </div>
+    <div class="location-confirm-popup__section location-confirm-popup__section_action">
+        <div class="location-confirm-popup__action location-confirm-popup__action_primary" data-region="1">Да</div>
+        <div class="location-confirm-popup__action location-confirm-popup__action_close" data-region="1">Нет</div>
+    </div>
+</div>
+<div class="location-form-widget">
+    <div class="location-form-widget__container">
+        <div class="location-form-widget__body">
+            <div class="location-form-widget__title">Выберете ваш регион:</div>
+            <div class="location-form-widget__section location-form-widget__section_locations">
+                                    <div class="location-form-widget__section location-form-widget__section_location">
+                        <a class="location-form-widget__location" data-region="1" href="https://www.divan.ru/order/check">
+                            Москва                        </a>
+                    </div>
+                                    <div class="location-form-widget__section location-form-widget__section_location">
+                        <a class="location-form-widget__location" data-region="2" href="https://www.divan.ru/sankt-peterburg/order/check">
+                            Санкт-Петербург                        </a>
+                    </div>
+                            </div>
+        </div>
+    </div>
+</div>
+</noindex>
+<noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-5WZW4K" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script src="/assets/f52e56a9/js/yii.min.js?v=1491401751"></script>
+<script src="/assets/8e2cc126/js/YW5hbHl0aWNz.js?v=1502785630"></script>
+<script src="/assets/f52e56a9/js/common.min.js?v=1514292123"></script>
+<script src="/assets/a41ab63b/jquery.kinetic.min.js?v=1412671057"></script>
+<script src="/assets/f52e56a9/js/main.min.js?v=1491401752"></script>
+<script src="/assets/8e2cc126/js/order.js?v=1513176160"></script>
+<script src="/assets/d737e553/jquery.bxslider.min.js?v=1491380300"></script>
+<script src="/assets/f52e56a9/js/product-quick-view.min.js?v=1491401752"></script>
+<script src="/assets/f52e56a9/js/logo.min.js?v=1491401751"></script>
+<script src="/assets/97d2e8c7/js/subscribe-form.js?v=1494422404"></script>
+<script src="/assets/8e2cc126/js/header-contact-forms.js?v=1493807958"></script>
+<script src="/assets/43794d2d/js/location-form.js?v=1513941527"></script>
+<script type="text/javascript">
+var _iPromoBannerObj = function(params) {
+this.htmlElementId = 'promocode-element-container';
+this.params = params;
+
+this.lS=function(s){ var head=document.head || document.getElementsByTagName("head" )[0] || document.documentElement; var script=document.createElement("script");script.async="async";script.src=s;head.insertBefore(script,head.firstChild);},
+this.gc=function(){return document.getElementById(this.htmlElementId);};
+this.start=function() { var r=[];for(e in this.params){if(typeof(e)==='string'){r.push(e+'='+encodeURIComponent(this.params[e]));}}r.push('method=main');r.push('jsc=iPromoCpnObj');this.lS(('https:'==document.location.protocol ? 'https://':'http://')+'get4click.ru/wrapper.php?'+r.join('&'));}};
+var iPromoCpnObj = null;
+(function(){yii.compareList.options={"compareUrl":"/compare","putUrl":"/compare/put","removeUrl":"/compare/remove","removeAllUrl":"/compare/remove-all"}})();</script>
+<script type="text/javascript">jQuery(document).ready(function () {
+
+    $(".order-items").productQuickView({
+        "childs": ".order-wrapper",
+        "attributeName": "data-cart-position-id",
+        "selector": ".cart-quick-view",
+        "quickViewUrl": "/shop-product/quick-view-position"
+    });
+$("#orderform-mobile").inputmask(inputmask_69a2315d);
+
+setTimeout(function(){
+                                        $('.order .delivery-list .delivery-item[data-delivery-id=1]').click();
+                                    }, 100);
+jQuery('#customer-info-form').yiiActiveForm([{"id":"orderform-first_name","name":"first_name","container":".field-orderform-first_name","input":"#orderform-first_name","enableAjaxValidation":true},{"id":"orderform-email","name":"email","container":".field-orderform-email","input":"#orderform-email","enableAjaxValidation":true},{"id":"orderform-mobile","name":"mobile","container":".field-orderform-mobile","input":"#orderform-mobile","enableAjaxValidation":true},{"id":"orderform-delivery_type_id","name":"delivery_type_id","container":".field-orderform-delivery_type_id","input":"#orderform-delivery_type_id","enableAjaxValidation":true},{"id":"orderform-address","name":"address","container":".field-orderform-address","input":"#orderform-address","enableAjaxValidation":true},{"id":"orderform-payment_type_id","name":"payment_type_id","container":".field-orderform-payment_type_id","input":"#orderform-payment_type_id","enableAjaxValidation":true},{"id":"orderform-payment_variant","name":"payment_variant","container":".field-orderform-payment_variant","input":"#orderform-payment_variant","enableAjaxValidation":true}], []);
+jQuery('#w0').yiiActiveForm([{"id":"couponform-code","name":"code","container":".field-couponform-code","input":"#couponform-code","enableAjaxValidation":true,"validateOnChange":false,"validateOnBlur":false}], []);
+
+    $('.items-list').productQuickView({
+        quickViewUrl:'/shop-product/quick-view'
+    });
+setTimeout(function(){
+        $('.order_info_continue_btn').click();
+    }, 100);
+
+$(window).load(function() {
+    yii.analytics.push({event: 'EC_ORDER_PAGE'});
+});
+yii.analytics.push({"moscow_region":0});
+$('#cart').cart({"checkoutUrl":"/order/check","relatedUrl":"/product/related-products","putUrl":"/cart/put","removeUrl":"/cart/remove","removeAllUrl":"/cart/remove-all","updateUrl":"/cart/update","hideUrl":"/cart/hide","unhideUrl":"/cart/unhide","cartInfoUrl":"/cart/info","count":0,"hiddenCount":0,"cost":0,"discount":0,"availablePaymentTypes":{"1":{"5":{"full":{"name":"Оплатить покупку полностью","sum":0}},"8":{"full":{"name":"Оплатить покупку полностью","sum":0}},"3":{"full":{"name":"Оплатить покупку полностью","sum":0}},"1":{"full":{"name":"Оплатить покупку полностью","sum":0}}},"2":{"5":{"full":{"name":"Оплатить покупку полностью","sum":0}},"8":{"full":{"name":"Оплатить покупку полностью","sum":0}},"3":{"full":{"name":"Оплатить покупку полностью","sum":0}},"6":{"full":{"name":"Оплатить покупку полностью","sum":0}},"7":{"full":{"name":"Оплатить покупку полностью","sum":0}}}}})
+yii.contactForm.init('/site/send-message')
+jQuery('#w1').yiiActiveForm([{"id":"contactform-name","name":"name","container":".field-contactform-name","input":"#contactform-name","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Имя»."});yii.validation.string(value, messages, {"message":"Значение «Имя» должно быть строкой.","max":85,"tooLong":"Значение «Имя» должно содержать максимум 85 символов.","skipOnEmpty":1});}},{"id":"contactform-email","name":"email","container":".field-contactform-email","input":"#contactform-email","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Электронная почта»."});yii.validation.email(value, messages, {"pattern":/^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/,"fullPattern":/^[^@]*<[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?>$/,"allowName":false,"message":"Значение «Электронная почта» не является правильным email адресом.","enableIDN":false,"skipOnEmpty":1});}},{"id":"contactform-subject","name":"subject","container":".field-contactform-subject","input":"#contactform-subject","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Значение «Тема» должно быть строкой.","max":100,"tooLong":"Значение «Тема» должно содержать максимум 100 символов.","skipOnEmpty":1});}},{"id":"contactform-body","name":"body","container":".field-contactform-body","input":"#contactform-body","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Сообщение»."});yii.validation.string(value, messages, {"message":"Значение «Сообщение» должно быть строкой.","max":1000,"tooLong":"Значение «Сообщение» должно содержать максимум 1 000 символов.","skipOnEmpty":1});}}], []);
+yii.callbackForm.init("/site/send-callback")
+$("#callbackform-phone").inputmask(inputmask_69a2315d);
+
+jQuery('#w2').yiiActiveForm([{"id":"callbackform-name","name":"name","container":".field-callbackform-name","input":"#callbackform-name","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Значение «Имя» должно быть строкой.","max":85,"tooLong":"Значение «Имя» должно содержать максимум 85 символов.","skipOnEmpty":1});}},{"id":"callbackform-phone","name":"phone","container":".field-callbackform-phone","input":"#callbackform-phone","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Номер»."});yii.validation.regularExpression(value, messages, {"pattern":/^\+7\(\d{3}\)\d{3}-\d\d-\d\d$/,"not":false,"message":"Значение «Номер» неверно.","skipOnEmpty":1});}}], []);
+yii.subscribeForm.init('/subscribe/subscribe', 0)
+$("#callbackform-phone2").inputmask(inputmask_69a2315d);
+
+jQuery('#w3').yiiActiveForm([{"id":"callbackform-name","name":"name","container":".field-callbackform-name","input":"#callbackform-name","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Значение «Имя» должно быть строкой.","max":85,"tooLong":"Значение «Имя» должно содержать максимум 85 символов.","skipOnEmpty":1});}}], []);
+jQuery('#w4').yiiActiveForm([{"id":"contactform-body","name":"body","container":".field-contactform-body","input":"#contactform-body","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Сообщение»."});yii.validation.string(value, messages, {"message":"Значение «Сообщение» должно быть строкой.","max":1000,"tooLong":"Значение «Сообщение» должно содержать максимум 1 000 символов.","skipOnEmpty":1});}},{"id":"contactform-name","name":"name","container":".field-contactform-name","input":"#contactform-name","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Имя»."});yii.validation.string(value, messages, {"message":"Значение «Имя» должно быть строкой.","max":85,"tooLong":"Значение «Имя» должно содержать максимум 85 символов.","skipOnEmpty":1});}},{"id":"contactform-email","name":"email","container":".field-contactform-email","input":"#contactform-email","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Электронная почта»."});yii.validation.email(value, messages, {"pattern":/^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/,"fullPattern":/^[^@]*<[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?>$/,"allowName":false,"message":"Значение «Электронная почта» не является правильным email адресом.","enableIDN":false,"skipOnEmpty":1});}}], []);
+});</script></body>
+</html>
+
+

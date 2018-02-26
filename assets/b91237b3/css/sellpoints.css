@@ -1,0 +1,524 @@
+.sell-points {
+    display  : block;
+    position : relative;
+    margin   : 0;
+    padding  : 0;
+}
+
+.sell-points .word {
+    white-space : nowrap;
+}
+
+.sell-points__map {
+    overflow : hidden;
+    display  : block;
+    width    : 100%;
+    height   : 500px;
+    margin   : 0;
+}
+
+.sell-point-popup,
+.sell-point-popup__section {
+    display : block;
+    margin  : 0;
+    padding : 0;
+}
+
+.sell-point-popup {
+    opacity     : 0;
+    box-sizing  : border-box;
+    display     : block;
+    position    : absolute;
+    width       : 370px;
+    padding     : 25px;
+    margin      : auto 0;
+    left        : 60px;
+    background  : rgba(255, 255, 255, .9);
+    font-size   : 14px;
+    line-height : 1;
+    font-weight : 300;
+    color       : #000;
+    text-align  : left;
+    transition  : opacity .25s ease-in-out 0s;
+}
+
+.sell-point-popup__section:after {
+    content : "";
+    display : table;
+    clear   : both;
+}
+
+.sell-point-popup_active {
+    opacity : 1;
+    top     : 0;
+    bottom  : 0;
+}
+
+.sell-point-popup__section_close {
+    position : absolute;
+    top      : 15px;
+    right    : 15px;
+    z-index  : 1;
+}
+
+.sell-point-popup__section_info {
+    box-sizing  : border-box;
+    padding     : 5px 0 3px 40px;
+    font-size   : 14px;
+    line-height : 1.5;
+}
+
+.sell-point-popup__section_info + .sell-point-popup__section_info {
+    margin-top : 15px;
+}
+
+.sell-point-popup__section_address,
+.sell-point-popup__section_phone,
+.sell-point-popup__section_schedule {
+}
+
+.sell-point-popup__section_gallery-grid {
+    overflow      : hidden;
+    margin-top    : 20px;
+    margin-bottom : 20px;
+}
+
+.sell-point-popup__section_gallery-more {
+    margin-top : 20px;
+    font-size  : 0;
+    text-align : center;
+}
+
+.sell-point-popup__close {
+    height                             : 19px;
+    width                              : 19px;
+    -webkit-transform                  : rotate(-180deg);
+    transform                          : rotate(-180deg);
+    -webkit-transition-property        : -webkit-transform;
+    transition-property                : -webkit-transform;
+    transition-property                : transform;
+    transition-property                : transform, -webkit-transform;
+    -webkit-transition-duration        : 0.4s;
+    transition-duration                : 0.4s;
+    -webkit-transition-timing-function : ease;
+    transition-timing-function         : ease;
+    will-change                        : -webkit-transform;
+    will-change                        : -moz-transform;
+    will-change                        : transform;
+    cursor                             : pointer;
+}
+
+.sell-point-popup__close:hover {
+    -webkit-transform : rotate(180deg);
+    transform         : rotate(180deg);
+}
+
+.sell-point-popup__close:before,
+.sell-point-popup__close:after {
+    content    : "";
+    box-sizing : border-box;
+    position   : absolute;
+    top        : 0;
+    right      : 0;
+    bottom     : 0;
+    left       : 0;
+    height     : 1px;
+    width      : 100%;
+    margin     : auto;
+    background : #000;
+}
+
+.sell-point-popup__close:before {
+    -webkit-transform : rotate(45deg);
+    transform         : rotate(45deg);
+}
+
+.sell-point-popup__close:after {
+    -webkit-transform : rotate(-45deg);
+    transform         : rotate(-45deg);
+}
+
+.sell-point-popup__title {
+    display     : block;
+    margin      : 0 0 25px;
+    padding     : 0;
+    font-size   : 21px;
+    font-weight : 700;
+    line-height : 1.3;
+}
+
+.sell-point-popup__address,
+.sell-point-popup__phone,
+.sell-point-popup__schedule {
+    position : relative;
+}
+
+.sell-point-popup__address:before,
+.sell-point-popup__phone:before,
+.sell-point-popup__schedule:before {
+    content    : "";
+    display    : block;
+    height     : 29px;
+    width      : 29px;
+    background : none 50% 50% no-repeat;
+    position   : absolute;
+    left       : -40px;
+    top        : -5px;
+}
+
+.sell-point-popup__address:before {
+    background-image : url(/images/showroom_address.svg);
+}
+
+.sell-point-popup__phone:before {
+    background-image : url(/images/showroom_phone.svg);
+}
+
+.sell-point-popup__schedule:before {
+    background-image : url(/images/showroom_regime.svg);
+}
+
+.sell-point-popup__gallery-grid {
+    display : block;
+    margin  : 0 -8px;
+    padding : 0;
+}
+
+.sell-point-popup__gallery:after {
+    content : "";
+    display : table;
+    clear   : both;
+}
+
+.sell-point-popup__gallery-image {
+    display    : block;
+    position   : relative;
+    max-width  : 100%;
+    margin     : 0;
+    /*padding    : 0 0 42.561983%;*/
+    padding    : 0 0 66.666667%;
+    border     : 0;
+    background : none 50% 50%/cover no-repeat #e8e8e8;
+    cursor     : pointer;
+}
+
+.sell-point-popup__gallery-image:after {
+    content            : "";
+    display            : block;
+    width              : 24px;
+    height             : 24px;
+    position           : absolute;
+    right              : 5px;
+    bottom             : 5px;
+    background         : url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4OCA4OCI+PGcgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNODYuODMgODEuMTdsLTIyLjctMjIuN0M2OS4wMyA1Mi4zIDcyIDQ0LjUgNzIgMzYgNzIgMTYuMTIgNTUuODggMCAzNiAwUzAgMTYuMTIgMCAzNnMxNi4xMiAzNiAzNiAzNmM4LjUgMCAxNi4zLTIuOTUgMjIuNDYtNy44OGwyMi43IDIyLjdjMS41NyAxLjU3IDQuMSAxLjU3IDUuNjcgMCAxLjU2LTEuNTUgMS41Ni00LjEgMC01LjY1ek0zNiA2NEMyMC41NCA2NCA4IDUxLjQ2IDggMzZTMjAuNTQgOCAzNiA4czI4IDEyLjU0IDI4IDI4LTEyLjU0IDI4LTI4IDI4eiIvPjxwYXRoIGQ9Ik00OCAzMmgtOHYtOGMwLTIuMi0xLjgtNC00LTRzLTQgMS44LTQgNHY4aC04Yy0yLjIgMC00IDEuOC00IDRzMS44IDQgNCA0aDh2OGMwIDIuMiAxLjggNCA0IDRzNC0xLjggNC00di04aDhjMi4yIDAgNC0xLjggNC00cy0xLjgtNC00LTR6Ii8+PC9nPjwvc3ZnPg==") 0 0 no-repeat;
+    opacity            : 0;
+    -webkit-transition : all .3s ease;
+    -moz-transition    : all .3s ease;
+    -ms-transition     : all .3s ease;
+    -o-transition      : all .3s ease;
+    transition         : all .3s ease;
+}
+
+.sell-point-popup__gallery-image:hover:after {
+    opacity : 1;
+}
+
+.sell-point-popup__gallery-cell {
+    box-sizing : border-box;
+    display    : block;
+    float      : left;
+    width      : 50%;
+    margin     : 0;
+    padding    : 0 8px;
+}
+
+.sell-point-popup__gallery-cell:nth-child(n+3) {
+    margin-top : 30px;
+}
+
+.sell-point-popup__gallery-more {
+    box-sizing      : border-box;
+    display         : inline-block;
+    border          : 0;
+    border-radius   : 3px;
+    padding         : 11px 40px;
+    background      : #f0f0f0;
+    color           : #000;
+    font-size       : 14px;
+    line-height     : 1;
+    font-weight     : 300;
+    white-space     : nowrap;
+    text-decoration : none !important;
+    cursor          : pointer;
+    transition      : background-color 0.2s ease 0s;
+}
+
+.sell-point-popup__gallery-more:hover {
+    background-color : #e8e8e8;
+}
+
+.showroom-page-slider {
+    display   : block;
+    margin    : 0 0 0 30px;
+    padding   : 0;
+    max-width : 1210px;
+    position  : relative;
+}
+
+.showroom-page-slider:after {
+    content : "";
+    display : table;
+    clear   : both;
+}
+
+.showroom-page-slider_modal {
+    margin    : 0;
+    left      : 50%;
+    top       : 50%;
+    transform : translate(-50%, -50%);
+}
+
+.showroom-page-slider_modal .close {
+    top   : 0 !important;
+    right : -35px !important;
+}
+
+.showroom-page-slider__images {
+    display  : block;
+    margin   : 0 0 10px;
+    padding  : 0;
+    position : relative;
+    overflow : hidden;
+    opacity  : 0;
+}
+
+.showroom-page-slider__images.slick-initialized {
+    opacity            : 1;
+    -webkit-transition : opacity 0.5s linear 0.2s;
+    -moz-transition    : opacity 0.5s linear 0.2s;
+    -ms-transition     : opacity 0.5s linear 0.2s;
+    -o-transition      : opacity 0.5s linear 0.2s;
+    transition         : opacity 0.5s linear 0.2s;
+}
+
+.showroom-page-slider__images .showroom-page-slider__prev,
+.showroom-page-slider__images .showroom-page-slider__next {
+    display            : block;
+    position           : absolute;
+    top                : 0;
+    bottom             : 0;
+    width              : 90px;
+    height             : 280px;
+    margin             : auto 0;
+    cursor             : pointer;
+    z-index            : 2;
+    -webkit-transition : background-position 400ms ease;
+    -moz-transition    : background-position 400ms ease;
+    -ms-transition     : background-position 400ms ease;
+    -o-transition      : background-position 400ms ease;
+    transition         : background-position 400ms ease;
+}
+
+.showroom-page-slider__images .showroom-page-slider__prev:hover,
+.showroom-page-slider__images .showroom-page-slider__next:hover {
+    background-color : rgba(0, 0, 0, 0.07);
+}
+
+.showroom-page-slider__images .showroom-page-slider__prev svg,
+.showroom-page-slider__images .showroom-page-slider__next svg {
+    display            : block;
+    position           : absolute;
+    top                : 0;
+    right              : 0;
+    bottom             : 0;
+    left               : 0;
+    width              : 31px;
+    height             : 59px;
+    margin             : auto;
+    fill               : #000;
+    -webkit-transition : fill 0.2s;
+    -moz-transition    : fill 0.2s;
+    -ms-transition     : fill 0.2s;
+    -o-transition      : fill 0.2s;
+    transition         : fill 0.2s;
+}
+
+.showroom-page-slider__images .showroom-page-slider__prev {
+    left : 0;
+}
+
+.showroom-page-slider__images .showroom-page-slider__next {
+    right : 0;
+}
+
+.showroom-page-slider__images .showroom-page-slider__prev:hover svg,
+.showroom-page-slider__images .showroom-page-slider__next:hover svg {
+    fill : #fff;
+}
+
+.showroom-page-slider__image {
+    display : block;
+    margin  : 0;
+    padding : 0;
+}
+
+.showroom-page-slider__image-bg {
+    display    : block;
+    padding    : 21.280992% 0;
+    position   : relative;
+    background : none 50% 0/cover no-repeat;
+}
+
+/*
+.showroom-page-slider__image-bg:before {
+    content     : "Шоу-рум на Рижской";
+    display     : block;
+    height      : 30px;
+    margin      : 0;
+    padding     : 0 20px;
+    position    : absolute;
+    left        : 20px;
+    top         : -15px;
+    background  : #dedede;
+    font-size   : 14px;
+    font-weight : 300;
+    line-height : 30px;
+    white-space : nowrap;
+}
+*/
+
+.showroom-page-slider__pano {
+    display : block;
+    width   : 100%;
+    margin  : 0;
+    border  : 0;
+    outline : 0;
+    cursor  : pointer;
+}
+
+.showroom-page-slider__pano_moscow {
+    min-height : 515px;
+}
+
+.showroom-page-slider__pano_moscow .showroom-page-slider__image-bg {
+    padding    : 21.280992% 0;
+    background : url(/images/showroom__pano_moscow.jpg) 50% 50%/cover no-repeat;
+}
+
+.showroom-page-slider__pano_praga .showroom-page-slider__image-bg {
+    padding    : 21.280992% 0;
+    background : url(/images/showroom__pano_moscow.jpg) 50% 50%/cover no-repeat;
+}
+
+.showroom-page-slider__thumbs {
+    display  : block;
+    margin   : 0;
+    padding  : 0 48px 0 50px;
+    position : relative;
+    opacity  : 0;
+}
+
+.showroom-page-slider__thumbs.slick-initialized {
+    opacity            : 1;
+    -webkit-transition : opacity 0.5s linear 0.2s;
+    -moz-transition    : opacity 0.5s linear 0.2s;
+    -ms-transition     : opacity 0.5s linear 0.2s;
+    -o-transition      : opacity 0.5s linear 0.2s;
+    transition         : opacity 0.5s linear 0.2s;
+}
+
+.showroom-page-slider__thumbs .showroom-page-slider__prev,
+.showroom-page-slider__thumbs .showroom-page-slider__next {
+    display            : block;
+    height             : 32px;
+    width              : 32px;
+    margin             : -16px 0 0;
+    padding            : 0;
+    position           : absolute;
+    top                : 50%;
+    background         : rgba(255, 255, 255, 0.8);
+    border-radius      : 50%;
+    border             : 1px solid #909090;
+    box-shadow         : inset 0 0 0 0 #fff;
+    -webkit-transition : all 200ms ease;
+    -moz-transition    : all 200ms ease;
+    -ms-transition     : all 200ms ease;
+    -o-transition      : all 200ms ease;
+    transition         : all 200ms ease;
+    z-index            : 2;
+    cursor             : pointer;
+    text-align         : center;
+}
+
+.showroom-page-slider__thumbs .showroom-page-slider__prev:after,
+.showroom-page-slider__thumbs .showroom-page-slider__next:after {
+    content : "";
+    display : block;
+    color   : #909090;
+    font    : normal 400 20px/32px Arial, sans-serif;
+}
+
+.showroom-page-slider__thumbs .showroom-page-slider__prev {
+    left : 0;
+}
+
+.showroom-page-slider__thumbs .showroom-page-slider__next {
+    right : 0;
+}
+
+.showroom-page-slider__thumbs .showroom-page-slider__prev:after,
+.showroom-page-slider__thumbs .showroom-page-slider__next:after {
+    display    : block;
+    width      : 32px;
+    height     : 32px;
+    margin     : 0;
+    padding    : 0;
+    background : none 50% 6px no-repeat;
+}
+
+.showroom-page-slider__thumbs .showroom-page-slider__prev:after {
+    background-image : url('/images/element-slider-left.png');
+}
+
+.showroom-page-slider__thumbs .showroom-page-slider__next:after {
+    background-image : url('/images/element-slider-right.png');
+}
+
+.showroom-page-slider__thumbs .showroom-page-slider__prev:hover,
+.showroom-page-slider__thumbs .showroom-page-slider__next:hover {
+    box-shadow : inset 0 0 0 16px #000;
+    border     : 1px solid #fff;
+}
+
+.showroom-page-slider__thumbs .showroom-page-slider__prev:hover:after,
+.showroom-page-slider__thumbs .showroom-page-slider__next:hover:after {
+    background-position : 50% -14px;
+}
+
+.showroom-page-slider__thumb {
+    box-sizing : border-box;
+    display    : block;
+    float      : left;
+    margin     : 0 5px 0 0;
+    border     : 1px solid #ccc;
+    cursor     : pointer;
+}
+
+.showroom-page-slider__thumb-bg {
+    display    : block;
+    padding    : 33.193278% 0;
+    position   : relative;
+    background : none 50% 0/cover no-repeat;
+}
+
+.mobile-body .sell-point-popup {
+    max-width : 90%;
+    left      : 0;
+    right     : 0;
+    margin    : auto;
+}
+
+.mobile-body .showroom-page-slider_modal .close {
+    top   : -35px !important;
+    right : 10px !important;
+}

@@ -1,0 +1,113 @@
+.product-filter-item,
+.product-filter-item__section {
+    display : block;
+    margin  : 0;
+    padding : 0;
+}
+
+.product-filter-item {
+    margin-bottom : 25px;
+}
+
+.product-filter-item__section_title {
+    margin-bottom : 5px;
+}
+
+.product-filter-item__section_description {
+    margin-bottom : 5px;
+}
+
+.product-filter-item__section_slider {
+    margin-top     : 12px;
+    padding-bottom : 20px;
+}
+
+.product-filter-item__section_values {
+    box-sizing     : border-box;
+    padding-top    : 1px;
+    padding-bottom : 1px;
+}
+
+.product-filter-item__section_more {
+    margin-top : 9px;
+}
+
+.product-filter-item__title {
+    display     : inline;
+    font-size   : 16px;
+    line-height : 1.2;
+    font-weight : 700;
+    color       : #000;
+}
+
+.product-filter-item__description {
+    display     : inline;
+    font-size   : 12px;
+    line-height : 1.2;
+    color       : #a3a3a3;
+}
+
+.product-filter-item__value:before {
+    content       : "";
+    box-sizing    : border-box;
+    display       : inline-block;
+    border-radius : 2px;
+    border        : 1px solid #a3a3a3;
+    width         : 1em;
+    height        : 1em;
+    position      : absolute;
+    top           : 2px;
+    left          : 0;
+}
+
+.product-filter-item__more {
+    display         : inline-block;
+    padding-right   : 12px;
+    position        : relative;
+    color           : inherit !important;
+    cursor          : pointer;
+    text-decoration : none !important;
+    transition      : color .15s ease-in-out 0s;
+}
+
+.product-filter-item__more:after {
+    content      : "";
+    display      : inline-block;
+    width        : 5px;
+    height       : 5px;
+    border-top   : 1px solid;
+    border-right : 1px solid;
+    position     : absolute;
+    top          : 50%;
+    right        : 0;
+    transform    : translateY(-50%) rotate(135deg);
+    transition   : all 0.25s ease 0s;
+}
+
+.product-filter-item.product-filter-item__section_collapsed .product-filter-item__section_values,
+.product-filter-item.product-filter-item__section_expanded .product-filter-item__section_values {
+    overflow   : hidden;
+    transition : height 0.25s ease 0s;
+}
+
+.product-filter-item.product-filter-item__section_collapsed .product-filter-item__more:after {
+    transform  : translateY(-50%) rotate(135deg) scale(1, 1);
+    margin-top : -1px;
+}
+
+.product-filter-item.product-filter-item__section_expanded .product-filter-item__more:after {
+    transform  : translateY(-50%) rotate(135deg) scale(-1, -1);
+    margin-top : 1px;
+}
+
+.product-filter-group .product-filter-item {
+    margin-bottom : 10px;
+}
+
+.product-filter-group .product-filter-item__section_title {
+    margin-bottom : 1px;
+}
+
+.product-filter-group .product-filter-item__title {
+    font-size : 12px;
+}

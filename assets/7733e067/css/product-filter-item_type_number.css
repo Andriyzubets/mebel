@@ -1,0 +1,83 @@
+.product-filter-item_type_number .product-filter-item__section_values {
+    display      : block;
+    position     : relative;
+    font-size    : 0;
+    line-height  : 1;
+    text-align   : justify;
+    text-justify : distribute-all-lines;
+}
+
+.product-filter-item_type_number .product-filter-item__section_values:before {
+    content          : "";
+    display          : block;
+    height           : 1px;
+    position         : absolute;
+    top              : 50%;
+    left             : 0;
+    right            : 0;
+    background-color : #000;
+}
+
+.product-filter-item_type_number .product-filter-item__section_values:after {
+    content : "";
+    display : table;
+    clear   : both;
+}
+
+.product-filter-item_type_number .product-filter-item__section_value {
+    float   : left;
+    display : block;
+    width   : 48.5%;
+}
+
+.product-filter-item_type_number .product-filter-item__section_value:last-child {
+    float : right;
+}
+
+.product-filter-item_type_number .product-filter-item-value {
+    box-sizing  : border-box;
+    display     : block;
+    border      : 1px solid #000;
+    padding     : 5px 6px;
+    width       : 100%;
+    position    : relative;
+    background  : #fff;
+    font-size   : 11px;
+    line-height : 1.45454545;
+}
+
+.product-filter-item_type_number .product-filter-item-value:after {
+    content : "";
+    display : table;
+    clear   : both;
+}
+
+.product-filter-item_type_number .product-filter-item-value_from:before,
+.product-filter-item_type_number .product-filter-item-value_to:before {
+    display      : block;
+    float        : left;
+    margin-right : 0.35em;
+    line-height  : 1.45454545;
+}
+
+.product-filter-item_type_number .product-filter-item-value_from:before {
+    content : "от";
+}
+
+.product-filter-item_type_number .product-filter-item-value_to:before {
+    content : "до";
+}
+
+.product-filter-item_type_number .product-filter-item-value__container {
+    display  : block;
+    overflow : hidden;
+}
+
+.product-filter-item_type_number .product-filter-item-value__value {
+    display : block;
+    outline : 0;
+    border  : 0;
+    margin  : 0;
+    padding : 0;
+    width   : 100%;
+}

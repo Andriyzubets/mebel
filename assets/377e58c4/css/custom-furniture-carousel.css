@@ -1,0 +1,288 @@
+.custom-furniture-slider {
+    display   : block;
+    margin    : 0;
+    padding   : 0;
+    max-width : 1210px;
+}
+
+.custom-furniture-slider:after {
+    content : "";
+    display : table;
+    clear   : both;
+}
+
+.custom-furniture-slider__images {
+    display  : block;
+    margin   : 0 0 20px;
+    padding  : 0;
+    position : relative;
+    overflow : hidden;
+    opacity  : 0;
+}
+
+.custom-furniture-slider__images.slick-initialized {
+    opacity            : 1;
+    -webkit-transition : opacity 0.5s linear 0.2s;
+    -moz-transition    : opacity 0.5s linear 0.2s;
+    -ms-transition     : opacity 0.5s linear 0.2s;
+    -o-transition      : opacity 0.5s linear 0.2s;
+    transition         : opacity 0.5s linear 0.2s;
+}
+
+.custom-furniture-slider__image {
+    display  : block;
+    margin   : 0;
+    padding  : 0;
+    position : relative;
+}
+
+.custom-furniture-slider__image-bg {
+    display    : block;
+    margin     : 0;
+    padding    : 21.280992% 0;
+    background : none 50% 50%/cover no-repeat;
+    position   : relative;
+}
+
+.custom-furniture-slider__image-bg:after {
+    content    : "";
+    position   : absolute;
+    right      : 0;
+    top        : 0;
+    left       : 0;
+    height     : 35%;
+    opacity    : 0.65;
+    background : linear-gradient(180deg, rgba(0, 0, 0, .65), rgba(0, 0, 0, 0));
+}
+
+.custom-furniture-slider__image-product {
+    display                 : block;
+    margin                  : 0;
+    padding                 : 0;
+    position                : absolute;
+    z-index                 : 1;
+    top                     : 3.5rem;
+    left                    : 5rem;
+    font-size               : 2.7rem;
+    line-height             : 4rem;
+    color                   : #fff;
+    text-rendering          : auto;
+    -webkit-font-smoothing  : antialiased;
+    -moz-osx-font-smoothing : grayscale;
+}
+
+.custom-furniture-slider__image-product-price {
+    font-size   : 3rem;
+    font-weight : 700;
+}
+
+.custom-furniture-slider__thumbs-wrapper {
+    position : relative;
+
+}
+
+.custom-furniture-slider__thumbs {
+    display  : block;
+    margin   : 0;
+    padding  : 0 48px 0 50px;
+    position : relative;
+    opacity  : 0;
+}
+
+.custom-furniture-slider__thumbs:after {
+    content : "";
+    display : table;
+    clear   : both;
+}
+
+.custom-furniture-slider__thumbs.slick-initialized {
+    opacity            : 1;
+    -webkit-transition : opacity 0.5s linear 0.2s;
+    -moz-transition    : opacity 0.5s linear 0.2s;
+    -ms-transition     : opacity 0.5s linear 0.2s;
+    -o-transition      : opacity 0.5s linear 0.2s;
+    transition         : opacity 0.5s linear 0.2s;
+}
+
+.custom-furniture-slider__thumbs .slick-track {
+    margin : 0 auto;
+}
+
+.custom-furniture-slider__thumbs-wrapper .custom-furniture-slider__prev,
+.custom-furniture-slider__thumbs-wrapper .custom-furniture-slider__next,
+.custom-furniture-slider__thumbs .custom-furniture-slider__prev,
+.custom-furniture-slider__thumbs .custom-furniture-slider__next {
+    display            : block;
+    height             : 32px;
+    width              : 32px;
+    margin             : -16px 0 0;
+    padding            : 0;
+    position           : absolute;
+    top                : 50%;
+    background         : rgba(255, 255, 255, 0.8);
+    border-radius      : 50%;
+    border             : 1px solid #909090;
+    box-shadow         : inset 0 0 0 0 #fff;
+    -webkit-transition : all 200ms ease;
+    -moz-transition    : all 200ms ease;
+    -ms-transition     : all 200ms ease;
+    -o-transition      : all 200ms ease;
+    transition         : all 200ms ease;
+    z-index            : 2;
+    cursor             : pointer;
+    text-align         : center;
+}
+
+.custom-furniture-slider__thumbs-wrapper .custom-furniture-slider__prev:after,
+.custom-furniture-slider__thumbs-wrapper .custom-furniture-slider__next:after,
+.custom-furniture-slider__thumbs .custom-furniture-slider__prev:after,
+.custom-furniture-slider__thumbs .custom-furniture-slider__next:after {
+    content : "";
+    display : block;
+    color   : #909090;
+    font    : normal 400 20px/32px Arial, sans-serif;
+}
+
+.custom-furniture-slider__thumbs-wrapper .custom-furniture-slider__prev,
+.custom-furniture-slider__thumbs .custom-furniture-slider__prev {
+    left : 0;
+}
+
+.custom-furniture-slider__thumbs-wrapper .custom-furniture-slider__next,
+.custom-furniture-slider__thumbs .custom-furniture-slider__next {
+    right : 0;
+}
+
+.custom-furniture-slider__thumbs-wrapper .custom-furniture-slider__prev:after,
+.custom-furniture-slider__thumbs-wrapper .custom-furniture-slider__next:after,
+.custom-furniture-slider__thumbs .custom-furniture-slider__prev:after,
+.custom-furniture-slider__thumbs .custom-furniture-slider__next:after {
+    display    : block;
+    width      : 32px;
+    height     : 32px;
+    margin     : 0;
+    padding    : 0;
+    background : none 50% 6px no-repeat;
+}
+
+.custom-furniture-slider__thumbs-wrapper .custom-furniture-slider__prev:after,
+.custom-furniture-slider__thumbs .custom-furniture-slider__prev:after {
+    background-image : url('/images/element-slider-left.png');
+}
+
+.custom-furniture-slider__thumbs-wrapper .custom-furniture-slider__next:after,
+.custom-furniture-slider__thumbs .custom-furniture-slider__next:after {
+    background-image : url('/images/element-slider-right.png');
+}
+
+.custom-furniture-slider__thumbs-wrapper .custom-furniture-slider__prev:hover,
+.custom-furniture-slider__thumbs-wrapper .custom-furniture-slider__next:hover,
+.custom-furniture-slider__thumbs .custom-furniture-slider__prev:hover,
+.custom-furniture-slider__thumbs .custom-furniture-slider__next:hover {
+    box-shadow : inset 0 0 0 16px #000;
+    border     : 1px solid #fff;
+}
+
+.custom-furniture-slider__thumbs-wrapper .custom-furniture-slider__prev:hover:after,
+.custom-furniture-slider__thumbs-wrapper .custom-furniture-slider__next:hover:after,
+.custom-furniture-slider__thumbs .custom-furniture-slider__prev:hover:after,
+.custom-furniture-slider__thumbs .custom-furniture-slider__next:hover:after {
+    background-position : 50% -14px;
+}
+
+.custom-furniture-slider__thumb {
+    box-sizing : border-box;
+    display    : block;
+    float      : left;
+    margin     : 0 10px 0 0;
+    border     : 1px solid #ccc;
+    cursor     : pointer;
+}
+
+.custom-furniture-slider__thumb-bg {
+    display    : block;
+    margin     : 0;
+    padding    : 33.193278% 0;
+    background : none 50% 50%/cover no-repeat;
+    position   : relative;
+}
+
+.custom-furniture-slider__thumb-bg:after {
+    content            : "";
+    display            : block;
+    position           : absolute;
+    top                : 0;
+    right              : 0;
+    bottom             : 0;
+    left               : 0;
+    background         : #fff;
+    opacity            : 0.5;
+    -webkit-transition : opacity .4s ease;
+    -moz-transition    : opacity .4s ease;
+    -ms-transition     : opacity .4s ease;
+    -o-transition      : opacity .4s ease;
+    transition         : opacity .4s ease;
+}
+
+.custom-furniture-slider__thumb_active .custom-furniture-slider__thumb-bg:after {
+    opacity : 0;
+}
+
+.custom-furniture-slider__products {
+    font-size : 14px;
+}
+
+.custom-furniture-slider__products:before {
+    content         : "Хочу такую";
+    box-sizing      : border-box;
+    display         : inline-block;
+    width           : auto;
+    position        : absolute;
+    top             : 27px;
+    right           : 0;
+    margin          : 0;
+    padding         : 8px 50px;
+    background      : #fff;
+    border          : 1px solid #000;
+    border-radius   : 3px;
+    color           : #000;
+    font-size       : 16px;
+    line-height     : 20px;
+    text-align      : center;
+    text-decoration : none !important;
+    white-space     : nowrap;
+    cursor          : pointer;
+}
+
+.custom-furniture-slider__image .custom-furniture-slider__image-product {
+    opacity            : 0 !important;
+    -webkit-transition : opacity 0.1s linear;
+    -moz-transition    : opacity 0.1s linear;
+    transition         : opacity 0.1s linear;
+}
+
+.custom-furniture-slider__image.slick-active .custom-furniture-slider__image-product {
+    opacity            : 1 !important;
+    -webkit-transition : opacity 0.15s linear 0.35s;
+    -moz-transition    : opacity 0.15s linear 0.35s;
+    transition         : opacity 0.15s linear 0.35s;
+}
+
+@media (max-width : 768px) {
+    .custom-furniture-slider__images {
+        margin-left  : -1.5rem;
+        margin-right : -1.5rem;
+    }
+
+    .custom-furniture-slider__image-product {
+        margin      : 1rem 1.5rem 0;
+        position    : static;
+        font-size   : 2rem;
+        line-height : 3rem;
+        color       : #000;
+    }
+
+    .custom-furniture-slider__image-product-price {
+        font-size : 2.5rem;
+    }
+}

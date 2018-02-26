@@ -1,0 +1,92 @@
+.product-filter-more {
+    display            : none;
+    position           : absolute;
+    z-index            : 15;
+    left               : 100%;
+    top                : 200px;
+    margin             : -35px 0 0 -20px;
+    padding            : 15px 15px 15px 0;
+}
+
+.product-filter-more__container {
+    font-size          : 0;
+    line-height        : 1;
+    white-space        : nowrap;
+    -webkit-box-shadow : 0 5px 15px 0 rgba(0, 0, 0, .35);
+    box-shadow         : 0 5px 15px 0 rgba(0, 0, 0, .35);
+}
+
+.product-filter-more__container:before {
+    content            : "";
+    display            : block;
+    position           : absolute;
+    top                : 50%;
+    left               : 0;
+    width              : 8px;
+    height             : 8px;
+    margin-top         : -4px;
+    margin-left        : -4px;
+    background         : #fff;
+    /*background         : #47627d;*/
+    -webkit-box-shadow : 0 5px 15px 0 rgba(0, 0, 0, .35);
+    box-shadow         : 0 5px 15px 0 rgba(0, 0, 0, .35);
+    -webkit-transform  : rotate(45deg);
+    transform          : rotate(45deg);
+    transition         : background-color .15s ease-in-out 0s;
+}
+
+/*.product-filter-more__container:hover:before {*/
+    /*background-color : #1a398b;*/
+/*}*/
+
+.product-filter-more__container:after {
+    content : "";
+    display : table;
+    clear   : both;
+}
+
+.product-filter-widget__section_sidebar {
+    position : relative;
+}
+
+.product-filter-more__info,
+.product-filter-more__action {
+    display        : inline-block;
+    vertical-align : middle;
+    padding        : 12px 20px;
+    position       : relative;
+}
+
+.product-filter-more__info {
+    background : #fff;
+    color      : #000;
+}
+
+.product-filter-more__action {
+    background : #47627d;
+    color      : #fff;
+    cursor     : pointer;
+    transition : background-color .15s ease-in-out 0s;
+}
+
+.product-filter-more__action:hover {
+    background-color : #1a398b;
+}
+
+.product-filter-more__title,
+.product-filter-more__count {
+    display        : inline-block;
+    vertical-align : middle;
+}
+
+.product-filter-more__title:after {
+    content : ":";
+    display : inline-block;
+    margin  : 0 5px 0 0;
+}
+
+.product-filter-more__title,
+.product-filter-more__count,
+.product-filter-more__action {
+    font-size : 14px;
+}

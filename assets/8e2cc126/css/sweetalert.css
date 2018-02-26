@@ -1,0 +1,90 @@
+.sweet-alert {
+    font-family: "Circe-Light", sans-serif;
+    border-radius: 0;
+    -webkit-box-shadow: 6px 10px 38px 0px rgba(0, 0, 0, 0.41);
+    -moz-box-shadow: 6px 10px 38px 0px rgba(0, 0, 0, 0.41);
+    box-shadow: 6px 10px 38px 0px rgba(0, 0, 0, 0.41);
+    width: 500px;
+}
+
+.sweet-overlay {
+    background-color: rgba(255, 255, 255, 0.54);
+}
+
+.sweet-alert h2 {
+    font-size: 25px;
+    font-weight: normal;
+    text-align: left;
+    margin: 10px 0 20px;
+}
+
+.sweet-alert p {
+    font-size: 18px;
+    text-align: left;
+}
+
+.sweet-alert .sa-icon {
+    float: left;
+    margin-top: 26px;
+    margin-left: 11px;
+    margin-right: 32px;
+}
+
+.sweet-alert[data-has-confirm-button=false][data-has-cancel-button=false] {
+    padding-bottom: 0;
+}
+
+.sa-cross-close {
+    display: block;
+    top: 15px;
+    right: 18px;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: url('/images/price-arrows-sprite.png') -52px 0 no-repeat;
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transition: transform 400ms ease;
+    -moz-transition: transform 400ms ease;
+    -ms-transition: transform 400ms ease;
+    -o-transition: transform 400ms ease;
+    transition: transform 400ms ease;
+    cursor: pointer;
+}
+
+.sa-cross-close:hover {
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.sweet-alert .sa-icon.sa-warning .sa-body, .sweet-alert .sa-icon.sa-warning .sa-dot {
+    background-color: #fbb982;
+}
+
+.sweet-alert .sa-icon.sa-warning {
+    border-color: #fbb982;
+}
+
+.pulseWarning, .pulseWarningIns {
+    -webkit-animation: none;
+    -o-animation: none;
+    animation: none;
+}
+
+.sweet-alert .sa-icon.sa-error {
+    border-color: #f28183;
+}
+
+.sweet-alert .sa-icon.sa-error .sa-line {
+    background-color: #f28183;
+}
+
+body.stop-scrolling {
+    height: auto;
+}

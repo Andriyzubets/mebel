@@ -1,0 +1,88 @@
+.product-filter-sidebar {
+    box-sizing : border-box;
+    display    : block;
+    padding    : 5px 10px 30px;
+    width      : 100%;
+}
+
+.product-filter-widget__section {
+    display : block;
+    margin  : 0;
+    padding : 0;
+}
+
+.product-filter-widget_sidebar {
+
+}
+
+.product-filter-widget__section_container {
+    display : flex;
+}
+
+.product-filter-widget__section_container:after {
+    content : "";
+    display : table;
+    clear   : both;
+}
+
+.product-filter-widget__section_sidebar {
+    box-sizing   : border-box;
+    float        : left;
+    width        : 222px;
+    padding      : 10px 21px 0 30px;
+    border-right : 1px solid #eee;
+    display      : none;
+}
+
+.product-filter-widget__section_content {
+    float : left;
+    width : 100%;
+}
+
+.product-filter-widget-toolbar__sidebar-toogle {
+    display       : block;
+    padding-right : 17px;
+    position      : relative;
+    cursor        : pointer;
+    line-height   : 70px;
+    white-space   : nowrap;
+}
+
+.product-filter-widget-toolbar__sidebar-toogle:before {
+    content : "Показать фильтры";
+}
+
+.product-filter-widget-toolbar__sidebar-toogle:hover {
+    background-color : #d3d3d3;
+}
+
+.product-filter-widget-toolbar__sidebar-toogle:after {
+    content       : "";
+    display       : inline-block;
+    width         : 6px;
+    height        : 6px;
+    border-bottom : 1px solid;
+    border-right  : 1px solid;
+    position      : relative;
+    top           : -2px;
+    right         : -10px;
+    transform     : rotate(45deg);
+    transition    : all 0.25s ease 0s;
+}
+
+.product-filter-widget_sidebar .product-filter-widget__section_sidebar {
+    display : block;
+}
+
+.product-filter-widget_sidebar .product-filter-widget__section_content {
+    width : calc(100% - 222px);
+}
+
+.product-filter-widget_sidebar .product-filter-widget-toolbar__sidebar-toogle:before {
+    content : "Скрыть фильтры";
+}
+
+.product-filter-widget_sidebar .product-filter-widget-toolbar__sidebar-toogle:after {
+    transform : rotate(45deg) scale(-1, -1);
+}
+

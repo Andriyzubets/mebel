@@ -1,0 +1,208 @@
+.installment {
+    display         : inline;
+    outline         : 0;
+    border          : 0;
+    margin          : 0;
+    color           : #000;
+    text-align      : center;
+    text-decoration : none !important;
+}
+.installment:hover {
+    opacity         : .75;
+    text-decoration : none !important;
+}
+#installment-popup {
+    box-sizing: border-box;
+    z-index: 20; 
+    width: 240px;
+    padding: 5px 0 15px;
+    background: #fff; 
+    position: absolute; right: 375px;
+    -webkit-box-shadow: -5px 16px 50px 0 rgba(0, 0, 0, 0.4); 
+    box-shadow: -5px 16px 50px 0 rgba(0, 0, 0, 0.4);
+}
+#installment-popup:after {
+    content: ''; 
+    position: absolute;
+    left: 100%;
+    top: 128px;
+    border: 11px solid transparent;    
+    border-left: 11px solid #fff;
+}
+#installment-popup .block {
+    display: inline-block;
+    overflow: hidden;
+    padding: 0 15px;
+    position: relative;
+    top: 0; left: 20px;
+    vertical-align: top;
+    height: 136px;
+}
+#installment-popup .block.monthly-payment {
+    background: #ddd;
+    height: 92px;
+}
+#installment-popup .title {
+    padding-top: 13px; 
+}
+#installment-popup .value {
+    background: #fff;
+    border: 1px solid #000;
+    text-align: center;
+    margin: 10px 0 15px;
+    padding: 3px 0;
+}
+#installment-popup .block.monthly-payment .value {
+    width: 171px;
+    border: none;
+    background: none;
+    font-size: 24px;
+    margin: 10px 0 0;
+}
+#installment-popup .glide {
+    width: 169px;
+    height: 5px;
+}
+#installment-popup .noUi-base {
+    background: #000;
+}
+#installment-popup .noUi-origin {
+    background: #b2b2b2;
+}
+#installment-popup .noUi-handle {
+  background: rgba(0, 0, 0, 0) url("/images/ui-slider-handle.png") no-repeat scroll center center;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  top: 0;
+}
+#installment-popup .noUi-handle:before, 
+#installment-popup .noUi-handle:after { display:none }
+#installment-popup .range {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 13px;
+    color: #b2b2b2;
+}
+#installment-popup .buttons {
+    padding: 0 20px 15px;
+}
+#installment-popup .installment-tocart {
+    box-sizing: border-box;
+    width: 100%;
+    box-shadow: none;
+    text-align: center;
+}
+#installment-popup .cancel-credit {
+    border:none;
+    box-shadow:none;
+    background:none;
+    color: #a3a3a3;
+}
+#installment-popup .cancel-credit:hover {
+    color: #000
+}
+#installment-popup .close {
+    cursor: pointer;
+    display: inline-block;
+    width: 12px; height: 12px;
+    background: url('/images/price-arrows-sprite.png') -52px 0 no-repeat;
+    -webkit-transition: transform 400ms ease;
+    -moz-transition: transform 400ms ease;
+    -ms-transition: transform 400ms ease;
+    -o-transition: transform 400ms ease;
+    transition: transform 400ms ease;
+    position: absolute;
+    right: 15px; top: 12px;
+}
+#installment-popup .close:hover {
+    transform: rotate(-360deg);
+}
+#installment-popup .installment-popup__discount-section {
+    display     : block;
+    padding     : 25px 20px 0;
+    font-size   : 0;
+    white-space : nowrap;
+}
+#installment-popup .installment-popup__discount {
+    display     : inline-block;
+    color       : #9ed5dc;
+    font-size   : 50px;
+    line-height : 1;
+}
+#installment-popup .installment-popup__discount:after {
+    font-size : 21px;
+}
+#installment-popup .installment-popup__discount_ruble {
+    padding-right : 10px;
+    border-right  : 1px solid #efefef;
+}
+#installment-popup .installment-popup__discount_ruble:after {
+    content : '\20bd';
+}
+#installment-popup .installment-popup__discount_percent:after {
+    content : '%';
+}
+#installment-popup .installment-popup__discount_percent {
+    padding-left  : 10px;
+    padding-right : 10px;
+    border-right  : 1px solid #efefef;
+}
+#installment-popup .installment-popup__discount_month {
+    padding-left : 10px;
+}
+#installment-popup .installment-popup__discount_month:after {
+    content : 'мес.';
+}
+@media screen and (min-width: 881px) {
+    .l-content #installment-popup {
+        top: 105px;
+        right: 100%;
+    }
+}
+@media screen and (max-width: 880px) {
+    #installment-popup {
+        top: 80px !important;
+        width: 100%;
+        position: fixed;
+        right: 0;
+    }
+    #installment-popup > div {
+        max-width: 455px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+        clear: both;
+    }
+    #installment-popup:after {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 560px) {
+    .side-menu + .content #installment-popup > div {
+        max-width: 455px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px 0 65px;
+        box-sizing: border-box;
+        clear: both;
+    }
+    .l-content #installment-popup {
+        top: 80px !important;
+        width: 100%;
+        position: fixed;
+        right: 0;
+    }
+    .l-content #installment-popup > div {
+        max-width: 455px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+        clear: both;
+    }
+    .l-content #installment-popup:after {
+        display: none !important;
+    }
+}

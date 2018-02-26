@@ -1,0 +1,130 @@
+/* BANNER */
+.banner {
+  height: 148px;
+  margin-left: -30px;
+  position: relative;
+  padding: 10px 0 0;
+  overflow: hidden;
+  display: block;
+  text-decoration: none !important;
+}
+.banner span {
+  display: block;
+}
+.banner.yellow {
+  background-color: #f3f281;
+}
+.banner.blue-gray {
+  background-color: #c5d7e5;
+  color: #FFF;
+  padding: 16px 0 0 0;
+}
+.banner.blue-gray a {
+  color: #FFF;
+}
+.banner.blue-gray .info .more {
+  background: url('/images/more_white.png') right center no-repeat;
+}
+.banner.dark-brown {
+  background: #cb98bc;
+}
+.banner .image {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  vertical-align: bottom;
+}
+.banner > div {
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+.banner .info {
+  font-size: 35px;
+  padding-left: 65px;
+}
+.banner .info .banner-title {
+  line-height: 46px;
+}
+.banner .banner-image {
+  margin: 0;
+  line-height: 148px;
+  padding: 0 38px 0 0;
+  text-align: right;
+}
+.banner .more {
+  display: inline-block;
+  font-size: 14px;
+  margin: 12px 0 0 0;
+  padding-right: 15px;
+  background: url('/images/more.png') right center no-repeat;
+}
+.banner .banner-description {
+  font-size: 14px;
+  padding-left: 31px;
+}
+.banner_black-november {
+  padding: 0;
+  background: #000 !important;
+  color: #fff;
+}
+.banner_black-november:hover {
+  color: #fff;
+}
+.banner_index-winter-banner {
+  padding: 0;
+  background: url("/images/index_winter_banner_bg.png") 50% 50% repeat-x !important;
+}
+.banner-stock .banner-image {
+  margin: 0;
+  line-height: 148px;
+  padding: 0 38px 0 40px;
+  text-align: right;
+}
+.index-page .banner-title {
+  margin-top: 24px;
+}
+.banner-showroom {
+  height: 301px;
+  background: url(/images/offers/showroom-301.jpg) center top repeat-x;
+  border-bottom: 1px solid #e7e7e7 !important;
+  margin-bottom: 10px;
+  padding: 0;
+}
+.banner-showroom span {
+  font-size: 24px;
+  padding: 90px 0 20px;
+}
+.banner-showroom .button {
+  font-weight: normal;
+  padding: 3px 50px 2px;
+  box-shadow: none;
+  border: 1px solid #000;
+  line-height: 38px;
+}
+@media (max-width: 1279px) {
+  .banner-showroom {
+    background-position: -38px top;
+  }
+}
+@media (max-width: 1199px) {
+  .banner-showroom {
+    background-position: -120px top;
+  }
+}
+@media (max-width: 1099px) {
+  .banner-showroom {
+    background-position: -180px top;
+  }
+}
+@media (max-width: 1059px) {
+  .banner-showroom {
+    background-position: -200px top;
+  }
+}
+@media (max-width: 1023px) {
+  .banner-showroom {
+    background-position: -300px top;
+  }
+}
